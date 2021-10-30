@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "EkrhVXlWjEZ8b5Pzqgie9Uc7g7UxCq8S0Qbnm/YKBCFjnhqW82fwFgxJWJhAcGBv7WoUTg3lQKc9lVfln549jw==",
+  "success": true,
+  "projectFilePath": "E:\\新建文件夹\\Demo\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\MS48\\.nuget\\packages\\freesql\\2.6.100\\freesql.2.6.100.nupkg.sha512",
+    "C:\\Users\\MS48\\.nuget\\packages\\freesql.extensions.linq\\2.6.100\\freesql.extensions.linq.2.6.100.nupkg.sha512",
+    "C:\\Users\\MS48\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

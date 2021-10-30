@@ -1,0 +1,15 @@
+E:\新建文件夹\Demo\CCDto\src\Core\CCDto.common\bin\Debug\net5.0\CCDto.common.deps.json
+E:\新建文件夹\Demo\CCDto\src\Core\CCDto.common\bin\Debug\net5.0\CCDto.common.dll
+E:\新建文件夹\Demo\CCDto\src\Core\CCDto.common\bin\Debug\net5.0\ref\CCDto.common.dll
+E:\新建文件夹\Demo\CCDto\src\Core\CCDto.common\bin\Debug\net5.0\CCDto.common.pdb
+E:\新建文件夹\Demo\CCDto\src\Core\CCDto.common\bin\Debug\net5.0\CCDto.entity.dll
+E:\新建文件夹\Demo\CCDto\src\Core\CCDto.common\bin\Debug\net5.0\CCDto.entity.pdb
+E:\新建文件夹\Demo\CCDto\src\Core\CCDto.common\obj\Debug\net5.0\CCDto.common.csproj.AssemblyReference.cache
+E:\新建文件夹\Demo\CCDto\src\Core\CCDto.common\obj\Debug\net5.0\CCDto.common.GeneratedMSBuildEditorConfig.editorconfig
+E:\新建文件夹\Demo\CCDto\src\Core\CCDto.common\obj\Debug\net5.0\CCDto.common.AssemblyInfoInputs.cache
+E:\新建文件夹\Demo\CCDto\src\Core\CCDto.common\obj\Debug\net5.0\CCDto.common.AssemblyInfo.cs
+E:\新建文件夹\Demo\CCDto\src\Core\CCDto.common\obj\Debug\net5.0\CCDto.common.csproj.CoreCompileInputs.cache
+E:\新建文件夹\Demo\CCDto\src\Core\CCDto.common\obj\Debug\net5.0\CCDto.common.csproj.CopyComplete
+E:\新建文件夹\Demo\CCDto\src\Core\CCDto.common\obj\Debug\net5.0\CCDto.common.dll
+E:\新建文件夹\Demo\CCDto\src\Core\CCDto.common\obj\Debug\net5.0\ref\CCDto.common.dll
+E:\新建文件夹\Demo\CCDto\src\Core\CCDto.common\obj\Debug\net5.0\CCDto.common.pdb

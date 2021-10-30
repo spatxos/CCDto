@@ -1,0 +1,186 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    background: #064892;
+    width: 100%;
+}
+
+.coupon-img {
+    width: 100%;
+}
+
+.coupon-top {
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+    .coupon-top .box {
+        margin: 10px;
+    }
+
+    .coupon-top .logo {
+        width: 30px;
+        height: 30px;
+        float: left;
+    }
+
+    .coupon-top p {
+        color: #fff;
+        font-size: 15px;
+        line-height: 20px;
+        padding: 5px 10px;
+        background: rgba(0,0,0,0.3);
+        margin-left: 40px;
+        border-radius: 4px;
+        position: relative;
+    }
+
+        .coupon-top p:before {
+            content: "";
+            display: inline-block;
+            font-size: 0;
+            border-width: 6px;
+            border-color: rgba(0,0,0,0.3);
+            border-left-width: 0;
+            border-style: dashed;
+            border-right-style: solid;
+            border-top-color: transparent;
+            border-bottom-color: transparent;
+            position: absolute;
+            left: -6px;
+            margin-top: 4px;
+        }
+
+.coupon-cruise {
+    padding: 10px;
+}
+.coupon-cruise .curisetit {
+    margin-bottom: 15px;
+}
+.coupon-cruise .curisetit p{
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.coupon-list {
+    background: rgba(0,0,0,0.2);
+    padding: 10px 10px 20px 10px;
+    border-radius: 4px;
+}
+
+    .coupon-list .info {
+        text-align: center;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+
+        .coupon-list .info .account {
+            color: #f7ca18 !important;
+        }
+
+.coupon {
+    background: #fff;
+    padding: 10px 15px;
+    border-bottom: 3px solid #064892;
+    margin-bottom: 10px;
+}
+
+.coupon-head {
+    height: 3px;
+    display: block;
+    background: url('/Images/halfdot.png') repeat;
+}
+    .coupon-content {
+        position:relative;
+    }
+    .coupon .type .tit{
+        font-size:16px;
+    }
+.coupon .money {
+    width: 90px;
+    color: #e7505a !important;
+    font-size: 14px;
+    line-height: 44px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: right;
+    overflow:hidden;
+}
+
+    .coupon .money span {
+        font-size: 28px;
+    }
+
+.coupon .describ {
+    margin: 0 0 0 120px;
+    padding: 0;
+}
+
+    .coupon .describ li {
+        line-height: 20px;
+        list-style-type: disc;
+        color: #666;
+    }
+
+.btn {
+    font-size: 18px;
+    text-align: center;
+    padding: 6px;
+    color: #fff;
+}
+
+    .btn:link, .btn:visited, .btn:hover, .btn:active {
+        color: #fff;
+    }
+
+    .btn.orange {
+        background: #E87E04 !important;
+    }
+
+    .btn.btn-block {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .btn.btn-square {
+        border-radius: 4px;
+    }
+
+.coupon-rules {
+    padding: 10px 20px;
+    color: #fff;
+}
+
+    .coupon-rules .title {
+        text-align: center;
+        position: relative;
+        height: 36px;
+    }
+
+        .coupon-rules .title span {
+            font-size: 16px;
+            z-index: 10;
+            background: #064892;
+            display: block;
+            position: absolute;
+            left: 50%;
+            margin-left: -35px;
+            width: 70px;
+        }
+
+        .coupon-rules .title .line {
+            height: 1px;
+            position: absolute;
+            top: 10px;
+            width: 100%;
+            background: #fff;
+            z-index: -1;
+        }
+
+    .coupon-rules .rules p {
+        margin: 10px;
+    }

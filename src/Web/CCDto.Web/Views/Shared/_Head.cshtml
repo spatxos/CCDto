@@ -1,0 +1,37 @@
+﻿@{ 
+//User LoginUser = ViewBag.LoginUser;
+}
+
+<ul class="nav navbar-nav pull-right">
+    <!-- BEGIN USER LOGIN DROPDOWN -->
+    <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+    <li class="dropdown dropdown-user">
+        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+            <img alt="" class="img-circle" src="~/assets/layouts/layout/img/avatar3_small.jpg">
+            @*<span class="username username-hide-on-mobile"> @(LoginUser.UserName) </span>*@
+            <i class="fa fa-angle-down"></i>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-default">
+            <li class="divider"> </li>
+            @*<li>
+                <a target="_blank" href="/CodeGenerator/Index">
+                    <i class="icon-lock"></i> 代码生产器
+                </a>
+            </li>*@
+            <li>
+                @*<a class="fancybox fancybox.iframe" href="/System/User/EditPassword/@(LoginUser.Id)">
+                    <i class="van-icon-passed"></i> 修改密码
+                </a>*@
+            </li>
+        </ul>
+    </li>
+    <!-- END USER LOGIN DROPDOWN -->
+    <!-- BEGIN QUICK SIDEBAR TOGGLER -->
+    <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+    <li class="dropdown dropdown-quick-sidebar-toggler">
+        <a href="/Account/Logout" class="dropdown-toggle">
+            <i class="icon-logout"></i>
+        </a>
+    </li>
+    <!-- END QUICK SIDEBAR TOGGLER -->
+</ul>

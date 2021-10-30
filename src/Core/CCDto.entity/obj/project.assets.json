@@ -1,0 +1,184 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "FreeSql/2.6.100": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/FreeSql.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/FreeSql.dll": {}
+        }
+      },
+      "FreeSql.Extensions.Linq/2.6.100": {
+        "type": "package",
+        "dependencies": {
+          "FreeSql": "2.6.100"
+        },
+        "compile": {
+          "lib/netstandard2.0/FreeSql.Extensions.Linq.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/FreeSql.Extensions.Linq.dll": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FreeSql/2.6.100": {
+      "sha512": "pZtckvsbS17wBUOKfsvsJzBjZ38OIb6y+1i0e+eMdRBmASYHjAholOQcnJzhOLdGATDs+GjQdmAWI1Z0JQLyqQ==",
+      "type": "package",
+      "path": "freesql/2.6.100",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "freesql.2.6.100.nupkg.sha512",
+        "freesql.nuspec",
+        "lib/net40/FreeSql.dll",
+        "lib/net40/FreeSql.pdb",
+        "lib/net40/FreeSql.xml",
+        "lib/net45/FreeSql.dll",
+        "lib/net45/FreeSql.pdb",
+        "lib/net45/FreeSql.xml",
+        "lib/netstandard2.0/FreeSql.dll",
+        "lib/netstandard2.0/FreeSql.pdb",
+        "lib/netstandard2.0/FreeSql.xml",
+        "logo.png"
+      ]
+    },
+    "FreeSql.Extensions.Linq/2.6.100": {
+      "sha512": "aDBkK8S971RDDV7VhqHfcpueMUmpt9AjdGO9WnF/7UeDJ1C6Fk6HwQUmaUPfVFfb/56LrvBYQ0a3GeyDPnmLVQ==",
+      "type": "package",
+      "path": "freesql.extensions.linq/2.6.100",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "freesql.extensions.linq.2.6.100.nupkg.sha512",
+        "freesql.extensions.linq.nuspec",
+        "lib/net40/FreeSql.Extensions.Linq.dll",
+        "lib/net40/FreeSql.Extensions.Linq.pdb",
+        "lib/net45/FreeSql.Extensions.Linq.dll",
+        "lib/net45/FreeSql.Extensions.Linq.pdb",
+        "lib/netstandard2.0/FreeSql.Extensions.Linq.dll",
+        "lib/netstandard2.0/FreeSql.Extensions.Linq.pdb",
+        "lib/netstandard2.0/FreeSql.Extensions.Linq.xml",
+        "logo.png"
+      ]
+    },
+    "Newtonsoft.Json/13.0.1": {
+      "sha512": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.1.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "FreeSql >= 2.6.100",
+      "FreeSql.Extensions.Linq >= 2.6.100",
+      "Newtonsoft.Json >= 13.0.1"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\MS48\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "E:\\新建文件夹\\Demo\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj",
+      "projectName": "CCDto.entity",
+      "projectPath": "E:\\新建文件夹\\Demo\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj",
+      "packagesPath": "C:\\Users\\MS48\\.nuget\\packages\\",
+      "outputPath": "E:\\新建文件夹\\Demo\\CCDto\\src\\Core\\CCDto.entity\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\MS48\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "dependencies": {
+          "FreeSql": {
+            "target": "Package",
+            "version": "[2.6.100, )"
+          },
+          "FreeSql.Extensions.Linq": {
+            "target": "Package",
+            "version": "[2.6.100, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.1, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.2.21505.57\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
