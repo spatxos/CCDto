@@ -1,0 +1,87 @@
+﻿@{
+    var action = ViewContext.RouteData.Values["action"].ToString().ToLower();
+    var controller = ViewContext.RouteData.Values["controller"].ToString().ToLower();
+
+}
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    @*<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">*@
+    <meta charset="utf-8" />
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="~/images/favicon.ico" type="image/x-icon" />
+    <title>@(ViewBag.Title + ViewBag.SystemName)</title>
+    @await Html.PartialAsync("MyStyle")
+    @RenderSection("styles", required: false)
+</head>
+<body class="page-header-fixed page-sidebar-closed-hide-logo page-content-white page-md" style="">
+    <div class="page-wrapper">
+        <!-- BEGIN CONTAINER -->
+            <!-- BEGIN SIDEBAR -->
+            <!-- END SIDEBAR -->
+            <!-- BEGIN CONTENT -->
+                <!-- BEGIN CONTENT BODY -->
+                <div class="page-content" style="min-height: 1938px;">
+                    <div style="min-height:700px;padding-top:10px;">
+                        <div class="portlet light bordered">
+                            @RenderBody()
+                        </div>
+                    </div>
+                </div>
+                <!-- END CONTENT BODY -->
+            <!-- END CONTENT -->
+            <!-- BEGIN QUICK SIDEBAR -->
+            <!-- END QUICK SIDEBAR -->
+        <!-- END CONTAINER -->
+        <!-- BEGIN FOOTER -->
+        <!-- END FOOTER -->
+    </div>
+    <!-- BEGIN QUICK NAV -->
+    <!-- END QUICK NAV -->
+    <!--[if lt IE 9]>
+    <script src="~/assets/global/plugins/respond.min.js"></script>
+    <script src="~/assets/global/plugins/excanvas.min.js"></script>
+    <script src="~/assets/global/plugins/ie8.fix.min.js"></script>
+    <![endif]-->
+
+    @await Html.PartialAsync("MyScript")
+
+    @RenderSection("scripts", required: false)
+    <script type="text/javascript">
+        jQuery.support.cors = true;
+        $(function () {
+            $("#showModal").on("hidden.bs.modal", function () {
+                $(this).removeData("bs.modal");
+            });
+
+            //判断浏览器类型
+            var browser = {
+                versions: function () {
+                    var u = navigator.userAgent;
+                    return {
+                        trident: u.indexOf('Trident') > -1, //IE内核
+                        presto: u.indexOf('Presto') > -1, //opera内核
+                        webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+                        gecko: u.indexOf('Firefox') > -1, //火狐内核Gecko
+                        mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+                        ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios
+                        android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android
+                        iPhone: u.indexOf('iPhone') > -1, //iPhone
+                        iPad: u.indexOf('iPad') > -1, //iPad
+                        webApp: u.indexOf('Safari') > -1 //Safari
+                    };
+                }()
+            }
+            if (browser.versions.trident) {
+                if (confirm("您正在使用IE内核浏览器，为了不影响您的使用，请修改为极速模式或者下载最新版的谷歌浏览器！")) {
+                    window.open("/Home/UnderIE8");
+                }
+            }
+        });
+
+    </script>
+</body>
+</html>

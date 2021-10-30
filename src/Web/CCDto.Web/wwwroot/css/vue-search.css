@@ -1,0 +1,175 @@
+﻿ .s-container {
+    position: relative;
+    background: #fff;
+    padding-right: 3px;
+}
+
+.s-list {
+    border: 1px solid #fff;
+    border-left: 3px solid #fff;
+    padding: 15px;
+    position: relative;
+    z-index: 17;
+    background: #fff;
+    border-bottom: 1px dashed #e8e8e8;
+}
+
+
+    .s-list.active {
+        border: 1px solid #e8e8e8;
+        box-shadow: 0 0 6px rgba(0,0,0,.4);
+        border-left: 3px solid #007BE5;
+    }
+
+        .s-list.active:after {
+            position: absolute;
+            top: 0;
+            right: -4px;
+            width: 5px;
+            height: 100%;
+            content: "\20";
+            background: #fff;
+        }
+
+    .s-list b {
+        line-height: 18px;
+        margin-bottom: 10px;
+        color: #007BE5;
+    }
+
+        .s-list b i {
+            color: #007BE5;
+            font-size: 16px;
+            width: 20px;
+            text-align: center;
+        }
+
+.s-list-con:before, .s-list-con:after, .s-list-con .line:before, .s-list-con .line:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.s-list-con a, .s-list-con b {
+    float: left;
+    margin: 0 10px 0 0;
+    line-height: 22px;
+    color: #333;
+    padding: 0 2px;
+}
+
+    .s-list-con a:hover {
+        color: #007BE5;
+    }
+
+.s-list-con .line {
+    line-height: 22px;
+    margin: 0;
+}
+
+    .s-list-con .line .year {
+        width: 50px;
+    }
+
+    .s-list-con .line .tit {
+        width: 100px;
+    }
+     .s-list-con .line .con {
+            margin-left: 110px;
+        }
+.s-con {
+    position: absolute;
+    top: 0;
+    left: 297px;
+    background-color: rgba(255, 255, 255, 0.85);
+    width:684px;
+    z-index: 16;
+    padding: 15px 15px 0 15px;
+    border: 1px solid #e8e8e8;
+    box-shadow: 0 0 6px rgba(0,0,0,.4);
+    height: 650px;
+    max-height: 650px;
+    overflow-y: scroll;
+}
+
+    .s-con .tit {
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .s-con .s-list-con .line {
+        border-top: 1px dashed #e8e8e8;
+        padding: 10px 0;
+    }
+
+        .s-con .s-list-con .line .year-con {
+            margin-left: 60px;
+        }
+
+
+            .s-con .s-list-con .line .con span{
+                width: 95px;
+                overflow: hidden;
+                display: inline-block;
+            }
+            .s-con .s-list-con .line .con span a {
+                 max-width: 85px;font-size: 13px;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+
+
+.s-con .s-list-con .hotdes {
+    border-top: 1px dashed #e8e8e8;
+    padding-top: 5px;
+}
+
+    .s-con .s-list-con .hotdes .line {
+        border: none;
+        line-height: 22px;
+        margin-bottom: 5px;
+        padding: 0;
+    }
+
+.hotdes span {
+    width: 60px;
+}
+
+.hotdes span, .hotdes a {
+    float: left;
+    margin: 0 10px 0 0;
+    line-height: 22px;
+}
+
+.s-con .s-list-con .hotdes a {
+    width: auto;
+    font-size: 13px;
+}
+
+.s-list-con>.hot,.s-list-con .line .con>span>.hot {
+        color: #e7505a;
+    }
+  .s-list-con a.active,.s-list-con .line .con>span>a.active {
+    background:#007BE5 url('/Images/s-remove.png') bottom right no-repeat;color: #fff;padding: 0 20px 0 5px;
+}
+    .s-list-con .active:hover, .s-list-con .line .con > span > a.active:hover {
+        color: #e8e8e8;
+         background:#007BE5 url('/Images/s-remove.png') top right no-repeat;
+    }
+    .s-list-con .con a {
+        max-width: 143px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+  .s-result {
+      background: #fff;
+      padding:8px 15px;
+      line-height: 34px;
+  }
+   .s-result .s-btn {
+      padding:4px 10px;
+       font-size: 16px;
+
+  }

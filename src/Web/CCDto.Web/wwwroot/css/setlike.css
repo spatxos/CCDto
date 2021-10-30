@@ -1,0 +1,201 @@
+﻿a {
+    color: #fff;
+}
+
+    a:hover, a:link, a:active, a:visited, a:focus {
+        color: #eee;
+    }
+
+.el-upload__input[type='file'] {
+    display: none;
+}
+
+.events_box {
+    background: #d61336;
+    min-width: 1180px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cru_title {
+    position: relative;
+    z-index: 1;
+    height: 100px;
+    padding: 30px;
+    line-height: 40px;
+}
+
+    .cru_title .line_l, .cru_title .line_r {
+        position: absolute;
+        z-index: 1;
+        width: 505px;
+        height: 1px;
+        overflow: hidden;
+        top: 50px;
+        background-color: #d5d9d8;
+    }
+
+    .cru_title .line_l {
+        left: 0;
+    }
+
+    .cru_title .line_r {
+        right: 0;
+    }
+
+    .cru_title .text {
+        position: absolute;
+        z-index: 1;
+        left: 50%;
+        top: 50%;
+        margin-top: -20px;
+        margin-left: -80px;
+        width: 160px;
+        font-size: 30px;
+        text-align: center;
+        font-family: "Microsoft YaHei",simsun,sans-serif;
+        color: #fff;
+        line-height: 40px;
+    }
+
+.cru_content {
+    color: #fff;
+    padding: 0 100px 20px 100px;
+}
+
+.cru_info {
+    background: #ffc801;
+    color: #333;
+    padding: 40px 100px;
+    text-indent: 2em;
+    text-align: left;
+}
+
+    .cru_info, .cru_info:before, .cru_info:after {
+        display: table;
+        content: " ";
+    }
+
+        .cru_info .intro {
+            margin-bottom: 40px;
+        }
+
+            .cru_info .intro p {
+                font-size: 18px;
+            }
+
+        .cru_info .rules {
+            width: 50%;
+            float: left;
+        }
+
+            .cru_info .rules ul {
+                padding: 0;
+            }
+
+                .cru_info .rules ul li, .cru_info .rules ul li p {
+                    margin-bottom: 5px;
+                }
+
+                    .cru_info .rules ul li.tit {
+                        font-weight: bold;
+                    }
+
+.cru_table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #fff;
+    margin: 10px auto;
+}
+
+    .cru_table > tbody > tr > td, .cru_table > thead > tr > th {
+        border: 1px solid #ffe480;
+        display: table-cell;
+        text-align: center;
+        padding: 6px 12px;
+        text-indent: 0;
+    }
+
+.line_table {
+    margin-bottom: 10px;
+}
+
+    .line_table > thead > tr {
+        background: #ffe480;
+    }
+
+        .line_table > tbody > tr > td, .line_table > thead > tr > th {
+            display: table-cell;
+            text-align: center;
+            padding: 6px 12px;
+            text-indent: 0;
+        }
+
+    .line_table .col1 {
+        width: 70px;
+    }
+
+    .line_table .col2 {
+        width: 100px;
+    }
+
+    .line_table .col3 {
+        width: 200px;
+    }
+
+    .line_table .col4 {
+        width: 100px;
+    }
+
+    .line_table .col1, .line_table .col2, .line_table .col3, .line_table .col4 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        display: inline-block;
+    }
+
+.cru_info .list {
+    padding: 0;
+    width: 50%;
+    float: left;
+}
+
+    .cru_info .list .list_con {
+        width: 485px;
+        text-indent: 0;
+        float: right;
+    }
+
+    .cru_info .list .title, .cru_info .rules .title {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+        .cru_info .list .title a {
+            font-size: 16px;
+            font-weight: normal;
+            color: red;
+            float: right;
+            text-decoration: underline;
+        }
+/*.myresponsive {
+   overflow-y:scroll;
+}
+    .myresponsive::-webkit-scrollbar {
+        width: 7px;
+        background-color: #F5F5F5;
+    }
+
+    .myresponsive::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        background-color: #F5F5F5;
+    }
+
+    .myresponsive::-webkit-scrollbar-thumb {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+        background-color: #444;
+    } 
+
+*/

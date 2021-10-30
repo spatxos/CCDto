@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "04bc2444-f481-4294-82bf-6ef3d799d8c0": {
+      "ProjectGuid": "04bc2444-f481-4294-82bf-6ef3d799d8c0",
+      "DisplayName": "CCDto",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "杂项文件",
+      "ColorIndex": -1
+    },
+    "db064e25-4af4-4323-8bca-4036773a6310": {
+      "ProjectGuid": "db064e25-4af4-4323-8bca-4036773a6310",
+      "DisplayName": "CCDto.application",
+      "ColorIndex": 1
+    },
+    "e8bf5c2b-3f0c-44dd-92f6-ad21afe53d81": {
+      "ProjectGuid": "e8bf5c2b-3f0c-44dd-92f6-ad21afe53d81",
+      "DisplayName": "CCDto.entity",
+      "ColorIndex": 2
+    },
+    "64f3163a-d2b8-4d7e-9414-e5f0471a19e3": {
+      "ProjectGuid": "64f3163a-d2b8-4d7e-9414-e5f0471a19e3",
+      "DisplayName": "CCDto.common",
+      "ColorIndex": 3
+    },
+    "17cb1c96-0df0-45ce-b8a0-ae8bc9a19f61": {
+      "ProjectGuid": "17cb1c96-0df0-45ce-b8a0-ae8bc9a19f61",
+      "DisplayName": "CCDto.Web",
+      "ColorIndex": 4
+    }
+  },
+  "NextColorIndex": 5
+}

@@ -1,0 +1,222 @@
+﻿.overview-list {
+    min-width:925px;
+}
+.overview-list .box {
+    border: 1px solid #eee;
+    margin-bottom: 10px;
+    background: #fff;
+}
+
+    .overview-list .box .route {
+        padding: 32px 18px 17px 188px;
+        position: relative;
+    }
+
+        .overview-list .box .route .route-side {
+            width: 150px;
+            height: 103px;
+            overflow: hidden;
+            background: #f2f9fe;
+            position: absolute;
+            top: 30px;
+            left: 20px;
+            cursor: pointer;
+            user-select: none;
+            -moz-user-select: -moz-none;
+        }
+
+            .overview-list .box .route .route-side .route-img {
+                height: 83px;
+            }
+
+                .overview-list .box .route .route-side .route-img img {
+                    width: 100%;
+                    height: 100%;
+                }
+
+            .overview-list .box .route .route-side .route-zone {
+                line-height: 20px;
+                text-align: center;
+                color: #999;
+                font-size: 13px;
+            }
+
+        .overview-list .box .route .route-info {
+            margin-right: 130px;
+            overflow: hidden;
+        }
+
+            .overview-list .box .route .route-info .route-title {
+                max-height: 40px;
+                font-size: 16px;
+                line-height: 20px;
+                font-weight: 700;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                line-height: 20px;
+                margin-bottom: 4px;
+            }
+
+            .overview-list .box .route .route-info .route-info-line, .overview-list .box .route .route-info .route-label-list {
+                font-size: 13px;
+                line-height: 23px;
+            }
+
+                .overview-list .box .route .route-info .route-info-line b, .overview-list .box .route .route-info .route-label-list b {
+                    font-weight: normal;
+                    color: #999;
+                }
+
+            .overview-list .box .route .route-info .route-minprice-list {
+            }
+
+                .overview-list .box .route .route-info .route-minprice-list ul {
+                    padding: 0;
+                    margin: 0;
+                    width: 720px;
+                }
+
+                    .overview-list .box .route .route-info .route-minprice-list ul li {
+                        float: left;
+                        padding: 4px;
+                        border-top: 1px solid #eee;
+                        width: 60px;
+                        text-align: center;
+                        font-size: 12px;
+                        color: #444;
+                    }
+
+            .overview-list .box .route .route-info .route-label-list {
+                margin-bottom: 10px;
+            }
+
+        .overview-list .box .route .route-minprice {
+            color: #ed6b75;
+            font-size: 14px;
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            font-weight: bold;
+        }
+            .overview-list .box .route .route-minprice b{
+                font-size:24px;
+
+            }.overview-list .box .route .route-btn {
+                background: #3598dc;
+                padding: 8px 14px;
+                border-radius: 2px;
+                color: #fff;
+                font-size: 14px;
+                letter-spacing: 8px;
+                display: block;
+                position: absolute;
+                right: 20px;
+                bottom: 20px;
+            }
+
+        .overview-list .box .route .arrow-down b {
+            border-left: 5px solid #3598dc;
+            border-right: 5px solid #3598dc;
+            border-bottom: 0 none transparent;
+            border-top: 5px solid #fff;
+            display: inline-block;
+            margin-bottom: 2px;
+        }
+
+        .overview-list .box .route .arrow-up b {
+            border-left: 5px solid #3598dc;
+            border-right: 5px solid #3598dc;
+            border-top: 0 none transparent;
+            border-bottom: 5px solid #fff;
+            display: inline-block;
+            margin-bottom: 2px;
+        }
+
+    .offer-list {
+        background-color: #f6f6f6;
+    }
+           
+.offer-list .offer,.offer-list .offer-title {
+    padding: 10px 18px 10px 180px;
+    position: relative;
+    display: block;
+    margin:0;
+    border-bottom:1px solid #eee;
+}
+    /*.offer-list .offer-title::before {
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 0 none transparent;
+        border-bottom: 10px solid #f5f5f5;
+        display: inline-block;
+        position: absolute;
+        right: 50px;
+        top: -10px;
+    }*/
+    .offer-list .offer .offer-price {
+        margin: 0;
+        padding: 0;
+    }
+.offer-list .offer .supplier {
+    width: 180px;
+    position: absolute;
+    top: 10px;
+    left: 26px;
+    font-size: 14px;
+    height: 26px;
+    line-height: 20px;
+    overflow: hidden;
+    color: #333;
+}
+.offer-list .offer-title li,.offer-list .offer .offer-price li {
+    float: left;
+    padding: 0 4px;
+    width: 55px;
+    text-align: center;
+    font-size: 13px;
+    color: #444;
+    height: 23px;
+    line-height: 23px;
+    overflow: hidden;
+    cursor:pointer;
+}
+    .offer-list .offer-title li.text-danger, .offer-list .offer .offer-price li.text-danger {
+        color: #ed6b75
+    }
+        .offer-list .offer-title li.text-danger .asc_arrow, .offer-list .offer .offer-price li.text-danger .asc_arrow {
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 0 none transparent;
+            border-bottom: 5px solid #ed6b75;
+            display: inline-block;
+            margin-bottom: 2px;
+        }
+            .offer-list .offer-title li.text-danger:hover, .offer-list .offer .offer-price li.text-danger:hover, .offer-list .offer-title li.text-danger .asc_arrow:hover, .offer-list .offer .offer-price li.text-danger .asc_arrow:hover {
+                color: #d71b29;
+            }
+    .offer-list .offer:hover {
+        background: #f2f9fe;
+    }
+.label {
+    font-size: 10px;
+}
+.overview-list .box .offer-list .offer .info-btn {
+    background: #ff7362;
+    padding: 5px;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 14px;
+    display: block;
+    position: absolute;
+    right: 26px;
+    bottom: 7px;
+    user-select: none;
+    -moz-user-select: -moz-none;
+    width: 50px;
+    text-align: center;
+}
+
+    .overview-list .box .offer-list .offer .info-btn:hover {
+        background: #ff7362;
+    }
+
