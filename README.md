@@ -2,6 +2,7 @@
 依照ABP做一个简单的开发框架，基础的增删改查方法从AsyncCrudAppService继承，需要实现的Service如果有额外修改，可以进行override重写
 
 参考：ABP
+
 ORM：FreeSql
 
 # 简单cshtml页面无需多写，只需要根据模板生成
