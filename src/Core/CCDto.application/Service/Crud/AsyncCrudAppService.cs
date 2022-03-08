@@ -4,10 +4,12 @@ using CCDto.application.Service.Crud.Dto.Request;
 using CCDto.application.Service.Crud.Dto.Response;
 using CCDto.common;
 using CCDto.common.AutoMapper;
+using CCDto.common.FreeSql;
 using CCDto.entity.Base;
 using CCDto.entity.DtoColumn;
 using CCDto.entity.DtoColumn.Db;
 using CCDto.entity.DtoColumn.Option;
+using CCDto.entity.FreeSql;
 using FreeSql;
 using System;
 using System.Collections.Generic;
@@ -19,9 +21,9 @@ using System.Threading.Tasks;
 
 namespace CCDto.application.Service.Crud
 {
-    public class AsyncCrudAppService<TEntity, TEntityDto, TPrimaryKey, TGetAllInput, TUpdateInput> : 
-        BaseRepository<TEntity, TPrimaryKey>, 
-        IAsyncCrudAppService<TEntity, TEntityDto, TPrimaryKey, TGetAllInput, TUpdateInput> 
+    public class AsyncCrudAppService<TEntity, TEntityDto, TPrimaryKey, TGetAllInput, TUpdateInput> :
+        BaseRepository<TEntity, TPrimaryKey>,
+        IAsyncCrudAppService<TEntity, TEntityDto, TPrimaryKey, TGetAllInput, TUpdateInput>
         where TEntity : class, IEntity<TPrimaryKey>
     {
         protected static IBaseRepository<TEntity> _dbRepository;
@@ -29,8 +31,29 @@ namespace CCDto.application.Service.Crud
 
         public AsyncCrudAppService(IFreeSql fsql) : base(fsql, null, null)
         {
-            freeSql = fsql;
-            _dbRepository = fsql.GetRepository<TEntity, TPrimaryKey>();
+            try
+            {
+                freeSql = fsql.Change(GetBbKey(typeof(TEntity)));
+                _dbRepository = freeSql.GetRepository<TEntity, TPrimaryKey>();
+            }
+            catch(Exception ex)
+            {
+                freeSql = fsql;
+                _dbRepository = freeSql.GetRepository<TEntity, TPrimaryKey>();
+            }
+        }
+        public string GetBbKey(Type type = null)
+        {
+            var dbKey = default(string);
+            if (type != null)
+            {
+                var attribute = (MultiDBAttribute)Attribute.GetCustomAttribute(type, typeof(MultiDBAttribute));
+                if (attribute != null)
+                {
+                    dbKey = attribute.DbName;
+                }
+            }
+            return dbKey;
         }
         public int ExecuteNonQuery(string sql)
         {

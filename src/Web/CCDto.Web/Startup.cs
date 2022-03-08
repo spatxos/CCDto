@@ -1,4 +1,5 @@
 using CCDto.common.AutoMapper;
+using CCDto.common.Extensions;
 using CCDto.Web.Core.Extensions;
 using EasyNetQ;
 using FreeSql;
@@ -37,19 +38,19 @@ namespace CCDto.Web
 
             Configuration = builder.Build();
 
-            var type = Configuration["DbType"];
+            //var type = Configuration["DbType"];
 
-            Fsql = new FreeSql.FreeSqlBuilder()
-                   .UseConnectionString(GetDbType(type), configuration[$"ConnectionStrings:{type}"])
-                       //.UseAutoSyncStructure(true)
-                       //自动同步实体结构到数据库
-                       .UseNameConvert(NameConvertType.ToUpper)
-                       .UseLazyLoading(true)
-                       //.UseNameConvert(FreeSql.Internal.NameConvertType.ToUpper)
-                       //开启延时加载，导航属性
-                       .UseMonitorCommand(cmd => Trace.WriteLine(cmd.CommandText))
-                       //跟踪SQL执行语句
-                       .Build();
+            //Fsql = new FreeSql.FreeSqlBuilder()
+            //       .UseConnectionString(GetDbType(type), configuration[$"ConnectionStrings:{type}"])
+            //           //.UseAutoSyncStructure(true)
+            //           //自动同步实体结构到数据库
+            //           .UseNameConvert(NameConvertType.ToUpper)
+            //           .UseLazyLoading(true)
+            //           //.UseNameConvert(FreeSql.Internal.NameConvertType.ToUpper)
+            //           //开启延时加载，导航属性
+            //           .UseMonitorCommand(cmd => Trace.WriteLine(cmd.CommandText))
+            //           //跟踪SQL执行语句
+            //           .Build();
         }
 
         public IConfiguration Configuration { get; }
@@ -77,7 +78,16 @@ namespace CCDto.Web
                 options.SerializerSettings.DateFormatString = "yyyy-MM-dd HH:mm:ss";
             });
 
-            services.AddSingleton(Fsql);
+            //#region 多数据配置
+            //if (Convert.ToBoolean(Configuration["DbsOpen"]))
+            //{
+            //    services.AddIdleBus();
+            //}
+            //#endregion
+
+            services.AddMultiDB(Configuration);
+
+            //services.AddSingleton(Fsql);
 
             services.AddSingleton(RabbitHutch.CreateBus(Configuration["MQ:Dev"]));
         }

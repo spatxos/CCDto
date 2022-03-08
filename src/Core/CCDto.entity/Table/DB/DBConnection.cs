@@ -1,4 +1,5 @@
 ﻿using CCDto.entity.Base;
+using CCDto.entity.FreeSql;
 using FreeSql.DataAnnotations;
 using System;
 using System.Collections.Generic;
@@ -11,6 +12,7 @@ namespace CCDto.entity.Table
     /// </summary>
     [Serializable]
     [Table(Name = "TBL_DBCONNECTION",OldName = "DBConnection")]
+    [MultiDB(DbName: "DB1")]
     public class DBConnection : Entity<int>
     {
         /// <summary>

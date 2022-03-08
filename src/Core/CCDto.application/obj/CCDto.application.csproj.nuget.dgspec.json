@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\新建文件夹\\Demo\\CCDto\\src\\Core\\CCDto.application\\CCDto.application.csproj": {}
+    "E:\\王朋总\\Demo\\CCDto\\src\\Core\\CCDto.application\\CCDto.application.csproj": {}
   },
   "projects": {
-    "E:\\新建文件夹\\Demo\\CCDto\\src\\Core\\CCDto.application\\CCDto.application.csproj": {
+    "E:\\王朋总\\Demo\\CCDto\\src\\Core\\CCDto.application\\CCDto.application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\新建文件夹\\Demo\\CCDto\\src\\Core\\CCDto.application\\CCDto.application.csproj",
+        "projectUniqueName": "E:\\王朋总\\Demo\\CCDto\\src\\Core\\CCDto.application\\CCDto.application.csproj",
         "projectName": "CCDto.application",
-        "projectPath": "E:\\新建文件夹\\Demo\\CCDto\\src\\Core\\CCDto.application\\CCDto.application.csproj",
+        "projectPath": "E:\\王朋总\\Demo\\CCDto\\src\\Core\\CCDto.application\\CCDto.application.csproj",
         "packagesPath": "C:\\Users\\MS48\\.nuget\\packages\\",
-        "outputPath": "E:\\新建文件夹\\Demo\\CCDto\\src\\Core\\CCDto.application\\obj\\",
+        "outputPath": "E:\\王朋总\\Demo\\CCDto\\src\\Core\\CCDto.application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MS48\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,11 +28,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "E:\\新建文件夹\\Demo\\CCDto\\src\\Core\\CCDto.common\\CCDto.common.csproj": {
-                "projectPath": "E:\\新建文件夹\\Demo\\CCDto\\src\\Core\\CCDto.common\\CCDto.common.csproj"
+              "E:\\王朋总\\Demo\\CCDto\\src\\Core\\CCDto.common\\CCDto.common.csproj": {
+                "projectPath": "E:\\王朋总\\Demo\\CCDto\\src\\Core\\CCDto.common\\CCDto.common.csproj"
               },
-              "E:\\新建文件夹\\Demo\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj": {
-                "projectPath": "E:\\新建文件夹\\Demo\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj"
+              "E:\\王朋总\\Demo\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj": {
+                "projectPath": "E:\\王朋总\\Demo\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj"
               }
             }
           }
@@ -99,18 +99,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.2.21505.57\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\新建文件夹\\Demo\\CCDto\\src\\Core\\CCDto.common\\CCDto.common.csproj": {
+    "E:\\王朋总\\Demo\\CCDto\\src\\Core\\CCDto.common\\CCDto.common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\新建文件夹\\Demo\\CCDto\\src\\Core\\CCDto.common\\CCDto.common.csproj",
+        "projectUniqueName": "E:\\王朋总\\Demo\\CCDto\\src\\Core\\CCDto.common\\CCDto.common.csproj",
         "projectName": "CCDto.common",
-        "projectPath": "E:\\新建文件夹\\Demo\\CCDto\\src\\Core\\CCDto.common\\CCDto.common.csproj",
+        "projectPath": "E:\\王朋总\\Demo\\CCDto\\src\\Core\\CCDto.common\\CCDto.common.csproj",
         "packagesPath": "C:\\Users\\MS48\\.nuget\\packages\\",
-        "outputPath": "E:\\新建文件夹\\Demo\\CCDto\\src\\Core\\CCDto.common\\obj\\",
+        "outputPath": "E:\\王朋总\\Demo\\CCDto\\src\\Core\\CCDto.common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MS48\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -127,8 +127,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "E:\\新建文件夹\\Demo\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj": {
-                "projectPath": "E:\\新建文件夹\\Demo\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj"
+              "E:\\王朋总\\Demo\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj": {
+                "projectPath": "E:\\王朋总\\Demo\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj"
               }
             }
           }
@@ -146,6 +146,10 @@
             "AutoMapper": {
               "target": "Package",
               "version": "[10.1.1, )"
+            },
+            "IdleBus": {
+              "target": "Package",
+              "version": "[1.5.2, )"
             },
             "Microsoft.AspNetCore.Http.Abstractions": {
               "target": "Package",
@@ -171,18 +175,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.2.21505.57\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\新建文件夹\\Demo\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj": {
+    "E:\\王朋总\\Demo\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\新建文件夹\\Demo\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj",
+        "projectUniqueName": "E:\\王朋总\\Demo\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj",
         "projectName": "CCDto.entity",
-        "projectPath": "E:\\新建文件夹\\Demo\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj",
+        "projectPath": "E:\\王朋总\\Demo\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj",
         "packagesPath": "C:\\Users\\MS48\\.nuget\\packages\\",
-        "outputPath": "E:\\新建文件夹\\Demo\\CCDto\\src\\Core\\CCDto.entity\\obj\\",
+        "outputPath": "E:\\王朋总\\Demo\\CCDto\\src\\Core\\CCDto.entity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MS48\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -239,7 +243,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.2.21505.57\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

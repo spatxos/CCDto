@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "EBPsq+6zpU0fxZpkbV4m+QLt1C+F7EWIvJVAaB2N/sfKXCed10tSCJkfAuzYQiZ928Ta+T1iZpKGo4d7QGS/Gg==",
+  "dgSpecHash": "VXasZ1RAXUB0uCLfgACx2kZRWL1PNZGaIMFWbHOmPX48DBuymWW63FOvRApYPd9ftcD2GZdfs5NG+73nnND8BA==",
   "success": true,
-  "projectFilePath": "E:\\新建文件夹\\Demo\\CCDto\\src\\Core\\CCDto.common\\CCDto.common.csproj",
+  "projectFilePath": "E:\\王朋总\\Demo\\CCDto\\src\\Core\\CCDto.common\\CCDto.common.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MS48\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\MS48\\.nuget\\packages\\freesql\\2.6.100\\freesql.2.6.100.nupkg.sha512",
     "C:\\Users\\MS48\\.nuget\\packages\\freesql.extensions.linq\\2.6.100\\freesql.extensions.linq.2.6.100.nupkg.sha512",
+    "C:\\Users\\MS48\\.nuget\\packages\\idlebus\\1.5.2\\idlebus.1.5.2.nupkg.sha512",
     "C:\\Users\\MS48\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\MS48\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
     "C:\\Users\\MS48\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

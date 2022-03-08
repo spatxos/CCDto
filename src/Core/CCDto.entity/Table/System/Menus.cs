@@ -1,5 +1,6 @@
 ﻿
 using CCDto.entity.Base;
+using CCDto.entity.FreeSql;
 using FreeSql.DataAnnotations;
 
 namespace CCDto.entity.Table
@@ -7,6 +8,7 @@ namespace CCDto.entity.Table
     /// <summary>
     /// TBL_NAVITREE:实体类(导航菜单信息表)
     /// </summary>
+    //[MultiDB(DbName: "DB1")]
     public class Menus : Entity<int>
     {
         /// <summary>

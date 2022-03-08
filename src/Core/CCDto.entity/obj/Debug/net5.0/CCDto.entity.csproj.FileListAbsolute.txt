@@ -10,3 +10,15 @@ E:\新建文件夹\Demo\CCDto\src\Core\CCDto.entity\obj\Debug\net5.0\CCDto.entit
 E:\新建文件夹\Demo\CCDto\src\Core\CCDto.entity\obj\Debug\net5.0\ref\CCDto.entity.dll
 E:\新建文件夹\Demo\CCDto\src\Core\CCDto.entity\obj\Debug\net5.0\CCDto.entity.pdb
 E:\新建文件夹\Demo\CCDto\src\Core\CCDto.entity\obj\Debug\net5.0\CCDto.entity.csproj.AssemblyReference.cache
+E:\王朋总\Demo\CCDto\src\Core\CCDto.entity\bin\Debug\net5.0\CCDto.entity.deps.json
+E:\王朋总\Demo\CCDto\src\Core\CCDto.entity\bin\Debug\net5.0\CCDto.entity.dll
+E:\王朋总\Demo\CCDto\src\Core\CCDto.entity\bin\Debug\net5.0\ref\CCDto.entity.dll
+E:\王朋总\Demo\CCDto\src\Core\CCDto.entity\bin\Debug\net5.0\CCDto.entity.pdb
+E:\王朋总\Demo\CCDto\src\Core\CCDto.entity\obj\Debug\net5.0\CCDto.entity.csproj.AssemblyReference.cache
+E:\王朋总\Demo\CCDto\src\Core\CCDto.entity\obj\Debug\net5.0\CCDto.entity.GeneratedMSBuildEditorConfig.editorconfig
+E:\王朋总\Demo\CCDto\src\Core\CCDto.entity\obj\Debug\net5.0\CCDto.entity.AssemblyInfoInputs.cache
+E:\王朋总\Demo\CCDto\src\Core\CCDto.entity\obj\Debug\net5.0\CCDto.entity.AssemblyInfo.cs
+E:\王朋总\Demo\CCDto\src\Core\CCDto.entity\obj\Debug\net5.0\CCDto.entity.csproj.CoreCompileInputs.cache
+E:\王朋总\Demo\CCDto\src\Core\CCDto.entity\obj\Debug\net5.0\CCDto.entity.dll
+E:\王朋总\Demo\CCDto\src\Core\CCDto.entity\obj\Debug\net5.0\ref\CCDto.entity.dll
+E:\王朋总\Demo\CCDto\src\Core\CCDto.entity\obj\Debug\net5.0\CCDto.entity.pdb

@@ -158,6 +158,14 @@
           }
         }
       },
+      "IdleBus/1.5.2": {
+        "runtime": {
+          "lib/netstandard2.0/IdleBus.dll": {
+            "assemblyVersion": "1.5.2.0",
+            "fileVersion": "1.5.2.0"
+          }
+        }
+      },
       "K4os.Compression.LZ4/1.1.11": {
         "dependencies": {
           "System.Memory": "4.5.3"
@@ -2157,6 +2165,7 @@
         "dependencies": {
           "AutoMapper": "10.1.1",
           "CCDto.entity": "1.0.0",
+          "IdleBus": "1.5.2",
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
           "Microsoft.Extensions.DependencyInjection": "5.0.2"
         },
@@ -2265,6 +2274,13 @@
       "sha512": "sha512-741fGeDQjixBJaU2j+0CbrmZXsNJkTn/hWbOh4fLVXndHsCclJmWznCPWrJmPoZKvajBvAz3e8ECJOUvRtwjNQ==",
       "path": "google.protobuf/3.6.1",
       "hashPath": "google.protobuf.3.6.1.nupkg.sha512"
+    },
+    "IdleBus/1.5.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oknn4KsiPxWRXAr081IngmpRc9za+DHlTNwL28P6QoAhsciYdcU0tDCiGpNB0FZhxT7DhI9wTK2atHYuWw/jNg==",
+      "path": "idlebus/1.5.2",
+      "hashPath": "idlebus.1.5.2.nupkg.sha512"
     },
     "K4os.Compression.LZ4/1.1.11": {
       "type": "package",

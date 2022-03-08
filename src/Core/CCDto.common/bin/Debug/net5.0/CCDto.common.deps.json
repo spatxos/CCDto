@@ -10,6 +10,7 @@
         "dependencies": {
           "AutoMapper": "10.1.1",
           "CCDto.entity": "1.0.0",
+          "IdleBus": "1.5.2",
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
           "Microsoft.Extensions.DependencyInjection": "5.0.2"
         },
@@ -45,6 +46,14 @@
           "lib/netstandard2.0/FreeSql.Extensions.Linq.dll": {
             "assemblyVersion": "2.6.100.0",
             "fileVersion": "2.6.100.0"
+          }
+        }
+      },
+      "IdleBus/1.5.2": {
+        "runtime": {
+          "lib/netstandard2.0/IdleBus.dll": {
+            "assemblyVersion": "1.5.2.0",
+            "fileVersion": "1.5.2.0"
           }
         }
       },
@@ -153,6 +162,13 @@
       "sha512": "sha512-aDBkK8S971RDDV7VhqHfcpueMUmpt9AjdGO9WnF/7UeDJ1C6Fk6HwQUmaUPfVFfb/56LrvBYQ0a3GeyDPnmLVQ==",
       "path": "freesql.extensions.linq/2.6.100",
       "hashPath": "freesql.extensions.linq.2.6.100.nupkg.sha512"
+    },
+    "IdleBus/1.5.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oknn4KsiPxWRXAr081IngmpRc9za+DHlTNwL28P6QoAhsciYdcU0tDCiGpNB0FZhxT7DhI9wTK2atHYuWw/jNg==",
+      "path": "idlebus/1.5.2",
+      "hashPath": "idlebus.1.5.2.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Http.Abstractions/2.2.0": {
       "type": "package",

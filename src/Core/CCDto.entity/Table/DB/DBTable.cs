@@ -1,4 +1,5 @@
 ﻿using CCDto.entity.Base;
+using CCDto.entity.FreeSql;
 using FreeSql.DataAnnotations;
 using Newtonsoft.Json;
 using System;
@@ -12,6 +13,7 @@ namespace CCDto.entity.Table
     /// </summary>
     [Serializable]
     [Table(Name = "TBL_DBTABLE", OldName = "DBTable")]
+    [MultiDB(DbName: "DB2")]
     public class DBTable : Entity<int>
     {
         /// <summary>

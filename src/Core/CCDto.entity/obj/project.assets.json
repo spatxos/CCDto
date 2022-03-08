@@ -116,11 +116,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\新建文件夹\\Demo\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj",
+      "projectUniqueName": "E:\\王朋总\\Demo\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj",
       "projectName": "CCDto.entity",
-      "projectPath": "E:\\新建文件夹\\Demo\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj",
+      "projectPath": "E:\\王朋总\\Demo\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj",
       "packagesPath": "C:\\Users\\MS48\\.nuget\\packages\\",
-      "outputPath": "E:\\新建文件夹\\Demo\\CCDto\\src\\Core\\CCDto.entity\\obj\\",
+      "outputPath": "E:\\王朋总\\Demo\\CCDto\\src\\Core\\CCDto.entity\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\MS48\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -177,7 +177,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.2.21505.57\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

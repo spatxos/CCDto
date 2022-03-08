@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "S1nD7U3gAXLHOSP+nLWHun12X/NbRrjYtOxqYSYezOL4pbxdkFxTvohVVqLzKBLPKMeyRaXgzTFbOhM259peQg==",
+  "dgSpecHash": "aXgX9lyJLpyoIZfleIvw3uhHdPird9JIpU+P7/pc6pSi4SvRhpYq3gSZE/vmX2byIFTqLMYJ7v4/GZKDYylApQ==",
   "success": true,
-  "projectFilePath": "E:\\新建文件夹\\Demo\\CCDto\\src\\Core\\CCDto.application\\CCDto.application.csproj",
+  "projectFilePath": "E:\\王朋总\\Demo\\CCDto\\src\\Core\\CCDto.application\\CCDto.application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MS48\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\MS48\\.nuget\\packages\\bouncycastle.netcore\\1.8.3\\bouncycastle.netcore.1.8.3.nupkg.sha512",
@@ -16,6 +16,7 @@
     "C:\\Users\\MS48\\.nuget\\packages\\freesql.provider.sqlserver\\2.6.100\\freesql.provider.sqlserver.2.6.100.nupkg.sha512",
     "C:\\Users\\MS48\\.nuget\\packages\\freesql.repository\\2.6.100\\freesql.repository.2.6.100.nupkg.sha512",
     "C:\\Users\\MS48\\.nuget\\packages\\google.protobuf\\3.6.1\\google.protobuf.3.6.1.nupkg.sha512",
+    "C:\\Users\\MS48\\.nuget\\packages\\idlebus\\1.5.2\\idlebus.1.5.2.nupkg.sha512",
     "C:\\Users\\MS48\\.nuget\\packages\\k4os.compression.lz4\\1.1.11\\k4os.compression.lz4.1.1.11.nupkg.sha512",
     "C:\\Users\\MS48\\.nuget\\packages\\k4os.compression.lz4.streams\\1.1.11\\k4os.compression.lz4.streams.1.1.11.nupkg.sha512",
     "C:\\Users\\MS48\\.nuget\\packages\\k4os.hash.xxhash\\1.0.6\\k4os.hash.xxhash.1.0.6.nupkg.sha512",

@@ -36,6 +36,15 @@
           "lib/netstandard2.0/FreeSql.Extensions.Linq.dll": {}
         }
       },
+      "IdleBus/1.5.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/IdleBus.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/IdleBus.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Http.Abstractions/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -221,6 +230,20 @@
         "lib/netstandard2.0/FreeSql.Extensions.Linq.pdb",
         "lib/netstandard2.0/FreeSql.Extensions.Linq.xml",
         "logo.png"
+      ]
+    },
+    "IdleBus/1.5.2": {
+      "sha512": "oknn4KsiPxWRXAr081IngmpRc9za+DHlTNwL28P6QoAhsciYdcU0tDCiGpNB0FZhxT7DhI9wTK2atHYuWw/jNg==",
+      "type": "package",
+      "path": "idlebus/1.5.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "idlebus.1.5.2.nupkg.sha512",
+        "idlebus.nuspec",
+        "lib/net40/IdleBus.dll",
+        "lib/netstandard2.0/IdleBus.dll",
+        "lib/netstandard2.0/IdleBus.xml"
       ]
     },
     "Microsoft.AspNetCore.Http.Abstractions/2.2.0": {
@@ -535,6 +558,7 @@
     "net5.0": [
       "AutoMapper >= 10.1.1",
       "CCDto.entity >= 1.0.0",
+      "IdleBus >= 1.5.2",
       "Microsoft.AspNetCore.Http.Abstractions >= 2.2.0",
       "Microsoft.Extensions.DependencyInjection >= 5.0.2"
     ]
@@ -545,11 +569,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\新建文件夹\\Demo\\CCDto\\src\\Core\\CCDto.common\\CCDto.common.csproj",
+      "projectUniqueName": "E:\\王朋总\\Demo\\CCDto\\src\\Core\\CCDto.common\\CCDto.common.csproj",
       "projectName": "CCDto.common",
-      "projectPath": "E:\\新建文件夹\\Demo\\CCDto\\src\\Core\\CCDto.common\\CCDto.common.csproj",
+      "projectPath": "E:\\王朋总\\Demo\\CCDto\\src\\Core\\CCDto.common\\CCDto.common.csproj",
       "packagesPath": "C:\\Users\\MS48\\.nuget\\packages\\",
-      "outputPath": "E:\\新建文件夹\\Demo\\CCDto\\src\\Core\\CCDto.common\\obj\\",
+      "outputPath": "E:\\王朋总\\Demo\\CCDto\\src\\Core\\CCDto.common\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\MS48\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -566,8 +590,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "E:\\新建文件夹\\Demo\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj": {
-              "projectPath": "E:\\新建文件夹\\Demo\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj"
+            "E:\\王朋总\\Demo\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj": {
+              "projectPath": "E:\\王朋总\\Demo\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj"
             }
           }
         }
@@ -585,6 +609,10 @@
           "AutoMapper": {
             "target": "Package",
             "version": "[10.1.1, )"
+          },
+          "IdleBus": {
+            "target": "Package",
+            "version": "[1.5.2, )"
           },
           "Microsoft.AspNetCore.Http.Abstractions": {
             "target": "Package",
@@ -610,7 +638,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.2.21505.57\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
