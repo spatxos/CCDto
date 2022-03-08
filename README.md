@@ -28,3 +28,8 @@ https://github.com/wangpengzong/CCDto/tree/master/src/Web/CCDto.Web/Template/Tab
 ```
 https://github.com/wangpengzong/CCDto/blob/master/src/Core/CCDto.application/Service/DB/DBConnection/Dto/DBConnectionDto.cs
 ```
+
+
+多数据库支持
+弃用之前的DbType和ConnectionStrings，使用DbsOpen和Dbs
+表对应实体头部添加`[MultiDB(DbName: "DB1")]`属性使当前实体连接数据库时使用这个Db，如果不添加默认使用配置json文件中的第一个Db连接
