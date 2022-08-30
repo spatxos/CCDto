@@ -31,14 +31,15 @@ namespace CCDto.application.Service.Crud
 
         public AsyncCrudAppService(IFreeSql fsql) : base(fsql, null, null)
         {
-            try
-            {
-                freeSql = fsql.Change(GetBbKey(typeof(TEntity)));
-                _dbRepository = freeSql.GetRepository<TEntity, TPrimaryKey>();
-            }
-            catch(Exception ex)
+            var dbKey = GetBbKey(typeof(TEntity));
+            if (string.IsNullOrWhiteSpace(dbKey))
             {
                 freeSql = fsql;
+                _dbRepository = freeSql.GetRepository<TEntity, TPrimaryKey>();
+            }
+            else
+            {
+                freeSql = fsql.Change(GetBbKey(typeof(TEntity)));
                 _dbRepository = freeSql.GetRepository<TEntity, TPrimaryKey>();
             }
         }
@@ -288,7 +289,7 @@ namespace CCDto.application.Service.Crud
             return query;
         }
 
-        public List<DtoColumn> GetDtoColumns(DtoColumnRequest dtoColumnRequest,Type type = null)
+        public virtual List<DtoColumn> GetDtoColumns(DtoColumnRequest dtoColumnRequest,Type type = null,List<CustomOption> customOptions = null)
         {
             var showColumns = new List<DtoColumn>();
             if (type == null)
@@ -330,21 +331,10 @@ namespace CCDto.application.Service.Crud
                             };
                             if (attr.EditType == EditType.select)
                             {
-                                if (attr.IsSplice)
+                                var customOption = customOptions.FirstOrDefault(o => o.PropertyName == property.Name);
+                                if (customOption != null)
                                 {
-                                    attr.OptionSql += dtoColumnRequest.QueryId;
-                                }
-                                //freeSql.Select<Option>().Where((Expression<Func<Option, bool>>)(u => true));
-
-                                var options = freeSql.Select<Option>().WithSql(attr.OptionSql).ToList();
-
-                                if (options.Any())
-                                {
-                                    if (!options.Any(o => o.Id == 0))
-                                    {
-                                        dtoColumn.Options.Add((0, "不选择"));
-                                    }
-                                    dtoColumn.Options.AddRange(options.Select(o => ((object)o.Id, (object)o.Value)));
+                                    dtoColumn = customOption.Func(dtoColumn);
                                 }
                             }
                             if (attr.EditType == EditType.boolselect)
@@ -380,68 +370,24 @@ namespace CCDto.application.Service.Crud
                             {
                                 dtoColumn.EditType = EditType.cascader.ToString();
                                 dtoColumn.CascaderValueName = attr.CascaderValueName;
-                                var cascaders = freeSql.Ado.Query<DbCascader>(attr.OptionSql).ToList();
-                                if (cascaders.Any())
+                                var customOption = customOptions.FirstOrDefault(o => o.PropertyName == property.Name);
+                                if (customOption != null)
                                 {
-                                    foreach (var db in cascaders.Select(o => new { o.id1 ,o.name1 }).Distinct())
-                                    {
-                                        var dbcascaderOption = new CascaderOption()
-                                        {
-                                            label = db.name1,
-                                            value = db.id1,
-                                            children = new List<CascaderOption>()
-                                        };
-                                        foreach (var table in cascaders.Where(o=>o.id1==db.id1).Select(o => new { o.id2, o.name2 }).Distinct())
-                                        {
-                                            var tablecascaderOption = new CascaderOption()
-                                            {
-                                                label = table.name2,
-                                                value = table.id2,
-                                                children = new List<CascaderOption>()
-                                            };
-                                            tablecascaderOption.children.Add(new CascaderOption()
-                                            {
-                                                label = "不选择",
-                                                value = 0,
-                                                children = null
-                                            }) ;
-
-                                            foreach (var fieid in cascaders.Where(o => o.id1 == db.id1 && o.id2 == table.id2).Select(o => new { o.id3, o.name3 }).Distinct())
-                                            {
-                                                var fieidcascaderOption = new CascaderOption()
-                                                {
-                                                    label = fieid.name3,
-                                                    value = fieid.id3,
-                                                    children = null
-                                                };
-                                                tablecascaderOption.children.Add(fieidcascaderOption);
-                                            }
-                                            dbcascaderOption.children.Add(tablecascaderOption);
-                                        }
-                                        dtoColumn.CascaderOptions.Add(dbcascaderOption);
-                                    }
+                                    dtoColumn = customOption.Func(dtoColumn);
                                 }
                             }
                             if (attr.EditType == EditType.multiple)
                             {
                                 dtoColumn.EditType = EditType.multiple.ToString();
                                 dtoColumn.MultipleValueName = attr.MultipleValueName;
-                                if (!string.IsNullOrWhiteSpace(dtoColumnRequest.ExternalIds))
+                                //if (!string.IsNullOrWhiteSpace(dtoColumnRequest.ExternalIds))
+                                //{
+                                //    attr.OptionSql += $" and id in ({dtoColumnRequest.ExternalIds.Trim(',')})";
+                                //}
+                                var customOption = customOptions.FirstOrDefault(o => o.PropertyName == property.Name);
+                                if (customOption != null)
                                 {
-                                    attr.OptionSql += $" and id in ({dtoColumnRequest.ExternalIds.Trim(',')})";
-                                }
-                                var multiples = freeSql.Ado.Query<DbMultiple>(attr.OptionSql).ToList();
-                                if (multiples.Any())
-                                {
-                                    foreach (var db in multiples)
-                                    {
-                                        var multipleOption = new MultipleOption()
-                                        {
-                                            label = db.label,
-                                            value = db.value,
-                                        };
-                                        dtoColumn.MultipleOptions.Add(multipleOption);
-                                    }
+                                    dtoColumn = customOption.Func(dtoColumn);
                                 }
                             }
 

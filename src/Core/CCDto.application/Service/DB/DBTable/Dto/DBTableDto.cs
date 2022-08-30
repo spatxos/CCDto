@@ -26,7 +26,7 @@ namespace CCDto.application.Service.DBTables.Dto
         [DtoColumn(ShowName = "数据库表编号")]
         public virtual string DBTableNo { get; set; }
 
-        [DtoColumn(ShowName = "数据库", IsDisabled = true, EditType = EditType.select, OptionSql = "select Id,DBConnectionName value from TBL_DBCONNECTION where isdelete=0")]
+        [DtoColumn(ShowName = "数据库", IsDisabled = true, EditType = EditType.select)]
         public virtual int DBConnectionId { get; set; }
 
         [DtoColumn(ShowName = "数据库",IsEdit = false)]
@@ -35,7 +35,7 @@ namespace CCDto.application.Service.DBTables.Dto
         [DtoColumn(ShowName = "添加时间", IsEdit = false)]
         public DateTime? CreateTime { get; set; }
 
-        [DtoColumn(ShowName = "关联自动化字段", IsDisabled = true, EditType = EditType.cascader, CascaderValueName = "DBFieldIds", OptionSql = @"select t1.id id1,t1.DBConnectionName name1,t2.id id2,t2.DBTableName name2,t3.Id id3,t3.DBFieldName name3  from TBL_DBCONNECTION t1 left join TBL_DBTABLE t2 on t1.id = t2.DBConnectionId left join TBL_DBFIELD t3 on t2.id = t3.DBTableId WHERE t1.IsDelete = 0 and t2.IsDelete = 0 and t3.IsDelete = 0 ")]
+        [DtoColumn(ShowName = "关联自动化字段", IsDisabled = true, EditType = EditType.cascader, CascaderValueName = "DBFieldIds")]
         public virtual int DBFieldId { get; set; }
 
         [DtoColumn(ShowName = "关联自动化字段", IsDisabled = true, EditType = EditType.hidden)]

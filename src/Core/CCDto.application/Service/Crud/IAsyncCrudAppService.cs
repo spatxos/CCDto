@@ -3,6 +3,7 @@ using CCDto.application.Service.Crud.Dto.Request;
 using CCDto.application.Service.Crud.Dto.Response;
 using CCDto.entity.Base;
 using CCDto.entity.DtoColumn;
+using CCDto.entity.DtoColumn.Db;
 using FreeSql;
 using System;
 using System.Collections.Generic;
@@ -26,7 +27,7 @@ namespace CCDto.application.Service.Crud
 
         Task<PagedResultDto<TEntityDto>> GetPagingAsync(Expression<Func<TEntity, bool>> exp, TGetAllInput input);
 
-        List<DtoColumn> GetDtoColumns(DtoColumnRequest dtoColumnRequest, Type type = null);
+        List<DtoColumn> GetDtoColumns(DtoColumnRequest dtoColumnRequest, Type type = null, List<CustomOption> customOptions = null);
 
         TEntityDto MapToEntityDto(TEntity entity);
     }

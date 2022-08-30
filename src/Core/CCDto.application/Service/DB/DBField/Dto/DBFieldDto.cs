@@ -23,7 +23,7 @@ namespace CCDto.application.Service.DBFields.Dto
         [DtoColumn(ShowName = "字段编号")]
         public virtual string DBFieldNo { get; set; }
 
-        [DtoColumn(ShowName = "数据库表", IsDisabled = true, EditType = EditType.select, OptionSql = "select Id,DBTableName value from TBL_DBTABLE where isdelete=0")]
+        [DtoColumn(ShowName = "数据库表", IsDisabled = true, EditType = EditType.select)]
         public virtual int DBTableId { get; set; }
 
         [DtoColumn(ShowName = "表名", IsEdit = false)]
