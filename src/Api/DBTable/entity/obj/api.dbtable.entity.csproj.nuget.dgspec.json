@@ -1,0 +1,276 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\github\\CCDto\\src\\Api\\DBTable\\entity\\api.dbtable.entity.csproj": {}
+  },
+  "projects": {
+    "D:\\github\\CCDto\\src\\Api\\DBConneciton\\entity\\api.dbconnecion.entity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\github\\CCDto\\src\\Api\\DBConneciton\\entity\\api.dbconnecion.entity.csproj",
+        "projectName": "api.dbconnecion.entity",
+        "projectPath": "D:\\github\\CCDto\\src\\Api\\DBConneciton\\entity\\api.dbconnecion.entity.csproj",
+        "packagesPath": "C:\\Users\\wangp\\.nuget\\packages\\",
+        "outputPath": "D:\\github\\CCDto\\src\\Api\\DBConneciton\\entity\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\wangp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\github\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj": {
+                "projectPath": "D:\\github\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\github\\CCDto\\src\\Api\\DBField\\entity\\api.dbfield.entity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\github\\CCDto\\src\\Api\\DBField\\entity\\api.dbfield.entity.csproj",
+        "projectName": "api.dbfield.entity",
+        "projectPath": "D:\\github\\CCDto\\src\\Api\\DBField\\entity\\api.dbfield.entity.csproj",
+        "packagesPath": "C:\\Users\\wangp\\.nuget\\packages\\",
+        "outputPath": "D:\\github\\CCDto\\src\\Api\\DBField\\entity\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\wangp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\github\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj": {
+                "projectPath": "D:\\github\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\github\\CCDto\\src\\Api\\DBTable\\entity\\api.dbtable.entity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\github\\CCDto\\src\\Api\\DBTable\\entity\\api.dbtable.entity.csproj",
+        "projectName": "api.dbtable.entity",
+        "projectPath": "D:\\github\\CCDto\\src\\Api\\DBTable\\entity\\api.dbtable.entity.csproj",
+        "packagesPath": "C:\\Users\\wangp\\.nuget\\packages\\",
+        "outputPath": "D:\\github\\CCDto\\src\\Api\\DBTable\\entity\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\wangp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\github\\CCDto\\src\\Api\\DBConneciton\\entity\\api.dbconnecion.entity.csproj": {
+                "projectPath": "D:\\github\\CCDto\\src\\Api\\DBConneciton\\entity\\api.dbconnecion.entity.csproj"
+              },
+              "D:\\github\\CCDto\\src\\Api\\DBField\\entity\\api.dbfield.entity.csproj": {
+                "projectPath": "D:\\github\\CCDto\\src\\Api\\DBField\\entity\\api.dbfield.entity.csproj"
+              },
+              "D:\\github\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj": {
+                "projectPath": "D:\\github\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\github\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\github\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj",
+        "projectName": "CCDto.entity",
+        "projectPath": "D:\\github\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj",
+        "packagesPath": "C:\\Users\\wangp\\.nuget\\packages\\",
+        "outputPath": "D:\\github\\CCDto\\src\\Core\\CCDto.entity\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\wangp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "FreeSql": {
+              "target": "Package",
+              "version": "[2.6.100, )"
+            },
+            "FreeSql.Extensions.Linq": {
+              "target": "Package",
+              "version": "[2.6.100, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

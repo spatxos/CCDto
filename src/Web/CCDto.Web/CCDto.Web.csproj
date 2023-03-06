@@ -1879,6 +1879,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Api\DBConneciton\application\api.dbconnecion.application.csproj" />
+    <ProjectReference Include="..\..\Api\DBField\application\api.dbfield.application.csproj" />
+    <ProjectReference Include="..\..\Api\DBTable\application\api.dbtable.application.csproj" />
     <ProjectReference Include="..\..\Core\CCDto.application\CCDto.application.csproj" />
     <ProjectReference Include="..\..\Core\CCDto.common\CCDto.common.csproj" />
     <ProjectReference Include="..\..\Core\CCDto.entity\CCDto.entity.csproj" />

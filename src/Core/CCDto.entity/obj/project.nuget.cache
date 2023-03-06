@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "6g6We6w/Q7L71iAewPtO2nqcJcYpDUHfgoW5PAsQs/EKIlDgYQKDyiEoMKOFlAG1VnCfBG0l39h+CmZRbblSaA==",
+  "dgSpecHash": "+FDNlQfDBA3mFfvXv0a8L0bvRoiOME2+zCdfksEbJ5QhBM5ZnaA0XHJo4ngtvP49ez7mJf/DuH9iYjUzFRydTQ==",
   "success": true,
-  "projectFilePath": "E:\\王朋总\\Demo\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj",
+  "projectFilePath": "D:\\github\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\MS48\\.nuget\\packages\\freesql\\2.6.100\\freesql.2.6.100.nupkg.sha512",
-    "C:\\Users\\MS48\\.nuget\\packages\\freesql.extensions.linq\\2.6.100\\freesql.extensions.linq.2.6.100.nupkg.sha512",
-    "C:\\Users\\MS48\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+    "C:\\Users\\wangp\\.nuget\\packages\\freesql\\2.6.100\\freesql.2.6.100.nupkg.sha512",
+    "C:\\Users\\wangp\\.nuget\\packages\\freesql.extensions.linq\\2.6.100\\freesql.extensions.linq.2.6.100.nupkg.sha512",
+    "C:\\Users\\wangp\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],
   "logs": []
 }

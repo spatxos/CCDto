@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "CkiMXzyDPojOLcONG6dGObSd44EJ3t30HNEal3TR/0f5+CGHD0/W32K8ByEewTwEhXjewKSZIubNwbLS2XNgjg==",
+  "success": true,
+  "projectFilePath": "D:\\github\\CCDto\\src\\Api\\DBConneciton\\src.api.dbconnecion.entity\\api.dbconnecion.entity.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\wangp\\.nuget\\packages\\freesql\\2.6.100\\freesql.2.6.100.nupkg.sha512",
+    "C:\\Users\\wangp\\.nuget\\packages\\freesql.extensions.linq\\2.6.100\\freesql.extensions.linq.2.6.100.nupkg.sha512",
+    "C:\\Users\\wangp\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

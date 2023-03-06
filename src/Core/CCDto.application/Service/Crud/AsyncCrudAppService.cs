@@ -1,14 +1,11 @@
 ﻿using AutoMapper;
-using CCDto.application.Service.Crud.Dto;
-using CCDto.application.Service.Crud.Dto.Request;
-using CCDto.application.Service.Crud.Dto.Response;
-using CCDto.common;
 using CCDto.common.AutoMapper;
 using CCDto.common.FreeSql;
 using CCDto.entity.Base;
+using CCDto.entity.Dto.Request;
+using CCDto.entity.Dto.Response;
 using CCDto.entity.DtoColumn;
 using CCDto.entity.DtoColumn.Db;
-using CCDto.entity.DtoColumn.Option;
 using CCDto.entity.FreeSql;
 using FreeSql;
 using System;
@@ -26,8 +23,9 @@ namespace CCDto.application.Service.Crud
         IAsyncCrudAppService<TEntity, TEntityDto, TPrimaryKey, TGetAllInput, TUpdateInput>
         where TEntity : class, IEntity<TPrimaryKey>
     {
-        protected static IBaseRepository<TEntity> _dbRepository;
         public static IFreeSql freeSql;
+
+        IBaseRepository<TEntity> _dbRepository { get; set; }
 
         public AsyncCrudAppService(IFreeSql fsql) : base(fsql, null, null)
         {
@@ -56,6 +54,20 @@ namespace CCDto.application.Service.Crud
             }
             return dbKey;
         }
+        //public IBaseRepository<TEntity> ChangeRepository(IApplicationService applicationService)
+        //{
+        //    var dbKey = GetBbKey(typeof(TEntity));
+        //    if (string.IsNullOrWhiteSpace(dbKey))
+        //    {
+        //        _dbRepository = freeSql.GetRepository<TEntity, TPrimaryKey>();
+        //    }
+        //    else
+        //    {
+        //        freeSql = freeSql.Change(GetBbKey(typeof(TEntity)));
+        //        _dbRepository = freeSql.GetRepository<TEntity, TPrimaryKey>();
+        //    }
+        //    return _dbRepository;
+        //}
         public int ExecuteNonQuery(string sql)
         {
             return _dbRepository.Orm.Ado.ExecuteNonQuery(sql);

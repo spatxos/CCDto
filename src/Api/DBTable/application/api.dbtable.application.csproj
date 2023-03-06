@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Core\CCDto.application\CCDto.application.csproj" />
+    <ProjectReference Include="..\..\..\Core\CCDto.common\CCDto.common.csproj" />
+    <ProjectReference Include="..\entity\api.dbtable.entity.csproj" />
+  </ItemGroup>
+
+</Project>

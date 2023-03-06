@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Core\CCDto.application\CCDto.application.csproj" />
+    <ProjectReference Include="..\..\..\Core\CCDto.entity\CCDto.entity.csproj" />
+    <ProjectReference Include="..\entity\api.dbfield.entity.csproj" />
+  </ItemGroup>
+
+</Project>

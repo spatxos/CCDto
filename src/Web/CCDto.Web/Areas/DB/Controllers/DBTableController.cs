@@ -1,14 +1,7 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using api.dbtable.application;
+using api.dbtable.application.Dto;
 using CCDto.application.Base;
-using CCDto.application.Service.Crud.Dto.Request;
-using CCDto.application.Service.DBTables;
-using CCDto.application.Service.DBTables.Dto;
-using CCDto.common.AutoMapper;
-using CCDto.entity;
-using Microsoft.AspNetCore.Authorization;
+using CCDto.entity.Dto.Request;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CCDto.Web.Areas.DB.Controllers

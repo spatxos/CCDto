@@ -1,7 +1,5 @@
-﻿using CCDto.application.Service.Crud.Dto;
-using CCDto.application.Service.Crud.Dto.Request;
-using CCDto.application.Service.Crud.Dto.Response;
-using CCDto.entity.Base;
+﻿using CCDto.entity.Dto.Request;
+using CCDto.entity.Dto.Response;
 using CCDto.entity.DtoColumn;
 using CCDto.entity.DtoColumn.Db;
 using FreeSql;

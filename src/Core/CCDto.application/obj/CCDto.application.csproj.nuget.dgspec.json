@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "E:\\王朋总\\Demo\\CCDto\\src\\Core\\CCDto.application\\CCDto.application.csproj": {}
+    "D:\\github\\CCDto\\src\\Core\\CCDto.application\\CCDto.application.csproj": {}
   },
   "projects": {
-    "E:\\王朋总\\Demo\\CCDto\\src\\Core\\CCDto.application\\CCDto.application.csproj": {
+    "D:\\github\\CCDto\\src\\Core\\CCDto.application\\CCDto.application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\王朋总\\Demo\\CCDto\\src\\Core\\CCDto.application\\CCDto.application.csproj",
+        "projectUniqueName": "D:\\github\\CCDto\\src\\Core\\CCDto.application\\CCDto.application.csproj",
         "projectName": "CCDto.application",
-        "projectPath": "E:\\王朋总\\Demo\\CCDto\\src\\Core\\CCDto.application\\CCDto.application.csproj",
-        "packagesPath": "C:\\Users\\MS48\\.nuget\\packages\\",
-        "outputPath": "E:\\王朋总\\Demo\\CCDto\\src\\Core\\CCDto.application\\obj\\",
+        "projectPath": "D:\\github\\CCDto\\src\\Core\\CCDto.application\\CCDto.application.csproj",
+        "packagesPath": "C:\\Users\\wangp\\.nuget\\packages\\",
+        "outputPath": "D:\\github\\CCDto\\src\\Core\\CCDto.application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\MS48\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\wangp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,11 +32,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "E:\\王朋总\\Demo\\CCDto\\src\\Core\\CCDto.common\\CCDto.common.csproj": {
-                "projectPath": "E:\\王朋总\\Demo\\CCDto\\src\\Core\\CCDto.common\\CCDto.common.csproj"
+              "D:\\github\\CCDto\\src\\Core\\CCDto.common\\CCDto.common.csproj": {
+                "projectPath": "D:\\github\\CCDto\\src\\Core\\CCDto.common\\CCDto.common.csproj"
               },
-              "E:\\王朋总\\Demo\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj": {
-                "projectPath": "E:\\王朋总\\Demo\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj"
+              "D:\\github\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj": {
+                "projectPath": "D:\\github\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj"
               }
             }
           }
@@ -90,7 +94,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -99,21 +104,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\王朋总\\Demo\\CCDto\\src\\Core\\CCDto.common\\CCDto.common.csproj": {
+    "D:\\github\\CCDto\\src\\Core\\CCDto.common\\CCDto.common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\王朋总\\Demo\\CCDto\\src\\Core\\CCDto.common\\CCDto.common.csproj",
+        "projectUniqueName": "D:\\github\\CCDto\\src\\Core\\CCDto.common\\CCDto.common.csproj",
         "projectName": "CCDto.common",
-        "projectPath": "E:\\王朋总\\Demo\\CCDto\\src\\Core\\CCDto.common\\CCDto.common.csproj",
-        "packagesPath": "C:\\Users\\MS48\\.nuget\\packages\\",
-        "outputPath": "E:\\王朋总\\Demo\\CCDto\\src\\Core\\CCDto.common\\obj\\",
+        "projectPath": "D:\\github\\CCDto\\src\\Core\\CCDto.common\\CCDto.common.csproj",
+        "packagesPath": "C:\\Users\\wangp\\.nuget\\packages\\",
+        "outputPath": "D:\\github\\CCDto\\src\\Core\\CCDto.common\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\MS48\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\wangp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -127,8 +136,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "E:\\王朋总\\Demo\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj": {
-                "projectPath": "E:\\王朋总\\Demo\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj"
+              "D:\\github\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj": {
+                "projectPath": "D:\\github\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj"
               }
             }
           }
@@ -166,7 +175,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -175,21 +185,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\王朋总\\Demo\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj": {
+    "D:\\github\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\王朋总\\Demo\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj",
+        "projectUniqueName": "D:\\github\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj",
         "projectName": "CCDto.entity",
-        "projectPath": "E:\\王朋总\\Demo\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj",
-        "packagesPath": "C:\\Users\\MS48\\.nuget\\packages\\",
-        "outputPath": "E:\\王朋总\\Demo\\CCDto\\src\\Core\\CCDto.entity\\obj\\",
+        "projectPath": "D:\\github\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj",
+        "packagesPath": "C:\\Users\\wangp\\.nuget\\packages\\",
+        "outputPath": "D:\\github\\CCDto\\src\\Core\\CCDto.entity\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\MS48\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\wangp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -234,7 +248,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -243,7 +258,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

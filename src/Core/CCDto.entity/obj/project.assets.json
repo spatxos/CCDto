@@ -5,10 +5,14 @@
       "FreeSql/2.6.100": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/FreeSql.dll": {}
+          "lib/netstandard2.0/FreeSql.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/FreeSql.dll": {}
+          "lib/netstandard2.0/FreeSql.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "FreeSql.Extensions.Linq/2.6.100": {
@@ -17,19 +21,27 @@
           "FreeSql": "2.6.100"
         },
         "compile": {
-          "lib/netstandard2.0/FreeSql.Extensions.Linq.dll": {}
+          "lib/netstandard2.0/FreeSql.Extensions.Linq.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/FreeSql.Extensions.Linq.dll": {}
+          "lib/netstandard2.0/FreeSql.Extensions.Linq.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "Newtonsoft.Json/13.0.1": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
         }
       }
     }
@@ -111,19 +123,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\MS48\\.nuget\\packages\\": {}
+    "C:\\Users\\wangp\\.nuget\\packages\\": {},
+    "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\王朋总\\Demo\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj",
+      "projectUniqueName": "D:\\github\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj",
       "projectName": "CCDto.entity",
-      "projectPath": "E:\\王朋总\\Demo\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj",
-      "packagesPath": "C:\\Users\\MS48\\.nuget\\packages\\",
-      "outputPath": "E:\\王朋总\\Demo\\CCDto\\src\\Core\\CCDto.entity\\obj\\",
+      "projectPath": "D:\\github\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj",
+      "packagesPath": "C:\\Users\\wangp\\.nuget\\packages\\",
+      "outputPath": "D:\\github\\CCDto\\src\\Core\\CCDto.entity\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\MS48\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\wangp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -168,7 +185,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -177,7 +195,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

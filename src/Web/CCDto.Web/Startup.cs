@@ -67,6 +67,10 @@ namespace CCDto.Web
             services.AddAutoMapper();
 
             services.AddAssembly("CCDto.application");
+            services.AddAssembly("api.dbconnecion.application");
+            services.AddAssembly("api.dbtable.application");
+            services.AddAssembly("api.dbfield.application");
+
 
             services.AddControllersWithViews().AddNewtonsoftJson(options =>
             {

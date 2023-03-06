@@ -24,23 +24,11 @@ namespace CCDto.entity.Base
 
         public int SortId { get; set; }
 
-        public string OptionSql { get; set; }
-
-        /// <summary>
-        /// Expression<Func<Type, bool>>
-        /// </summary>
-        public object ExpressionQuery { get; set; }
-
-
-        public bool IsSplice { get; set; }
-
         public Type Type { get; set; }
 
         public string CascaderValueName { get; set; }
 
         public string MultipleValueName { get; set; }
-
-        public string TypeName { get; set; }
 
         public DtoColumnAttribute()
         {
