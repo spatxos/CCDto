@@ -1,5 +1,5 @@
-using api.dbconnecion.application;
-using api.dbconnecion.application.Dto;
+using dbconnecion.application;
+using dbconnecion.application.Dto;
 using CCDto.application.Base;
 using CCDto.entity.Dto.Request;
 using Microsoft.AspNetCore.Mvc;

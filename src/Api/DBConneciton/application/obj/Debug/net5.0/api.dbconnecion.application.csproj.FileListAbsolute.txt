@@ -19,3 +19,5 @@ D:\github\CCDto\src\Api\DBConneciton\application\obj\Debug\net5.0\api.dbconnecio
 D:\github\CCDto\src\Api\DBConneciton\application\obj\Debug\net5.0\refint\api.dbconnecion.application.dll
 D:\github\CCDto\src\Api\DBConneciton\application\obj\Debug\net5.0\api.dbconnecion.application.pdb
 D:\github\CCDto\src\Api\DBConneciton\application\obj\Debug\net5.0\ref\api.dbconnecion.application.dll
+D:\github\CCDto\src\Api\DBConneciton\application\bin\Debug\net5.0\api.dbfield.entity.dll
+D:\github\CCDto\src\Api\DBConneciton\application\bin\Debug\net5.0\api.dbfield.entity.pdb

@@ -1,7 +1,7 @@
 using CCDto.entity.Dto.Request;
 using System;
 
-namespace api.dbconnecion.application.Dto
+namespace dbconnecion.application.Dto
 {
     [Serializable]
     public class DBConnectionsPagedResultRequestDto : PagedResultRequestDto, IPagedAndSortedResultRequest

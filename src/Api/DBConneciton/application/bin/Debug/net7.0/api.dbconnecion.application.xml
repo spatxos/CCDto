@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>api.dbconnecion.application</name>
+    </assembly>
+    <members>
+        <member name="M:api.dbconnecion.application.DBConnectionAppService.GetDBConnection(System.Int32)">
+            <summary>
+            根据Id获取
+            </summary>
+            <param name="id">Id</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

@@ -7,7 +7,7 @@ using System.Text;
 using CCDto.entity.Table;
 using api.dbconnecion.entity;
 
-namespace api.dbconnecion.application.Dto
+namespace dbconnecion.application.Dto
 {
     public class DBConnectionMapProfile : Profile, IProfile
     {

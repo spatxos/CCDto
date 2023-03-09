@@ -4,7 +4,7 @@ using CCDto.entity.DtoColumn;
 using CCDto.entity.Enum;
 using System;
 
-namespace api.dbconnecion.application.Dto
+namespace dbconnecion.application.Dto
 {
 
     public class DBConnectionDto:EntityDto<int>

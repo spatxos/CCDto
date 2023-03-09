@@ -27,3 +27,16 @@ D:\github\CCDto\src\Api\DBField\application\obj\Debug\net5.0\api.dbfield.applica
 D:\github\CCDto\src\Api\DBField\application\obj\Debug\net5.0\api.dbfield.application.dll
 D:\github\CCDto\src\Api\DBField\application\obj\Debug\net5.0\refint\api.dbfield.application.dll
 D:\github\CCDto\src\Api\DBField\application\obj\Debug\net5.0\api.dbfield.application.pdb
+D:\github\CCDto\src\Api\DBField\application\bin\Debug\net5.0\api.dbfield.application.deps.json
+D:\github\CCDto\src\Api\DBField\application\bin\Debug\net5.0\api.dbfield.application.dll
+D:\github\CCDto\src\Api\DBField\application\bin\Debug\net5.0\api.dbfield.application.pdb
+D:\github\CCDto\src\Api\DBField\application\bin\Debug\net5.0\api.dbfield.entity.dll
+D:\github\CCDto\src\Api\DBField\application\bin\Debug\net5.0\CCDto.application.dll
+D:\github\CCDto\src\Api\DBField\application\bin\Debug\net5.0\CCDto.common.dll
+D:\github\CCDto\src\Api\DBField\application\bin\Debug\net5.0\CCDto.entity.dll
+D:\github\CCDto\src\Api\DBField\application\bin\Debug\net5.0\CCDto.application.pdb
+D:\github\CCDto\src\Api\DBField\application\bin\Debug\net5.0\CCDto.entity.pdb
+D:\github\CCDto\src\Api\DBField\application\bin\Debug\net5.0\api.dbfield.entity.pdb
+D:\github\CCDto\src\Api\DBField\application\bin\Debug\net5.0\CCDto.common.pdb
+D:\github\CCDto\src\Api\DBField\application\obj\Debug\net5.0\api.dbfield.application.csproj.CopyComplete
+D:\github\CCDto\src\Api\DBField\application\obj\Debug\net5.0\ref\api.dbfield.application.dll

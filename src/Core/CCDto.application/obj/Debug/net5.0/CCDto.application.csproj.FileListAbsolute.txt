@@ -49,3 +49,5 @@ D:\github\CCDto\src\Core\CCDto.application\obj\Debug\net5.0\CCDto.application.dl
 D:\github\CCDto\src\Core\CCDto.application\obj\Debug\net5.0\refint\CCDto.application.dll
 D:\github\CCDto\src\Core\CCDto.application\obj\Debug\net5.0\CCDto.application.pdb
 D:\github\CCDto\src\Core\CCDto.application\obj\Debug\net5.0\ref\CCDto.application.dll
+D:\github\CCDto\src\Core\CCDto.application\bin\Debug\net5.0\api.dbfield.entity.dll
+D:\github\CCDto\src\Core\CCDto.application\bin\Debug\net5.0\api.dbfield.entity.pdb

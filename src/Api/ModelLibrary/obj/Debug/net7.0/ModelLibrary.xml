@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ModelLibrary</name>
+    </assembly>
+    <members>
+        <member name="M:ModelLibrary.AppleAppService.Get(System.Int32)">
+            <summary>
+            Get An Apple.
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ModelLibrary.AppleAppService.GetAllAsync">
+            <summary>
+            Get  All Apple Async.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ModelLibrary.AppleAppService.Get">
+            <summary>
+            Get All Apple.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ModelLibrary.AppleAppService.GetBigApple">
+            <summary>
+            Get All Apple.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ModelLibrary.AppleAppService.Update(System.Object)">
+            <summary>
+            Update Apple
+            </summary>
+            <param name="dto"></param>
+        </member>
+        <member name="M:ModelLibrary.AppleAppService.Delete(System.Int32)">
+            <summary>
+            Delete Apple
+            </summary>
+            <param name="id">Apple Id</param>
+        </member>
+    </members>
+</doc>

@@ -1,6 +1,5 @@
 using CCDto.common.AutoMapper;
-using CCDto.common.Extensions;
-using CCDto.Web.Core.Extensions;
+using CCDto.common.NetCore.Extensions;
 using EasyNetQ;
 using FreeSql;
 using FreeSql.Internal;
@@ -59,7 +58,7 @@ namespace CCDto.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddHttpContextAccessor();
+            services.AddCurrentHttpContextAccessor();
 
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();
@@ -67,7 +66,7 @@ namespace CCDto.Web
             services.AddAutoMapper();
 
             services.AddAssembly("CCDto.application");
-            services.AddAssembly("api.dbconnecion.application");
+            services.AddAssembly("dbconnecion.application");
             services.AddAssembly("api.dbtable.application");
             services.AddAssembly("api.dbfield.application");
 
@@ -108,7 +107,7 @@ namespace CCDto.Web
                 ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
             });
 
-            app.UseSubscribe("DbSaveServicer", Assembly.GetExecutingAssembly());
+            //app.UseSubscribe("DbSaveServicer", Assembly.GetExecutingAssembly());
 
             app.UseRouting();
 

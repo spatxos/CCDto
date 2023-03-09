@@ -39,6 +39,9 @@
           "EasyNetQ": "6.3.1",
           "IdleBus": "1.5.2",
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "5.0.11",
+          "api.dbconnecion.application": "1.0.0",
+          "api.dbfield.application": "1.0.0",
+          "api.dbtable.application": "1.0.0",
           "Microsoft.AspNetCore.Antiforgery.Reference": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions.Reference": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "5.0.0.0",
@@ -1399,6 +1402,17 @@
           "lib/netstandard2.1/Oracle.ManagedDataAccess.dll": {}
         }
       },
+      "Panda.DynamicWebApi/1.2.1": {
+        "runtime": {
+          "lib/net5.0/Panda.DynamicWebApi.dll": {
+            "assemblyVersion": "1.2.1.0",
+            "fileVersion": "1.2.1.0"
+          }
+        },
+        "compile": {
+          "lib/net5.0/Panda.DynamicWebApi.dll": {}
+        }
+      },
       "Portable.BouncyCastle/1.8.9": {
         "runtime": {
           "lib/netstandard2.0/BouncyCastle.Crypto.dll": {
@@ -2349,6 +2363,80 @@
           "ref/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
       },
+      "api.dbconnecion.application/1.0.0": {
+        "dependencies": {
+          "CCDto.application": "1.0.0",
+          "api.dbconnecion.entity": "1.0.0"
+        },
+        "runtime": {
+          "api.dbconnecion.application.dll": {}
+        },
+        "compile": {
+          "api.dbconnecion.application.dll": {}
+        }
+      },
+      "api.dbconnecion.entity/1.0.0": {
+        "dependencies": {
+          "CCDto.entity": "1.0.0"
+        },
+        "runtime": {
+          "api.dbconnecion.entity.dll": {}
+        },
+        "compile": {
+          "api.dbconnecion.entity.dll": {}
+        }
+      },
+      "api.dbfield.application/1.0.0": {
+        "dependencies": {
+          "CCDto.application": "1.0.0",
+          "CCDto.entity": "1.0.0",
+          "api.dbfield.entity": "1.0.0"
+        },
+        "runtime": {
+          "api.dbfield.application.dll": {}
+        },
+        "compile": {
+          "api.dbfield.application.dll": {}
+        }
+      },
+      "api.dbfield.entity/1.0.0": {
+        "dependencies": {
+          "CCDto.entity": "1.0.0"
+        },
+        "runtime": {
+          "api.dbfield.entity.dll": {}
+        },
+        "compile": {
+          "api.dbfield.entity.dll": {}
+        }
+      },
+      "api.dbtable.application/1.0.0": {
+        "dependencies": {
+          "AutoMapper": "10.1.1",
+          "CCDto.application": "1.0.0",
+          "CCDto.common": "1.0.0",
+          "api.dbtable.entity": "1.0.0"
+        },
+        "runtime": {
+          "api.dbtable.application.dll": {}
+        },
+        "compile": {
+          "api.dbtable.application.dll": {}
+        }
+      },
+      "api.dbtable.entity/1.0.0": {
+        "dependencies": {
+          "CCDto.entity": "1.0.0",
+          "api.dbconnecion.entity": "1.0.0",
+          "api.dbfield.entity": "1.0.0"
+        },
+        "runtime": {
+          "api.dbtable.entity.dll": {}
+        },
+        "compile": {
+          "api.dbtable.entity.dll": {}
+        }
+      },
       "CCDto.application/1.0.0": {
         "dependencies": {
           "CCDto.common": "1.0.0",
@@ -2361,7 +2449,9 @@
           "FreeSql.Repository": "2.6.100",
           "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
           "Microsoft.AspNetCore.Mvc.ViewFeatures": "2.2.0",
-          "NPOI": "2.5.5"
+          "NPOI": "2.5.5",
+          "Panda.DynamicWebApi": "1.2.1",
+          "api.dbfield.entity": "1.0.0"
         },
         "runtime": {
           "CCDto.application.dll": {}
@@ -4679,6 +4769,13 @@
       "path": "oracle.manageddataaccess.core/3.21.1",
       "hashPath": "oracle.manageddataaccess.core.3.21.1.nupkg.sha512"
     },
+    "Panda.DynamicWebApi/1.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NBmhr3LmcH28mq7RzvcVMUeQgBxhcy5qEw07+4Xms1UKqIU2fTTW1GypRZM5g2AlPt58xq7ZUc5fSCQcVv4CmQ==",
+      "path": "panda.dynamicwebapi/1.2.1",
+      "hashPath": "panda.dynamicwebapi.1.2.1.nupkg.sha512"
+    },
     "Portable.BouncyCastle/1.8.9": {
       "type": "package",
       "serviceable": true,
@@ -5420,6 +5517,36 @@
       "sha512": "sha512-Zm2BdeanuncYs3NhCj4c9e1x3EXFzFBVv2wPEc/Dj4ZbI9R8ecLSR5frAsx4zJCPBtKQreQ7Q/KxJEohJZbfzA==",
       "path": "system.xml.xpath.xmldocument/4.0.1",
       "hashPath": "system.xml.xpath.xmldocument.4.0.1.nupkg.sha512"
+    },
+    "api.dbconnecion.application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "api.dbconnecion.entity/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "api.dbfield.application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "api.dbfield.entity/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "api.dbtable.application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "api.dbtable.entity/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "CCDto.application/1.0.0": {
       "type": "project",

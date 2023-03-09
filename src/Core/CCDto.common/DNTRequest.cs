@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using CCDto.common.NetCore;
 using Microsoft.AspNetCore.Http;
-using HttpContext = CCDto.common.NetCore.HttpContext;
+using CurrentHttpContext = CCDto.common.NetCore.CurrentHttpContext;
 
 namespace CCDto.common
 {
@@ -18,7 +18,7 @@ namespace CCDto.common
         /// <returns>是否接收到了Post请求</returns>
         public bool IsPost()
         {
-            return HttpContext.Current.Request.Method.Equals("POST");
+            return CurrentHttpContext.Current.Request.Method.Equals("POST");
         }
         /// <summary>
         /// 判断当前页面是否接收到了Get请求
@@ -26,7 +26,7 @@ namespace CCDto.common
         /// <returns>是否接收到了Get请求</returns>
         public static bool IsGet()
         {
-            return HttpContext.Current.Request.Method.Equals("GET");
+            return CurrentHttpContext.Current.Request.Method.Equals("GET");
         }
 
         /// <summary>
@@ -54,7 +54,7 @@ namespace CCDto.common
 
             try
             {
-                retVal = HttpContext.Current.Request.Headers["Referer"].ToString();
+                retVal = CurrentHttpContext.Current.Request.Headers["Referer"].ToString();
             }
             catch { }
 
@@ -71,12 +71,12 @@ namespace CCDto.common
         /// <returns></returns>
         public static string GetCurrentFullHost()
         {
-            HttpRequest request = HttpContext.Current.Request;
+            HttpRequest request = CurrentHttpContext.Current.Request;
             //if (!request..IsDefaultPort)
             //{
             //    return Format("{0}:{1}", request.Url.Host, request.Url.Port.ToString());
             //}
-            return HttpContext.Current.Request.Host.Value;
+            return CurrentHttpContext.Current.Request.Host.Value;
         }
 
         /// <summary>
@@ -85,7 +85,7 @@ namespace CCDto.common
         /// <returns></returns>
         public static string GetHost()
         {
-            return HttpContext.Current.Request.Host.Value;
+            return CurrentHttpContext.Current.Request.Host.Value;
             //return HttpContext.Current.Request.Url.Host;
         }
 
@@ -106,7 +106,7 @@ namespace CCDto.common
 
         public static string GetRouteUrl()
         {
-            return HttpContext.Current.Request.Path + HttpContext.Current.Request.QueryString;
+            return CurrentHttpContext.Current.Request.Path + CurrentHttpContext.Current.Request.QueryString;
         }
 
         /// <summary>
@@ -116,7 +116,7 @@ namespace CCDto.common
         public static bool IsBrowserGet()
         {
             string[] BrowserName = { "ie", "opera", "netscape", "mozilla", "konqueror", "firefox" };
-            string curBrowser = HttpContext.Current.Request.Headers["User-Agent"].ToString().ToLower();
+            string curBrowser = CurrentHttpContext.Current.Request.Headers["User-Agent"].ToString().ToLower();
             for (int i = 0; i < BrowserName.Length; i++)
             {
                 if (curBrowser.IndexOf(BrowserName[i]) >= 0)
@@ -133,12 +133,12 @@ namespace CCDto.common
         /// <returns>是否来自搜索引擎链接</returns>
         public static bool IsSearchEnginesGet()
         {
-            if (HttpContext.Current.Request.Headers["Referer"].ToString() == null)
+            if (CurrentHttpContext.Current.Request.Headers["Referer"].ToString() == null)
             {
                 return false;
             }
             string[] SearchEngine = { "google", "yahoo", "msn", "baidu", "sogou", "sohu", "sina", "163", "lycos", "tom", "yisou", "iask", "soso", "gougou", "zhongsou" };
-            string tmpReferrer = HttpContext.Current.Request.Headers["Referer"].ToString().ToLower();
+            string tmpReferrer = CurrentHttpContext.Current.Request.Headers["Referer"].ToString().ToLower();
             for (int i = 0; i < SearchEngine.Length; i++)
             {
                 if (tmpReferrer.IndexOf(SearchEngine[i]) >= 0)
@@ -183,12 +183,12 @@ namespace CCDto.common
         {
             try
             {
-                var o = HttpContext.Current.Items[strName];
-                if (string.IsNullOrWhiteSpace(HttpContext.Current.Request.Query[strName]))
+                var o = CurrentHttpContext.Current.Items[strName];
+                if (string.IsNullOrWhiteSpace(CurrentHttpContext.Current.Request.Query[strName]))
                 {
                     return "";
                 }
-                return Utils.ChkSQL(HttpContext.Current.Request.Query[strName]);
+                return Utils.ChkSQL(CurrentHttpContext.Current.Request.Query[strName]);
             }
             catch
             {
@@ -212,7 +212,7 @@ namespace CCDto.common
         /// <returns></returns>
         public static int GetParamCount()
         {
-            return HttpContext.Current.Request.Form != null ? HttpContext.Current.Request.Form.Count : 0 + (HttpContext.Current.Request.Query != null ? HttpContext.Current.Request.Query.Count : 0);
+            return CurrentHttpContext.Current.Request.Form != null ? CurrentHttpContext.Current.Request.Form.Count : 0 + (CurrentHttpContext.Current.Request.Query != null ? CurrentHttpContext.Current.Request.Query.Count : 0);
         }
 
 
@@ -225,12 +225,12 @@ namespace CCDto.common
         {
             try
             {
-                var o = HttpContext.Current.Items[strName];
-                if (string.IsNullOrWhiteSpace(HttpContext.Current.Request.Form[strName]))
+                var o = CurrentHttpContext.Current.Items[strName];
+                if (string.IsNullOrWhiteSpace(CurrentHttpContext.Current.Request.Form[strName]))
                 {
                     return "";
                 }
-                return Utils.ChkSQL(HttpContext.Current.Request.Form[strName]);
+                return Utils.ChkSQL(CurrentHttpContext.Current.Request.Form[strName]);
             }
             catch
             {
@@ -279,7 +279,7 @@ namespace CCDto.common
         {
             try
             {
-                return Utils.StrToInt(HttpContext.Current.Request.Query[strName], defValue);
+                return Utils.StrToInt(CurrentHttpContext.Current.Request.Query[strName], defValue);
             }
             catch
             {
@@ -298,7 +298,7 @@ namespace CCDto.common
         {
             try
             {
-                return Utils.StrToInt(HttpContext.Current.Request.Form[strName], defValue);
+                return Utils.StrToInt(CurrentHttpContext.Current.Request.Form[strName], defValue);
             }
             catch
             {
@@ -334,7 +334,7 @@ namespace CCDto.common
         {
             try
             {
-                return Utils.StrToFloat(HttpContext.Current.Request.Query[strName], defValue);
+                return Utils.StrToFloat(CurrentHttpContext.Current.Request.Query[strName], defValue);
             }
             catch
             {
@@ -353,7 +353,7 @@ namespace CCDto.common
         {
             try
             {
-                return Utils.StrToFloat(HttpContext.Current.Request.Form[strName], defValue);
+                return Utils.StrToFloat(CurrentHttpContext.Current.Request.Form[strName], defValue);
             }
             catch
             {
@@ -389,11 +389,11 @@ namespace CCDto.common
 
             try
             {
-                result = HttpContext.Current.Request.Headers["X-Forwarded-For"].FirstOrDefault();
+                result = CurrentHttpContext.Current.Request.Headers["X-Forwarded-For"].FirstOrDefault();
 
                 if (string.IsNullOrWhiteSpace(result))
                 {
-                    result = HttpContext.Current.Connection.RemoteIpAddress.ToString();
+                    result = CurrentHttpContext.Current.Connection.RemoteIpAddress.ToString();
                 }
 
                 if (string.IsNullOrWhiteSpace(result) || !Utils.IsIP(result))
@@ -416,9 +416,9 @@ namespace CCDto.common
         /// <param name="path">保存路径</param>
         public static async System.Threading.Tasks.Task SaveRequestFileAsync(string path)
         {
-            if (HttpContext.Current.Request.Form.Files.Count > 0)
+            if (CurrentHttpContext.Current.Request.Form.Files.Count > 0)
             {
-                var file = HttpContext.Current.Request.Form.Files[0];
+                var file = CurrentHttpContext.Current.Request.Form.Files[0];
                 if (file.Length > 0)
                 {
                     using (var inputStream = new FileStream(path, FileMode.Create))
@@ -436,9 +436,9 @@ namespace CCDto.common
 
         public static async System.Threading.Tasks.Task<MemoryStream> GetRequestFileStreamAsync(string filename)
         {
-            if (HttpContext.Current.Request.Form.Files.Count > 0)
+            if (CurrentHttpContext.Current.Request.Form.Files.Count > 0)
             {
-                var file = HttpContext.Current.Request.Form.Files[filename];
+                var file = CurrentHttpContext.Current.Request.Form.Files[filename];
                 if (file != null && file.Length > 0)
                 {
                     var stream = new MemoryStream();
@@ -456,9 +456,9 @@ namespace CCDto.common
         }
         public static IFormFile GetRequestFileAsync(string filename)
         {
-            if (HttpContext.Current.Request.Form.Files.Count > 0)
+            if (CurrentHttpContext.Current.Request.Form.Files.Count > 0)
             {
-                var file = HttpContext.Current.Request.Form.Files[filename];
+                var file = CurrentHttpContext.Current.Request.Form.Files[filename];
                 if (file != null && file.Length > 0)
                 {
                     return file;
@@ -473,11 +473,11 @@ namespace CCDto.common
         {
             String[] mobileAgents = { "iphone", "android", "phone", "mobile", "wap", "netfront", "java", "opera mobi", "opera mini", "ucweb", "windows ce", "symbian", "series", "webos", "sony", "blackberry", "dopod", "nokia", "samsung", "palmsource", "xda", "pieplus", "meizu", "midp", "cldc", "motorola", "foma", "docomo", "up.browser", "up.link", "blazer", "helio", "hosin", "huawei", "novarra", "coolpad", "webos", "techfaith", "palmsource", "alcatel", "amoi", "ktouch", "nexian", "ericsson", "philips", "sagem", "wellcom", "bunjalloo", "maui", "smartphone", "iemobile", "spice", "bird", "zte-", "longcos", "pantech", "gionee", "portalmmm", "jig browser", "hiptop", "benq", "haier", "^lct", "320x320", "240x320", "176x220", "w3c ", "acs-", "alav", "alca", "amoi", "audi", "avan", "benq", "bird", "blac", "blaz", "brew", "cell", "cldc", "cmd-", "dang", "doco", "eric", "hipt", "inno", "ipaq", "java", "jigs", "kddi", "keji", "leno", "lg-c", "lg-d", "lg-g", "lge-", "maui", "maxo", "midp", "mits", "mmef", "mobi", "mot-", "moto", "mwbp", "nec-", "newt", "noki", "oper", "palm", "pana", "pant", "phil", "play", "port", "prox", "qwap", "sage", "sams", "sany", "sch-", "sec-", "send", "seri", "sgh-", "shar", "sie-", "siem", "smal", "smar", "sony", "sph-", "symb", "t-mo", "teli", "tim-", "tosh", "tsm-", "upg1", "upsi", "vk-v", "voda", "wap-", "wapa", "wapi", "wapp", "wapr", "webc", "winw", "winw", "xda", "xda-", "Googlebot-Mobile" };
             Boolean isMoblie = false;
-            if (HttpContext.Current.Request.Headers["User-Agent"].ToString().ToLower() != null)
+            if (CurrentHttpContext.Current.Request.Headers["User-Agent"].ToString().ToLower() != null)
             {
                 for (int i = 0; i < mobileAgents.Length; i++)
                 {
-                    if (HttpContext.Current.Request.Headers["User-Agent"].ToString().ToLower().IndexOf(mobileAgents[i]) >= 0)
+                    if (CurrentHttpContext.Current.Request.Headers["User-Agent"].ToString().ToLower().IndexOf(mobileAgents[i]) >= 0)
                     {
                         isMoblie = true;
                         break;

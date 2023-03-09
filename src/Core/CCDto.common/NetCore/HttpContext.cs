@@ -5,7 +5,7 @@ using System.Text;
 
 namespace CCDto.common.NetCore
 {
-    public static class HttpContext
+    public static class CurrentHttpContext
     {
         public static IHttpContextAccessor _accessor;
         public static Microsoft.AspNetCore.Http.HttpContext Current => _accessor.HttpContext;

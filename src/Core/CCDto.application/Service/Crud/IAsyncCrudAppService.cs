@@ -3,6 +3,8 @@ using CCDto.entity.Dto.Response;
 using CCDto.entity.DtoColumn;
 using CCDto.entity.DtoColumn.Db;
 using FreeSql;
+using Panda.DynamicWebApi;
+using Panda.DynamicWebApi.Attributes;
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
@@ -10,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace CCDto.application.Service.Crud
 {
-    public interface IAsyncCrudAppService<TEntity, TEntityDto, TPrimaryKey, TGetAllInput, TUpdateInput> : IApplicationService, IBaseRepository<TEntity, TPrimaryKey> where TEntity : class
+    public interface IAsyncCrudAppService<TEntity, TEntityDto, TPrimaryKey, TGetAllInput, TUpdateInput> : IApplicationService, IBaseRepository<TEntity, TPrimaryKey>, IDynamicWebApi where TEntity : class
     {
         int ExecuteNonQuery(string sql);
         List<TEntity> GetAll(Expression<Func<TEntity, bool>> exp = null);

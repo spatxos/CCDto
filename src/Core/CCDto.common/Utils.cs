@@ -2092,17 +2092,17 @@ namespace CCDto.common
             }
             return newdt;
         }
-        public static object CopyClass(object obj)
-        {
-            using (MemoryStream stream = new MemoryStream())
-            {
-                BinaryFormatter formatter = new BinaryFormatter();
-                stream.Position = 0L;
-                formatter.Serialize(stream, obj);
-                stream.Position = 0L;
-                return formatter.Deserialize(stream);
-            }
-        }
+        //public static object CopyClass(object obj)
+        //{
+        //    using (MemoryStream stream = new MemoryStream())
+        //    {
+        //        BinaryFormatter formatter = new BinaryFormatter();
+        //        stream.Position = 0L;
+        //        formatter.Serialize(stream, obj);
+        //        stream.Position = 0L;
+        //        return formatter.Deserialize(stream);
+        //    }
+        //}
         public static string HtmlEncode(string str)
         {
             str = str.Replace("<", "&lt;");

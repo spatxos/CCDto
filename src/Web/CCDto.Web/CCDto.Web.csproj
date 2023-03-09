@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
@@ -1879,7 +1879,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Api\DBConneciton\application\api.dbconnecion.application.csproj" />
+    <ProjectReference Include="..\..\Api\DBConneciton\application\dbconnecion.application.csproj" />
     <ProjectReference Include="..\..\Api\DBField\application\api.dbfield.application.csproj" />
     <ProjectReference Include="..\..\Api\DBTable\application\api.dbtable.application.csproj" />
     <ProjectReference Include="..\..\Core\CCDto.application\CCDto.application.csproj" />

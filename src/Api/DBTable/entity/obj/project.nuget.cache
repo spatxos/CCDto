@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "8mAT/r7RpMtx5Wzvqgy6uif4i1NALUKXowvu+AChEwlsqXAtq2BRe2Y2fgs+Ek8Fh89Wt+IgxLKyaJ6C0thoHQ==",
+  "dgSpecHash": "k9a6Nv5UptsAO+O/FYVfDhDY18lvRqzkksL8HuLcyIDVejm5hZKzgPNiwCqXkTSbDnD39iDC00GtO0hvPj4nUA==",
   "success": true,
   "projectFilePath": "D:\\github\\CCDto\\src\\Api\\DBTable\\entity\\api.dbtable.entity.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\wangp\\.nuget\\packages\\freesql\\2.6.100\\freesql.2.6.100.nupkg.sha512",
-    "C:\\Users\\wangp\\.nuget\\packages\\freesql.extensions.linq\\2.6.100\\freesql.extensions.linq.2.6.100.nupkg.sha512",
-    "C:\\Users\\wangp\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+    "C:\\Users\\wangp\\.nuget\\packages\\freesql\\3.2.691-preview20230305\\freesql.3.2.691-preview20230305.nupkg.sha512",
+    "C:\\Users\\wangp\\.nuget\\packages\\freesql.extensions.linq\\3.2.691-preview20230305\\freesql.extensions.linq.3.2.691-preview20230305.nupkg.sha512",
+    "C:\\Users\\wangp\\.nuget\\packages\\newtonsoft.json\\13.0.3-beta1\\newtonsoft.json.13.0.3-beta1.nupkg.sha512"
   ],
   "logs": []
 }

@@ -8,6 +8,8 @@ using CCDto.entity.DtoColumn;
 using CCDto.entity.DtoColumn.Db;
 using CCDto.entity.FreeSql;
 using FreeSql;
+using Microsoft.AspNetCore.Mvc;
+using Panda.DynamicWebApi.Attributes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -41,7 +43,9 @@ namespace CCDto.application.Service.Crud
                 _dbRepository = freeSql.GetRepository<TEntity, TPrimaryKey>();
             }
         }
-        public string GetBbKey(Type type = null)
+
+        [NonDynamicWebApi]
+        private string GetBbKey(Type type = null)
         {
             var dbKey = default(string);
             if (type != null)
@@ -72,6 +76,13 @@ namespace CCDto.application.Service.Crud
         {
             return _dbRepository.Orm.Ado.ExecuteNonQuery(sql);
         }
+
+        /// <summary>
+        /// 获取
+        /// </summary>
+        /// <param name="Id"></param>
+        /// <returns></returns>
+        [HttpGet("{id:int}")]
         public new TEntity Get(TPrimaryKey Id)
         {
             long entityid = 0;
