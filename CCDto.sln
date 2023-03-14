@@ -21,7 +21,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{0EA8CDE6-7BD
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DbConnecion", "DbConnecion", "{3CCDD516-ECD6-465D-98B4-BAF402BB40D8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dbconnecion.application", "src\Api\DBConneciton\application\dbconnecion.application.csproj", "{E643FAA5-3A47-416D-98C2-D421B5C790EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "api.dbconnecion.application", "src\Api\DBConneciton\application\api.dbconnecion.application.csproj", "{E643FAA5-3A47-416D-98C2-D421B5C790EB}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "api.dbconnecion.entity", "src\Api\DBConneciton\entity\api.dbconnecion.entity.csproj", "{98EA2FD0-2C7B-4253-867E-77A76A635D56}"
 EndProject
@@ -38,10 +38,6 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "api.dbfield.entity", "src\Api\DBField\entity\api.dbfield.entity.csproj", "{A9164272-1BCD-4692-9E23-3E350C740136}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api.Template", "src\Api\Api.Template\Api.Template.csproj", "{60F6BDB9-0A6B-4F1A-B259-18105B7A6391}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Panda.DynamicWebApi", "src\Core\Panda.DynamicWebApi\Panda.DynamicWebApi.csproj", "{9FA8DDF0-9D17-49CD-AA6B-92E6102B5F83}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelLibrary", "src\Api\ModelLibrary\ModelLibrary.csproj", "{16EDB2F1-775A-4E02-BCE8-6987F41F8698}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,14 +89,6 @@ Global
 		{60F6BDB9-0A6B-4F1A-B259-18105B7A6391}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60F6BDB9-0A6B-4F1A-B259-18105B7A6391}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60F6BDB9-0A6B-4F1A-B259-18105B7A6391}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9FA8DDF0-9D17-49CD-AA6B-92E6102B5F83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9FA8DDF0-9D17-49CD-AA6B-92E6102B5F83}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9FA8DDF0-9D17-49CD-AA6B-92E6102B5F83}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9FA8DDF0-9D17-49CD-AA6B-92E6102B5F83}.Release|Any CPU.Build.0 = Release|Any CPU
-		{16EDB2F1-775A-4E02-BCE8-6987F41F8698}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{16EDB2F1-775A-4E02-BCE8-6987F41F8698}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{16EDB2F1-775A-4E02-BCE8-6987F41F8698}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{16EDB2F1-775A-4E02-BCE8-6987F41F8698}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -120,8 +108,6 @@ Global
 		{B7347F94-4EB5-4BEB-B37B-39B031389894} = {5920CAC8-5A05-4A88-A08D-948C8CB29C5B}
 		{A9164272-1BCD-4692-9E23-3E350C740136} = {5920CAC8-5A05-4A88-A08D-948C8CB29C5B}
 		{60F6BDB9-0A6B-4F1A-B259-18105B7A6391} = {0EA8CDE6-7BD8-4EC5-9891-88FE3B7F9AEF}
-		{9FA8DDF0-9D17-49CD-AA6B-92E6102B5F83} = {7602C67F-D5B7-4393-B286-E408D9F422D7}
-		{16EDB2F1-775A-4E02-BCE8-6987F41F8698} = {0EA8CDE6-7BD8-4EC5-9891-88FE3B7F9AEF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0C186FEB-906C-40AB-A5DE-BDA42B2AA7F5}

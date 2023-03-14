@@ -1,5 +1,6 @@
-using api.dbfield.application;
-using api.dbfield.application.Dto;
+using System.Threading.Tasks;
+using api.dbfield.entity.Dto;
+using CCDto.application;
 using CCDto.application.Base;
 using CCDto.entity.Dto.Request;
 using Microsoft.AspNetCore.Mvc;
@@ -26,16 +27,16 @@ namespace CCDto.Web.Areas.DB.Controllers
             return View(id);
         }
 
-        public JsonResult EditForm(DBFieldDto dbfieldDto)
+        public async Task<JsonResult> EditFormAsync(DBFieldDto dbfieldDto)
         {
-            returnMsg.IsSuccess = _dbfieldService.Save(dbfieldDto);
+            returnMsg.IsSuccess = await _dbfieldService.SaveAsync(dbfieldDto);
             returnMsg.Message = returnMsg.IsSuccess ? "提交成功！" : "提交失败！";
             return Json(returnMsg);
         }
 
-        public JsonResult Delete(int id)
+        public async Task<JsonResult> DeleteAsync(int id)
         {
-            returnMsg.IsSuccess = _dbfieldService.Delete(id) > 0;
+            returnMsg.IsSuccess = await _dbfieldService.DeleteAsync(id) > 0;
             returnMsg.Message = returnMsg.IsSuccess ? "删除成功！" : "删除失败！";
             return Json(returnMsg);
         }
@@ -44,14 +45,14 @@ namespace CCDto.Web.Areas.DB.Controllers
             return Json(_dbfieldService.GetDtoColumns(request));
         }
 
-        public JsonResult GetDatas(DBFieldsPagedResultRequestDto requestDto)
+        public async Task<JsonResult> GetDatasAsync(DBFieldsPagedResultRequestDto requestDto)
         {
-            return Json(_dbfieldService.GetPaging(null, requestDto));
+            return Json(await _dbfieldService.GetPagingAsync(null, requestDto));
         }
 
-        public JsonResult getData(int id)
+        public async Task<JsonResult> getDataAsync(int id)
         {
-            return Json(_dbfieldService.Get(id));
+            return Json(await _dbfieldService.GetAsync(id));
         }
     }
 }

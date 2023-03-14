@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection.Metadata;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace CCDto.application.Service.Nav
 {
@@ -23,20 +24,20 @@ namespace CCDto.application.Service.Nav
         /// 获取导航菜单
         /// </summary>
         /// <returns></returns>
-        public List<MenuDto> GetMenusTrees()
+        public async Task<List<MenuDto>> GetMenusTreesAsync()
         {
-            var navs = GetAll().OrderBy(o=>o.Order).ToList();
+            var navs = (await GetAllAsync()).OrderBy(o=>o.Order).ToList();
             return SetNaviTrees(navs, 0);
         }
         #endregion
 
-        public string GetScript()
+        public async Task<string> GetScriptAsync()
         {
             var sb = new StringBuilder("$('#page-sidebar-menu-bs-navbar-ul').append(");
 
             sb.AppendLine(@""" """);
 
-            var dtos = GetMenusTrees();
+            var dtos = await GetMenusTreesAsync();
 
             foreach(var dto in dtos)
             {

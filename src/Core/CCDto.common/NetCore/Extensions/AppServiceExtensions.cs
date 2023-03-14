@@ -11,32 +11,35 @@ namespace CCDto.common.NetCore.Extensions
     {
         public static void AddAssembly(this IServiceCollection service, string assemblyName , ServiceLifetime serviceLifetime = ServiceLifetime.Scoped)
         {
-            var assembly = RuntimeHelper.GetAssemblyByName(assemblyName);
-
-            var types = assembly.GetTypes();
-            var list = types.Where(u => u.IsClass && !u.IsAbstract && !u.IsGenericType).ToList();
-
-            foreach (var type in list)
+            if (!string.IsNullOrWhiteSpace(assemblyName))
             {
-                var interfaceList = type.GetInterfaces();
-                if (interfaceList.Any())
+                var assembly = RuntimeHelper.LoadAssembly(assemblyName);
+
+                var types = assembly.GetTypes();
+                var list = types.Where(u => u.IsClass && !u.IsAbstract && !u.IsGenericType).ToList();
+
+                foreach (var type in list)
                 {
-                    var inter = interfaceList.Last();
-
-                    switch (serviceLifetime)
+                    var interfaceList = type.GetInterfaces();
+                    if (interfaceList.Any())
                     {
-                        case ServiceLifetime.Transient:
-                            service.AddTransient(inter, type);
-                            break;
-                        case ServiceLifetime.Scoped:
-                            service.AddScoped(inter, type);
-                            break;
-                        case ServiceLifetime.Singleton:
-                            service.AddSingleton(inter, type);
-                            break;
+                        var inter = interfaceList.Last();
 
+                        switch (serviceLifetime)
+                        {
+                            case ServiceLifetime.Transient:
+                                service.AddTransient(inter, type);
+                                break;
+                            case ServiceLifetime.Scoped:
+                                service.AddScoped(inter, type);
+                                break;
+                            case ServiceLifetime.Singleton:
+                                service.AddSingleton(inter, type);
+                                break;
+
+                        }
+                        service.AddScoped(inter, type);
                     }
-                    service.AddScoped(inter, type);
                 }
             }
         }

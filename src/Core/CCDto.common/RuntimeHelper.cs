@@ -15,7 +15,13 @@ namespace CCDto.common
         {
             return AssemblyLoadContext.Default.LoadFromAssemblyName(new AssemblyName(assemblyName));
         }
-
+        public static Assembly LoadAssembly(string assemblyName)
+        {
+            Assembly entry = Assembly.GetEntryAssembly();
+            string dir = Path.GetDirectoryName(entry.Location);
+            var filePath = Path.Combine(dir, $"{assemblyName}.dll");
+            return AssemblyLoadContext.Default.LoadFromAssemblyPath(filePath);
+        }
 
         public static List<Assembly> GetAllAssembly()
         {

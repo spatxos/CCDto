@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "m0qz+Uj5a2C/LvS9ZEYR2JHHx5N/f6QHOO+GzKrty1fpch+he3LuqKG90bdLEP6BQo8ymq+WZ0an70lrl64xVw==",
+  "dgSpecHash": "kKvFSpcXrXmJwJqrjukJpoR5dl1KZtuC4VGukZM1JTdvJALKzRBVI5gpXPq753FSPVorzVt6dmh5O1/SXDDJZQ==",
   "success": true,
-  "projectFilePath": "D:\\github\\CCDto\\src\\Api\\DBConneciton\\application\\dbconnecion.application.csproj",
+  "projectFilePath": "D:\\github\\CCDto\\src\\Api\\DBConneciton\\application\\api.dbconnecion.application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\wangp\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\wangp\\.nuget\\packages\\cs-script.core\\1.3.1\\cs-script.core.1.3.1.nupkg.sha512",
@@ -90,6 +90,7 @@
     "C:\\Users\\wangp\\.nuget\\packages\\newtonsoft.json.bson\\1.0.1\\newtonsoft.json.bson.1.0.1.nupkg.sha512",
     "C:\\Users\\wangp\\.nuget\\packages\\npoi\\2.6.0\\npoi.2.6.0.nupkg.sha512",
     "C:\\Users\\wangp\\.nuget\\packages\\oracle.manageddataaccess.core\\3.21.61\\oracle.manageddataaccess.core.3.21.61.nupkg.sha512",
+    "C:\\Users\\wangp\\.nuget\\packages\\panda.dynamicwebapi\\1.2.1\\panda.dynamicwebapi.1.2.1.nupkg.sha512",
     "C:\\Users\\wangp\\.nuget\\packages\\portable.bouncycastle\\1.9.0\\portable.bouncycastle.1.9.0.nupkg.sha512",
     "C:\\Users\\wangp\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\wangp\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",

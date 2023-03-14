@@ -14,8 +14,8 @@ namespace CCDto.application.Service.Nav
         /// 获取导航菜单
         /// </summary>
         /// <returns></returns>
-        List<MenuDto> GetMenusTrees();
+        Task<List<MenuDto>> GetMenusTreesAsync();
 
-        string GetScript();
+        Task<string> GetScriptAsync();
     }
 }

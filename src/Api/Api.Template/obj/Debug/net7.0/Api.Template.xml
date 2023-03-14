@@ -4,60 +4,6 @@
         <name>Api.Template</name>
     </assembly>
     <members>
-        <member name="M:Api.Template.EatAppleAppService.Get(System.Int32)">
-            <summary>
-            Get An Apple.
-            </summary>
-            <param name="id"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Api.Template.EatAppleAppService.GetAllAsync">
-            <summary>
-            Get  All Apple Async.
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:Api.Template.EatAppleAppService.Get">
-            <summary>
-            Get All Apple.
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:Api.Template.EatAppleAppService.GetBigApple">
-            <summary>
-            Get All Apple.
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:Api.Template.EatAppleAppService.Update(System.Object)">
-            <summary>
-            Update Apple
-            </summary>
-            <param name="dto"></param>
-        </member>
-        <member name="M:Api.Template.EatAppleAppService.Delete(System.Int32)">
-            <summary>
-            Delete Apple
-            </summary>
-            <param name="id">Apple Id</param>
-        </member>
-        <member name="T:Api.Template.ApiDescriptionGroupCollectionProvider">
-            <inheritdoc />
-        </member>
-        <member name="M:Api.Template.ApiDescriptionGroupCollectionProvider.#ctor(Microsoft.AspNetCore.Mvc.Infrastructure.IActionDescriptorCollectionProvider,System.Collections.Generic.IEnumerable{Microsoft.AspNetCore.Mvc.ApiExplorer.IApiDescriptionProvider})">
-            <summary>
-            Creates a new instance of <see cref="T:Api.Template.ApiDescriptionGroupCollectionProvider"/>.
-            </summary>
-            <param name="actionDescriptorCollectionProvider">
-            The <see cref="T:Microsoft.AspNetCore.Mvc.Infrastructure.IActionDescriptorCollectionProvider"/>.
-            </param>
-            <param name="apiDescriptionProviders">
-            The <see cref="T:System.Collections.Generic.IEnumerable`1"/>.
-            </param>
-        </member>
-        <member name="P:Api.Template.ApiDescriptionGroupCollectionProvider.ApiDescriptionGroups">
-            <inheritdoc />
-        </member>
         <member name="T:Api.Template.Controllers.HealthController">
             <summary>
             健康检查

@@ -4,6 +4,7 @@ D:\github\CCDto\src\Api\DBConneciton\application\bin\Debug\net7.0\api.dbconnecio
 D:\github\CCDto\src\Api\DBConneciton\application\bin\Debug\net7.0\api.dbconnecion.application.xml
 D:\github\CCDto\src\Api\DBConneciton\application\bin\Debug\net7.0\api.dbconnecion.entity.dll
 D:\github\CCDto\src\Api\DBConneciton\application\bin\Debug\net7.0\api.dbfield.entity.dll
+D:\github\CCDto\src\Api\DBConneciton\application\bin\Debug\net7.0\api.dbtable.entity.dll
 D:\github\CCDto\src\Api\DBConneciton\application\bin\Debug\net7.0\CCDto.application.dll
 D:\github\CCDto\src\Api\DBConneciton\application\bin\Debug\net7.0\CCDto.common.dll
 D:\github\CCDto\src\Api\DBConneciton\application\bin\Debug\net7.0\CCDto.entity.dll
@@ -11,6 +12,7 @@ D:\github\CCDto\src\Api\DBConneciton\application\bin\Debug\net7.0\CCDto.applicat
 D:\github\CCDto\src\Api\DBConneciton\application\bin\Debug\net7.0\CCDto.application.xml
 D:\github\CCDto\src\Api\DBConneciton\application\bin\Debug\net7.0\api.dbconnecion.entity.pdb
 D:\github\CCDto\src\Api\DBConneciton\application\bin\Debug\net7.0\api.dbfield.entity.pdb
+D:\github\CCDto\src\Api\DBConneciton\application\bin\Debug\net7.0\api.dbtable.entity.pdb
 D:\github\CCDto\src\Api\DBConneciton\application\bin\Debug\net7.0\CCDto.common.pdb
 D:\github\CCDto\src\Api\DBConneciton\application\bin\Debug\net7.0\CCDto.entity.pdb
 D:\github\CCDto\src\Api\DBConneciton\application\obj\Debug\net7.0\api.dbconnecion.application.csproj.AssemblyReference.cache
@@ -24,5 +26,3 @@ D:\github\CCDto\src\Api\DBConneciton\application\obj\Debug\net7.0\refint\api.dbc
 D:\github\CCDto\src\Api\DBConneciton\application\obj\Debug\net7.0\api.dbconnecion.application.xml
 D:\github\CCDto\src\Api\DBConneciton\application\obj\Debug\net7.0\api.dbconnecion.application.pdb
 D:\github\CCDto\src\Api\DBConneciton\application\obj\Debug\net7.0\ref\api.dbconnecion.application.dll
-D:\github\CCDto\src\Api\DBConneciton\application\bin\Debug\net7.0\Panda.DynamicWebApi.dll
-D:\github\CCDto\src\Api\DBConneciton\application\bin\Debug\net7.0\Panda.DynamicWebApi.pdb

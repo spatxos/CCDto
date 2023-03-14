@@ -1,8 +1,9 @@
-using dbconnecion.application;
-using dbconnecion.application.Dto;
 using CCDto.application.Base;
 using CCDto.entity.Dto.Request;
 using Microsoft.AspNetCore.Mvc;
+using CCDto.application;
+using api.dbconnecion.entity.Dto;
+using System.Threading.Tasks;
 
 namespace CCDto.Web.Areas.DB.Controllers
 {
@@ -26,16 +27,16 @@ namespace CCDto.Web.Areas.DB.Controllers
             return View(id);
         }
 
-        public JsonResult EditForm(DBConnectionDto dbconnectionDto)
+        public async Task<JsonResult> EditFormAsync(DBConnectionDto dbconnectionDto)
         {
-            returnMsg.IsSuccess = _dbconnectionService.Save(dbconnectionDto);
+            returnMsg.IsSuccess = await _dbconnectionService.SaveAsync(dbconnectionDto);
             returnMsg.Message = returnMsg.IsSuccess ? "提交成功！" : "提交失败！";
             return Json(returnMsg);
         }
 
-        public JsonResult Delete(int id)
+        public async Task<JsonResult>  DeleteAsync(int id)
         {
-            returnMsg.IsSuccess = _dbconnectionService.Delete(id) > 0;
+            returnMsg.IsSuccess = await _dbconnectionService.DeleteAsync(id) > 0;
             returnMsg.Message = returnMsg.IsSuccess ? "删除成功！" : "删除失败！";
             return Json(returnMsg);
         }
@@ -44,14 +45,14 @@ namespace CCDto.Web.Areas.DB.Controllers
             return Json(_dbconnectionService.GetDtoColumns(request));
         }
 
-        public JsonResult GetDatas(DBConnectionsPagedResultRequestDto requestDto)
+        public async Task<JsonResult>  GetDatasAsync(DBConnectionsPagedResultRequestDto requestDto)
         {
-            return Json(_dbconnectionService.GetPaging(null, requestDto));
+            return Json(await _dbconnectionService.GetPagingAsync(null, requestDto));
         }
 
-        public JsonResult getData(int id)
+        public async Task<JsonResult> getDataAsync(int id)
         {
-            return Json(_dbconnectionService.Get(id));
+            return Json(await _dbconnectionService.GetAsync(id));
         }
     }
 }

@@ -98,6 +98,9 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
+              "D:\\github\\CCDto\\src\\Core\\CCDto.common\\CCDto.common.csproj": {
+                "projectPath": "D:\\github\\CCDto\\src\\Core\\CCDto.common\\CCDto.common.csproj"
+              },
               "D:\\github\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj": {
                 "projectPath": "D:\\github\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj"
               }
@@ -113,6 +116,12 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -161,6 +170,84 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
+              "D:\\github\\CCDto\\src\\Core\\CCDto.common\\CCDto.common.csproj": {
+                "projectPath": "D:\\github\\CCDto\\src\\Core\\CCDto.common\\CCDto.common.csproj"
+              },
+              "D:\\github\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj": {
+                "projectPath": "D:\\github\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\github\\CCDto\\src\\Api\\DBTable\\entity\\api.dbtable.entity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\github\\CCDto\\src\\Api\\DBTable\\entity\\api.dbtable.entity.csproj",
+        "projectName": "api.dbtable.entity",
+        "projectPath": "D:\\github\\CCDto\\src\\Api\\DBTable\\entity\\api.dbtable.entity.csproj",
+        "packagesPath": "C:\\Users\\wangp\\.nuget\\packages\\",
+        "outputPath": "D:\\github\\CCDto\\src\\Api\\DBTable\\entity\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\wangp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "D:\\github\\CCDto\\src\\Api\\DBConneciton\\entity\\api.dbconnecion.entity.csproj": {
+                "projectPath": "D:\\github\\CCDto\\src\\Api\\DBConneciton\\entity\\api.dbconnecion.entity.csproj"
+              },
+              "D:\\github\\CCDto\\src\\Api\\DBField\\entity\\api.dbfield.entity.csproj": {
+                "projectPath": "D:\\github\\CCDto\\src\\Api\\DBField\\entity\\api.dbfield.entity.csproj"
+              },
               "D:\\github\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj": {
                 "projectPath": "D:\\github\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj"
               }
@@ -224,17 +311,20 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
+              "D:\\github\\CCDto\\src\\Api\\DBConneciton\\entity\\api.dbconnecion.entity.csproj": {
+                "projectPath": "D:\\github\\CCDto\\src\\Api\\DBConneciton\\entity\\api.dbconnecion.entity.csproj"
+              },
               "D:\\github\\CCDto\\src\\Api\\DBField\\entity\\api.dbfield.entity.csproj": {
                 "projectPath": "D:\\github\\CCDto\\src\\Api\\DBField\\entity\\api.dbfield.entity.csproj"
+              },
+              "D:\\github\\CCDto\\src\\Api\\DBTable\\entity\\api.dbtable.entity.csproj": {
+                "projectPath": "D:\\github\\CCDto\\src\\Api\\DBTable\\entity\\api.dbtable.entity.csproj"
               },
               "D:\\github\\CCDto\\src\\Core\\CCDto.common\\CCDto.common.csproj": {
                 "projectPath": "D:\\github\\CCDto\\src\\Core\\CCDto.common\\CCDto.common.csproj"
               },
               "D:\\github\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj": {
                 "projectPath": "D:\\github\\CCDto\\src\\Core\\CCDto.entity\\CCDto.entity.csproj"
-              },
-              "D:\\github\\CCDto\\src\\Core\\Panda.DynamicWebApi\\Panda.DynamicWebApi.csproj": {
-                "projectPath": "D:\\github\\CCDto\\src\\Core\\Panda.DynamicWebApi\\Panda.DynamicWebApi.csproj"
               }
             }
           }
@@ -284,6 +374,10 @@
             "NPOI": {
               "target": "Package",
               "version": "[2.6.0, )"
+            },
+            "Panda.DynamicWebApi": {
+              "target": "Package",
+              "version": "[1.2.1, )"
             }
           },
           "imports": [
@@ -363,6 +457,10 @@
               "version": "[2.2.2, )"
             },
             "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.ApiExplorer": {
               "target": "Package",
               "version": "[2.2.0, )"
             },
@@ -468,153 +566,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "D:\\github\\CCDto\\src\\Core\\Panda.DynamicWebApi\\Panda.DynamicWebApi.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "D:\\github\\CCDto\\src\\Core\\Panda.DynamicWebApi\\Panda.DynamicWebApi.csproj",
-        "projectName": "Panda.DynamicWebApi",
-        "projectPath": "D:\\github\\CCDto\\src\\Core\\Panda.DynamicWebApi\\Panda.DynamicWebApi.csproj",
-        "packagesPath": "C:\\Users\\wangp\\.nuget\\packages\\",
-        "outputPath": "D:\\github\\CCDto\\src\\Core\\Panda.DynamicWebApi\\obj\\",
-        "projectStyle": "PackageReference",
-        "crossTargeting": true,
-        "fallbackFolders": [
-          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\wangp\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net5.0",
-          "net6.0",
-          "net7.0",
-          "netcoreapp3.1"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
-            "projectReferences": {}
-          },
-          "net5.0": {
-            "targetAlias": "net5.0",
-            "projectReferences": {}
-          },
-          "net6.0": {
-            "targetAlias": "net6.0",
-            "projectReferences": {}
-          },
-          "net7.0": {
-            "targetAlias": "net7.0",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
-        },
-        "net5.0": {
-          "targetAlias": "net5.0",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
-        },
-        "net6.0": {
-          "targetAlias": "net6.0",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
-        },
-        "net7.0": {
-          "targetAlias": "net7.0",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

@@ -4,6 +4,7 @@ using System.Text;
 using Microsoft.AspNetCore.Authorization;
 using CCDto.application.Service.Nav;
 using CCDto.application.Base;
+using System.Threading.Tasks;
 
 namespace CollectionConfiguration.Controllers
 {
@@ -17,7 +18,7 @@ namespace CollectionConfiguration.Controllers
             _menuService = menuService;
         }
 
-        public ContentResult GetScript()
+        public async Task<ContentResult> GetScriptAsync()
         {
             var script = new StringBuilder();
             script.AppendLine("(function(){");
@@ -25,7 +26,7 @@ namespace CollectionConfiguration.Controllers
             try
             {
                 //var i =  _navService.();
-                script.AppendLine(_menuService.GetScript());
+                script.AppendLine(await _menuService.GetScriptAsync());
                 script.AppendLine();
                 script.AppendLine("$('#page-wrapper-page-footer').show();");
                 script.AppendLine("$('#page-wrapper-page-quick-sidebar-wrapper').show();");

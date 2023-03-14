@@ -1690,6 +1690,22 @@
           "lib/netstandard2.1/Oracle.ManagedDataAccess.dll": {}
         }
       },
+      "Panda.DynamicWebApi/1.2.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Panda.DynamicWebApi.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Panda.DynamicWebApi.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Portable.BouncyCastle/1.9.0": {
         "type": "package",
         "compile": {
@@ -3407,6 +3423,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "AutoMapper": "12.0.1",
+          "CCDto.common": "1.0.0",
           "CCDto.entity": "1.0.0"
         },
         "compile": {
@@ -3420,6 +3438,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "AutoMapper": "12.0.1",
+          "CCDto.common": "1.0.0",
           "CCDto.entity": "1.0.0"
         },
         "compile": {
@@ -3459,8 +3479,10 @@
           "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
           "Microsoft.AspNetCore.Mvc.ViewFeatures": "2.2.0",
           "NPOI": "2.6.0",
-          "Panda.DynamicWebApi": "1.0.0",
-          "api.dbfield.entity": "1.0.0"
+          "Panda.DynamicWebApi": "1.2.1",
+          "api.dbconnecion.entity": "1.0.0",
+          "api.dbfield.entity": "1.0.0",
+          "api.dbtable.entity": "1.0.0"
         },
         "compile": {
           "bin/placeholder/CCDto.application.dll": {}
@@ -3505,19 +3527,6 @@
         "runtime": {
           "bin/placeholder/CCDto.entity.dll": {}
         }
-      },
-      "Panda.DynamicWebApi/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "compile": {
-          "bin/placeholder/Panda.DynamicWebApi.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Panda.DynamicWebApi.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
       }
     }
   },
@@ -5423,6 +5432,24 @@
         "oracle.manageddataaccess.core.3.21.61.nupkg.sha512",
         "oracle.manageddataaccess.core.nuspec",
         "readme.txt"
+      ]
+    },
+    "Panda.DynamicWebApi/1.2.1": {
+      "sha512": "NBmhr3LmcH28mq7RzvcVMUeQgBxhcy5qEw07+4Xms1UKqIU2fTTW1GypRZM5g2AlPt58xq7ZUc5fSCQcVv4CmQ==",
+      "type": "package",
+      "path": "panda.dynamicwebapi/1.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "lib/net5.0/Panda.DynamicWebApi.dll",
+        "lib/net5.0/Panda.DynamicWebApi.xml",
+        "lib/net6.0/Panda.DynamicWebApi.dll",
+        "lib/net6.0/Panda.DynamicWebApi.xml",
+        "lib/netcoreapp3.1/Panda.DynamicWebApi.dll",
+        "lib/netcoreapp3.1/Panda.DynamicWebApi.xml",
+        "panda.dynamicwebapi.1.2.1.nupkg.sha512",
+        "panda.dynamicwebapi.nuspec"
       ]
     },
     "Portable.BouncyCastle/1.9.0": {
@@ -9584,11 +9611,6 @@
       "type": "project",
       "path": "../../../Core/CCDto.entity/CCDto.entity.csproj",
       "msbuildProject": "../../../Core/CCDto.entity/CCDto.entity.csproj"
-    },
-    "Panda.DynamicWebApi/1.0.0": {
-      "type": "project",
-      "path": "../../../Core/Panda.DynamicWebApi/Panda.DynamicWebApi.csproj",
-      "msbuildProject": "../../../Core/Panda.DynamicWebApi/Panda.DynamicWebApi.csproj"
     }
   },
   "projectFileDependencyGroups": {

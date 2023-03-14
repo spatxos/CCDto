@@ -8,8 +8,9 @@ using System.Collections.Generic;
 using CCDto.entity.DtoColumn.Option;
 using System;
 using api.dbfield.entity;
-using api.dbfield.application.Dto;
 using CCDto.entity.Dto.Request;
+using api.dbfield.entity.Dto;
+using CCDto.application;
 
 namespace api.dbfield.application
 {
@@ -39,7 +40,7 @@ namespace api.dbfield.application
                     //{
                     //    if (!options.Any(o => o.Id == 0))
                     //    {
-                    //        dtoColumn.Options.Add((0, "²»Ñ¡Ôñ"));
+                    //        dtoColumn.Options.Add((0, "ï¿½ï¿½Ñ¡ï¿½ï¿½"));
                     //    }
                     //    dtoColumn.Options.AddRange(options.Select(o => ((object)o.Id, (object)o.Value)));
                     //}

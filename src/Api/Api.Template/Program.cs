@@ -5,8 +5,7 @@ using System;
 using System.IO;
 using Api.Template;
 
-Console.WriteLine("Hello World!");
-
+Console.WriteLine($"Hello World!");
 
 var host = new WebHostBuilder()
             .UseKestrel()

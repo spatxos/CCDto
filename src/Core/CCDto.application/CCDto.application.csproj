@@ -15,13 +15,15 @@
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.ViewFeatures" Version="2.2.0" />
     <PackageReference Include="NPOI" Version="2.6.0" />
+    <PackageReference Include="Panda.DynamicWebApi" Version="1.2.1" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Api\DBConneciton\entity\api.dbconnecion.entity.csproj" />
     <ProjectReference Include="..\..\Api\DBField\entity\api.dbfield.entity.csproj" />
+    <ProjectReference Include="..\..\Api\DBTable\entity\api.dbtable.entity.csproj" />
     <ProjectReference Include="..\CCDto.common\CCDto.common.csproj" />
     <ProjectReference Include="..\CCDto.entity\CCDto.entity.csproj" />
-    <ProjectReference Include="..\Panda.DynamicWebApi\Panda.DynamicWebApi.csproj" />
   </ItemGroup>
 
 </Project>

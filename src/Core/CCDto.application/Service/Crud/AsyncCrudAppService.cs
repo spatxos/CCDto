@@ -1,5 +1,4 @@
-﻿using AutoMapper;
-using CCDto.common.AutoMapper;
+﻿using CCDto.common.AutoMapper;
 using CCDto.common.FreeSql;
 using CCDto.entity.Base;
 using CCDto.entity.Dto.Request;
@@ -9,7 +8,6 @@ using CCDto.entity.DtoColumn.Db;
 using CCDto.entity.FreeSql;
 using FreeSql;
 using Microsoft.AspNetCore.Mvc;
-using Panda.DynamicWebApi.Attributes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,15 +19,15 @@ using System.Threading.Tasks;
 namespace CCDto.application.Service.Crud
 {
     public class AsyncCrudAppService<TEntity, TEntityDto, TPrimaryKey, TGetAllInput, TUpdateInput> :
-        BaseRepository<TEntity, TPrimaryKey>,
+        //BaseRepository<TEntity, TPrimaryKey>,
         IAsyncCrudAppService<TEntity, TEntityDto, TPrimaryKey, TGetAllInput, TUpdateInput>
         where TEntity : class, IEntity<TPrimaryKey>
     {
         public static IFreeSql freeSql;
 
-        IBaseRepository<TEntity> _dbRepository { get; set; }
+        IBaseRepository<TEntity, TPrimaryKey> _dbRepository { get; set; }
 
-        public AsyncCrudAppService(IFreeSql fsql) : base(fsql, null, null)
+        public AsyncCrudAppService(IFreeSql fsql)
         {
             var dbKey = GetBbKey(typeof(TEntity));
             if (string.IsNullOrWhiteSpace(dbKey))
@@ -44,7 +42,7 @@ namespace CCDto.application.Service.Crud
             }
         }
 
-        [NonDynamicWebApi]
+        //[NonDynamicWebApi]
         private string GetBbKey(Type type = null)
         {
             var dbKey = default(string);
@@ -78,12 +76,11 @@ namespace CCDto.application.Service.Crud
         }
 
         /// <summary>
-        /// 获取
+        /// GetAsync
         /// </summary>
         /// <param name="Id"></param>
         /// <returns></returns>
-        [HttpGet("{id:int}")]
-        public new TEntity Get(TPrimaryKey Id)
+        public async Task<TEntity> GetAsync(TPrimaryKey Id)
         {
             long entityid = 0;
             if (typeof(TPrimaryKey) == typeof(int))
@@ -97,24 +94,9 @@ namespace CCDto.application.Service.Crud
             }
             if (entityid > 0)
             {
-                return base.Get(Id);
+                return await _dbRepository.GetAsync(Id);
             }
             return null;
-        }
-
-        public virtual bool Save(TEntityDto dto)
-        {
-            var entity = dto.MapTo<TEntity>();
-            if (entity.IsAboveZero())
-            {
-                _dbRepository.Update(entity);
-                return true;
-            }
-            else
-            {
-                var newentity = _dbRepository.Insert(entity);
-                return newentity.IsAboveZero();
-            }
         }
 
         public virtual async Task<bool> SaveAsync(TEntityDto dto)
@@ -133,102 +115,39 @@ namespace CCDto.application.Service.Crud
         }
 
         #region 删除变逻辑删除
-
-        public override int Delete(IEnumerable<TEntity> entitys)
-        {
-            foreach (var entity in entitys)
-            {
-                entity.IsDelete = true;
-            }
-            return base.Update(entitys);
-        }
-
-        public override int Delete(TEntity entity)
-        {
-            entity.IsDelete = true;
-            return base.Update(entity);
-        }
-        public override int Delete(TPrimaryKey id)
-        {
-            var entity = Get(id);
-            entity.IsDelete = true;
-            return base.Update(entity);
-        }
-        public override int Delete(Expression<Func<TEntity, bool>> predicate)
-        {
-            var entitys = GetAll(predicate);
-            foreach (var entity in entitys)
-            {
-                entity.IsDelete = true;
-            }
-            return base.Update(entitys);
-        }
-
-        //public override Task<int> DeleteAsync(Expression<Func<TEntity, bool>> predicate, CancellationToken cancellationToken = default)
-        //{
-        //    return base.DeleteAsync(predicate, cancellationToken);
-        //}
-
-
-        public override async Task<int> DeleteAsync(Expression<Func<TEntity, bool>> predicate, CancellationToken cancellationToken = default)
+        public async Task<int> DeleteAsync(Expression<Func<TEntity, bool>> predicate, CancellationToken cancellationToken = default)
         {
             var entitys = await GetAllAsync(predicate);
             foreach (var entity in entitys)
             {
                 entity.IsDelete = true;
             }
-            return await base.UpdateAsync(entitys, cancellationToken);
+            return await _dbRepository.UpdateAsync(entitys, cancellationToken);
         }
-        public override async Task<int> DeleteAsync(IEnumerable<TEntity> entitys, CancellationToken cancellationToken = default)
+        public async Task<int> DeleteAsync(IEnumerable<TEntity> entitys, CancellationToken cancellationToken = default)
         {
             foreach (var entity in entitys)
             {
                 entity.IsDelete = true;
             }
-            return await base.UpdateAsync(entitys);
+            return await _dbRepository.UpdateAsync(entitys);
         }
-        public override async Task<int> DeleteAsync(TEntity entity, CancellationToken cancellationToken = default)
+        public async Task<int> DeleteAsync(TEntity entity, CancellationToken cancellationToken = default)
         {
             entity.IsDelete = true;
-            return await base.UpdateAsync(entity, cancellationToken); 
+            return await _dbRepository.UpdateAsync(entity, cancellationToken); 
         }
-        public override async Task<int> DeleteAsync(TPrimaryKey id, CancellationToken cancellationToken = default)
+        public async Task<int> DeleteAsync(TPrimaryKey id, CancellationToken cancellationToken = default)
         {
             var entity = await GetAsync(id);
             entity.IsDelete = true;
-            return await base.UpdateAsync(entity, cancellationToken);
+            return await _dbRepository.UpdateAsync(entity, cancellationToken);
         }
         #endregion
-
-        public virtual List<TEntity> GetAll(Expression<Func<TEntity, bool>> exp = null)
-        {
-            return _dbRepository.WhereIf(exp != null, exp).Where(o => !o.IsDelete).ToList();
-        }
 
         public virtual async Task<List<TEntity>> GetAllAsync(Expression<Func<TEntity, bool>> exp = null)
         {
             return await _dbRepository.WhereIf(exp != null, exp).Where(o => !o.IsDelete).ToListAsync();
-        }
-
-        public virtual PagedResultDto<TEntityDto> GetPaging(Expression<Func<TEntity, bool>> exp, TGetAllInput input)
-        {
-            var query = _dbRepository
-                 .WhereIf(exp != null, exp)
-                 .Where(o=>!o.IsDelete)
-                 .Count(out var total); //总记录数量
-
-            if (input != null)
-            {
-                query = ApplySorting(query, input);
-                query = ApplyPaging(query, input);
-            }
-            var list = query.ToList();
-
-            return new PagedResultDto<TEntityDto>(
-                total,
-                input as PagedResultRequestDto,
-                list.Select(MapToEntityDto).ToList()
-            );
         }
 
         public virtual async Task<PagedResultDto<TEntityDto>> GetPagingAsync(Expression<Func<TEntity, bool>> exp, TGetAllInput input)

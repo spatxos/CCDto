@@ -1,14 +1,11 @@
-using dbconnecion.application.Dto;
 using api.dbconnecion.entity;
 using CCDto.application.Service.Crud;
 using CCDto.entity.Base;
-using Microsoft.AspNetCore.Mvc;
-using Panda.DynamicWebApi;
+using api.dbconnecion.entity.Dto;
+using CCDto.application;
 using Panda.DynamicWebApi.Attributes;
-using MathNet.Numerics.Statistics.Mcmc;
-using System;
 
-namespace dbconnecion.application
+namespace api.dbconnecion.application
 {
     [DynamicWebApi]
     [Service("DBConnection")]
@@ -27,9 +24,14 @@ namespace dbconnecion.application
     //{
     //    IAsyncCrudAppService<DBConnection, DBConnectionDto, int, DBConnectionsPagedResultRequestDto, DBConnectionDto> _asyncCrudAppService;
     //    public ReturnMsg returnMsg = new ReturnMsg();
-    //    public DBConnectionAppService(IFreeSql fsql)
+    //    //public DBConnectionAppService(IFreeSql fsql)
+    //    //{
+    //    //    _asyncCrudAppService = new AsyncCrudAppService<DBConnection, DBConnectionDto, int, DBConnectionsPagedResultRequestDto, DBConnectionDto>(fsql);
+    //    //}
+    //    public DBConnectionAppService(IFreeSql fsql, IAsyncCrudAppService<DBConnection, DBConnectionDto, int, DBConnectionsPagedResultRequestDto, DBConnectionDto> asyncCrudAppService)
     //    {
-    //        _asyncCrudAppService = new AsyncCrudAppService<DBConnection, DBConnectionDto, int, DBConnectionsPagedResultRequestDto, DBConnectionDto>(fsql);
+    //        _asyncCrudAppService = asyncCrudAppService;
+    //        //_asyncCrudAppService = new AsyncCrudAppService<DBConnection, DBConnectionDto, int, DBConnectionsPagedResultRequestDto, DBConnectionDto>(fsql);
     //    }
 
     //    /// <summary>

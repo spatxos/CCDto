@@ -4,9 +4,9 @@
         <name>CCDto.application</name>
     </assembly>
     <members>
-        <member name="M:CCDto.application.Service.Crud.AsyncCrudAppService`5.Get(`2)">
+        <member name="M:CCDto.application.Service.Crud.AsyncCrudAppService`5.GetAsync(`2)">
             <summary>
-            获取
+            GetAsync
             </summary>
             <param name="Id"></param>
             <returns></returns>
@@ -266,13 +266,13 @@
             
             </summary>
         </member>
-        <member name="M:CCDto.application.Service.Nav.IMenusService.GetMenusTrees">
+        <member name="M:CCDto.application.Service.Nav.IMenusService.GetMenusTreesAsync">
             <summary>
             获取导航菜单
             </summary>
             <returns></returns>
         </member>
-        <member name="M:CCDto.application.Service.Nav.MenusService.GetMenusTrees">
+        <member name="M:CCDto.application.Service.Nav.MenusService.GetMenusTreesAsync">
             <summary>
             获取导航菜单
             </summary>

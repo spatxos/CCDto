@@ -1,16 +1,13 @@
 using CCDto.application.Service.Crud;
 using CCDto.entity.Base;
-
-using System.Linq;
 using CCDto.entity.DtoColumn;
 using System.Collections.Generic;
 using System;
 using CCDto.entity.DtoColumn.Db;
-using CCDto.entity.DtoColumn.Option;
-using CCDto.common.Option;
 using api.dbtable.entity;
-using api.dbtable.application.Dto;
 using CCDto.entity.Dto.Request;
+using api.dbtable.entity.Dto;
+using CCDto.application;
 
 namespace api.dbtable.application
 {
@@ -42,7 +39,7 @@ namespace api.dbtable.application
                     //{
                     //    if (!options.Any(o => o.Id == 0))
                     //    {
-                    //        dtoColumn.Options.Add((0, "²»Ñ¡Ôñ"));
+                    //        dtoColumn.Options.Add((0, "ï¿½ï¿½Ñ¡ï¿½ï¿½"));
                     //    }
                     //    dtoColumn.Options.AddRange(options.Select(o => ((object)o.Id, (object)o.Value)));
                     //}

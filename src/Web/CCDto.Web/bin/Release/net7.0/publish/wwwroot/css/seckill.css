@@ -1,0 +1,93 @@
+﻿.seckill_banner {
+    width: 100%;
+    height: 400px;
+    background-color: #0094ff;
+    margin-bottom: 25px;
+}
+
+.seckillbox {
+    border: 1px solid #e5e5e5;
+    padding: 1px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    background: #fff;
+    margin-bottom: 30px;
+}
+
+    .seckillbox:hover {
+        border: 1px solid #007BE5;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    }
+
+.seckill_piclink {
+    display: block;
+    float: left;
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+}
+
+    .seckill_piclink img {
+        width: 100%;
+    }
+
+.seckillbox_right {
+    width: 50%;
+    float: right;
+    padding: 20px 40px;
+}
+
+    .seckillbox_right .seckill_pro {
+        font-size: 24px;
+        line-height: 40px;
+        height: 80px;
+        overflow: hidden;
+        margin-bottom: 20px;
+        color: #000;
+        display: block;
+    }
+
+        .seckillbox_right .seckill_pro:hover {
+            color: #007BE5;
+        }
+
+.seckill_line > i.fa {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #007BE5;
+}
+
+.seckill_foot {
+    line-height: 53px;
+    height: 53px;
+    margin-top: 30px;
+}
+
+.seckill_minprice {
+    font-size: 48px;
+    color: #e7505a;
+}
+
+    .seckill_minprice em {
+        font-size: 18px;
+        font-style: normal;
+        margin: 0 5px;
+    }
+
+.seckill_btn {
+    border: 1px solid #007BE5;
+    border-radius: 4px;
+    color: #007BE5;
+    padding: 8px 24px;
+    font-size: 20px;
+    float: right;
+    line-height: 25px;
+    margin-top: 4px;
+}
+
+    .seckill_btn:hover {
+        background-color: #007BE5;
+        color: #fff;
+    }

@@ -1,7 +1,9 @@
 D:\github\CCDto\src\Api\DBConneciton\entity\bin\Debug\net7.0\api.dbconnecion.entity.deps.json
 D:\github\CCDto\src\Api\DBConneciton\entity\bin\Debug\net7.0\api.dbconnecion.entity.dll
 D:\github\CCDto\src\Api\DBConneciton\entity\bin\Debug\net7.0\api.dbconnecion.entity.pdb
+D:\github\CCDto\src\Api\DBConneciton\entity\bin\Debug\net7.0\CCDto.common.dll
 D:\github\CCDto\src\Api\DBConneciton\entity\bin\Debug\net7.0\CCDto.entity.dll
+D:\github\CCDto\src\Api\DBConneciton\entity\bin\Debug\net7.0\CCDto.common.pdb
 D:\github\CCDto\src\Api\DBConneciton\entity\bin\Debug\net7.0\CCDto.entity.pdb
 D:\github\CCDto\src\Api\DBConneciton\entity\obj\Debug\net7.0\api.dbconnecion.entity.csproj.AssemblyReference.cache
 D:\github\CCDto\src\Api\DBConneciton\entity\obj\Debug\net7.0\api.dbconnecion.entity.GeneratedMSBuildEditorConfig.editorconfig

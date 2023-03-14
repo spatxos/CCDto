@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Reflection;
+using CCDto.entity.Base;
 using Panda.DynamicWebApi;
 using Panda.DynamicWebApi.Attributes;
 
