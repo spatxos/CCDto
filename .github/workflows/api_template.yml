@@ -32,14 +32,7 @@ jobs:
           password: "${{ secrets.DOCKER_PASSWORD }}"
       - name: Build Image
         run: |
-          ls
-          cd src
-          ls
-          cd api
-          ls
-          cd api.template
-          ls
-          cd src/api/api.template
+          cd src/Api/Api.Template
           docker build -t "${{ secrets.DOCKER_REGISTRY }}/CCDto/api.template:${{env.TAG_NAME}}" -f Dockerfile .
       - name: Push Image
         run: |
