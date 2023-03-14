@@ -27,11 +27,12 @@ jobs:
           region-id: "${{ secrets.DOCKER_REGISTRY_REGION }}"  # 3
           username: "${{ secrets.DOCKER_USERNAME }}"
           password: "${{ secrets.DOCKER_PASSWORD }}"
+
       - name: Build Image
-        with:
         run: |
           cd src/Api/Api.Template
           docker build -t "${{ secrets.DOCKER_REGISTRY }}/CCDto/api.template:${{ steps.date.outputs.today }}" -f Dockerfile .
+
       - name: Push Image
         run: |
           docker images
