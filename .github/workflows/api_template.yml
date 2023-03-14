@@ -2,8 +2,8 @@ name: Build Docker Image Run Host
 
 on:
   push:
-    tags:
-      - "api.tm.*.*.*"  # 后面每次更新提交，只有打上tag之后才会进行发布更新，减少actions执行次数
+    # tags:
+    #   - "api.tm.v*.*.*"  # 后面每次更新提交，只有打上tag之后才会进行发布更新，减少actions执行次数
   workflow_dispatch:
 
 jobs:
@@ -32,6 +32,7 @@ jobs:
           password: "${{ secrets.DOCKER_PASSWORD }}"
       - name: Build Image
         run: |
+          ls
           cd src/api/api.template
           docker build -t "${{ secrets.DOCKER_REGISTRY }}/CCDto/api.template:${{env.TAG_NAME}}" -f Dockerfile .
       - name: Push Image
