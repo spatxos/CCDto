@@ -41,4 +41,5 @@ jobs:
       - name: Push Image
         run: |
           docker images
+          docker tag $(docker ps -aqf "name=api.template") "${{ secrets.DOCKER_REGISTRY }}/ccdto/api.template:${{ env.TAG_NAME }}"
           docker push "${{ secrets.DOCKER_REGISTRY }}/ccdto/api.template:${{ env.TAG_NAME }}"
