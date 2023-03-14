@@ -18,7 +18,7 @@ jobs:
 
       - name: Get current date
         id: date
-        run: echo "::set-output name=today::$(date +'%Y-%m-%d')"
+        run: echo "Today=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
 
       - name: Login to Aliyun Container Registry (ACR)
         uses: aliyun/acr-login@v1
@@ -31,9 +31,9 @@ jobs:
       - name: Build Image
         run: |
           cd src/Api/Api.Template
-          docker build -t "${{ secrets.DOCKER_REGISTRY }}/CCDto/api.template:${{ steps.date.outputs.today }}" -f Dockerfile .
+          docker build -t "${{ secrets.DOCKER_REGISTRY }}/CCDto/api.template:${{ env.Today }}" -f Dockerfile .
 
       - name: Push Image
         run: |
           docker images
-          docker push "${{ secrets.DOCKER_REGISTRY }}/CCDto/api.template:${{ steps.date.outputs.today }}"
+          docker push "${{ secrets.DOCKER_REGISTRY }}/CCDto/api.template:${{ env.Today }}"
