@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eZQq4fC8+QenqwkkIjmNwUBANmRHT3/MkO8S7CUi9YZP2nj+tVBeyh2nqNeyzR70qaKL+DKwfAoTGzu4V22JOA==",
+  "dgSpecHash": "NiqCbrmBxU8oerkVZnGY6b3igfM0CfgjMSP48Y80NAe2BBd5zUak0qw98miU4Euet+mdqNejd9sm7rgs8YH6DQ==",
   "success": true,
-  "projectFilePath": "D:\\github\\CCDto\\src\\Api\\Api.Template\\Api.Template.csproj",
+  "projectFilePath": "D:\\github\\CCDto\\src\\api\\api.template\\Api.Template.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\wangp\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\wangp\\.nuget\\packages\\cs-script.core\\1.3.1\\cs-script.core.1.3.1.nupkg.sha512",

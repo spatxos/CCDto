@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Api.Template</name>
+    </assembly>
+    <members>
+        <member name="T:Api.Template.Controllers.HealthController">
+            <summary>
+            健康检查
+            </summary>
+        </member>
+        <member name="M:Api.Template.Controllers.HealthController.Check">
+            <summary>
+            健康检查
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

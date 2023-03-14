@@ -1,0 +1,305 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CCDto.application</name>
+    </assembly>
+    <members>
+        <member name="M:CCDto.application.Service.Crud.AsyncCrudAppService`5.GetAsync(`2)">
+            <summary>
+            GetAsync
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CCDto.application.Service.Crud.AsyncCrudAppService`5.MapToEntityDto(`0)">
+            <summary>
+            Maps <typeparamref name="TEntity"/> to <typeparamref name="TEntityDto"/>.
+            It uses <see cref="!:IObjectMapper"/> by default.
+            It can be overrided for custom mapping.
+            </summary>
+        </member>
+        <member name="M:CCDto.application.Service.Crud.AsyncCrudAppService`5.ApplySorting(FreeSql.ISelect{`0},`3)">
+            <summary>
+            Should apply sorting if needed.
+            </summary>
+            <param name="query">The query.</param>
+            <param name="input">The input.</param>
+        </member>
+        <member name="M:CCDto.application.Service.Crud.AsyncCrudAppService`5.ApplyPaging(FreeSql.ISelect{`0},`3)">
+            <summary>
+            Should apply paging if needed.
+            </summary>
+            <param name="query">The query.</param>
+            <param name="input">The input.</param>
+        </member>
+        <member name="T:CCDto.application.Service.Crud.Dto.EntityDto">
+            <summary>
+            A shortcut of <see cref="T:CCDto.application.Service.Crud.Dto.EntityDto`1"/> for most used primary key type (<see cref="T:System.Int32"/>).
+            </summary>
+        </member>
+        <member name="M:CCDto.application.Service.Crud.Dto.EntityDto.#ctor">
+            <summary>
+            Creates a new <see cref="T:CCDto.application.Service.Crud.Dto.EntityDto"/> object.
+            </summary>
+        </member>
+        <member name="M:CCDto.application.Service.Crud.Dto.EntityDto.#ctor(System.Int32)">
+            <summary>
+            Creates a new <see cref="T:CCDto.application.Service.Crud.Dto.EntityDto"/> object.
+            </summary>
+            <param name="id">Id of the entity</param>
+        </member>
+        <member name="T:CCDto.application.Service.Crud.Dto.EntityDto`1">
+            <summary>
+            Implements common properties for entity based DTOs.
+            </summary>
+            <typeparam name="TPrimaryKey">Type of the primary key</typeparam>
+        </member>
+        <member name="P:CCDto.application.Service.Crud.Dto.EntityDto`1.Id">
+            <summary>
+            Id of the entity.
+            </summary>
+        </member>
+        <member name="P:CCDto.application.Service.Crud.Dto.EntityDto`1.IsDelete">
+            <summary>
+            删除标识
+            </summary>
+        </member>
+        <member name="P:CCDto.application.Service.Crud.Dto.EntityDto`1.IsDeleteValue">
+            <summary>
+            删除标识
+            </summary>
+        </member>
+        <member name="M:CCDto.application.Service.Crud.Dto.EntityDto`1.#ctor">
+            <summary>
+            Creates a new <see cref="T:CCDto.application.Service.Crud.Dto.EntityDto`1"/> object.
+            </summary>
+        </member>
+        <member name="M:CCDto.application.Service.Crud.Dto.EntityDto`1.#ctor(`0)">
+            <summary>
+            Creates a new <see cref="T:CCDto.application.Service.Crud.Dto.EntityDto`1"/> object.
+            </summary>
+            <param name="id">Id of the entity</param>
+        </member>
+        <member name="T:CCDto.application.Service.Crud.Dto.IEntityDto">
+            <summary>
+            A shortcut of <see cref="T:CCDto.application.Service.Crud.Dto.IEntityDto`1"/> for most used primary key type (<see cref="T:System.Int32"/>).
+            </summary>
+        </member>
+        <member name="T:CCDto.application.Service.Crud.Dto.IEntityDto`1">
+            <summary>
+            Defines common properties for entity based DTOs.
+            </summary>
+            <typeparam name="TPrimaryKey"></typeparam>
+        </member>
+        <member name="P:CCDto.application.Service.Crud.Dto.IEntityDto`1.Id">
+            <summary>
+            Id of the entity.
+            </summary>
+        </member>
+        <member name="P:CCDto.application.Service.Crud.Dto.IEntityDto`1.IsDelete">
+            <summary>
+            逻辑删除.
+            </summary>
+        </member>
+        <member name="T:CCDto.application.Service.Crud.Dto.ILimitedResultRequest">
+            <summary>
+            This interface is defined to standardize to request a limited result.
+            </summary>
+        </member>
+        <member name="P:CCDto.application.Service.Crud.Dto.ILimitedResultRequest.PageSize">
+            <summary>
+            Max expected result count.
+            </summary>
+        </member>
+        <member name="T:CCDto.application.Service.Crud.Dto.IPagedAndSortedResultRequest">
+            <summary>
+            This interface is defined to standardize to request a paged and sorted result.
+            </summary>
+        </member>
+        <member name="T:CCDto.application.Service.Crud.Dto.IPagedResultRequest">
+            <summary>
+            This interface is defined to standardize to request a paged result.
+            </summary>
+        </member>
+        <member name="P:CCDto.application.Service.Crud.Dto.IPagedResultRequest.PageIndex">
+            <summary>
+            Skip count (beginning of the page).
+            </summary>
+        </member>
+        <member name="T:CCDto.application.Service.Crud.Dto.ISortedResultRequest">
+            <summary>
+            This interface is defined to standardize to request a sorted result.
+            </summary>
+        </member>
+        <member name="P:CCDto.application.Service.Crud.Dto.ISortedResultRequest.Sorting">
+            <summary>
+            Sorting information.
+            Should include sorting field and optionally a direction (ASC or DESC)
+            Can contain more than one field separated by comma (,).
+            </summary>
+            <example>
+            Examples:
+            "Name"
+            "Name DESC"
+            "Name ASC, Age DESC"
+            </example>
+        </member>
+        <member name="T:CCDto.application.Service.Crud.Dto.LimitedResultRequestDto">
+            <summary>
+            Simply implements <see cref="T:CCDto.application.Service.Crud.Dto.ILimitedResultRequest"/>.
+            </summary>
+        </member>
+        <member name="T:CCDto.application.Service.Crud.Dto.PagedAndSortedResultRequestDto">
+            <summary>
+            Simply implements <see cref="T:CCDto.application.Service.Crud.Dto.IPagedAndSortedResultRequest"/>.
+            </summary>
+        </member>
+        <member name="T:CCDto.application.Service.Crud.Dto.PagedResultRequestDto">
+            <summary>
+            Simply implements <see cref="T:CCDto.application.Service.Crud.Dto.IPagedResultRequest"/>.
+            </summary>
+        </member>
+        <member name="T:CCDto.application.Service.Crud.Dto.Response.IHasTotalCount">
+            <summary>
+            This interface is defined to standardize to set "Total Count of Items" to a DTO.
+            </summary>
+        </member>
+        <member name="P:CCDto.application.Service.Crud.Dto.Response.IHasTotalCount.TotalCount">
+            <summary>
+            Total count of Items.
+            </summary>
+        </member>
+        <member name="T:CCDto.application.Service.Crud.Dto.Response.IListResult`1">
+            <summary>
+            This interface is defined to standardize to return a list of items to clients.
+            </summary>
+            <typeparam name="T">Type of the items in the <see cref="P:CCDto.application.Service.Crud.Dto.Response.IListResult`1.Items"/> list</typeparam>
+        </member>
+        <member name="P:CCDto.application.Service.Crud.Dto.Response.IListResult`1.Items">
+            <summary>
+            List of items.
+            </summary>
+        </member>
+        <member name="T:CCDto.application.Service.Crud.Dto.Response.IPagedResult`1">
+            <summary>
+            This interface is defined to standardize to return a page of items to clients.
+            </summary>
+            <typeparam name="T">Type of the items in the <see cref="P:CCDto.application.Service.Crud.Dto.Response.IListResult`1.Items"/> list</typeparam>
+        </member>
+        <member name="T:CCDto.application.Service.Crud.Dto.Response.ListResultDto`1">
+            <summary>
+            Implements <see cref="T:CCDto.application.Service.Crud.Dto.Response.IListResult`1"/>.
+            </summary>
+            <typeparam name="T">Type of the items in the <see cref="P:CCDto.application.Service.Crud.Dto.Response.ListResultDto`1.Items"/> list</typeparam>
+        </member>
+        <member name="P:CCDto.application.Service.Crud.Dto.Response.ListResultDto`1.Items">
+            <summary>
+            List of items.
+            </summary>
+        </member>
+        <member name="M:CCDto.application.Service.Crud.Dto.Response.ListResultDto`1.#ctor">
+            <summary>
+            Creates a new <see cref="T:CCDto.application.Service.Crud.Dto.Response.ListResultDto`1"/> object.
+            </summary>
+        </member>
+        <member name="M:CCDto.application.Service.Crud.Dto.Response.ListResultDto`1.#ctor(System.Collections.Generic.IReadOnlyList{`0})">
+            <summary>
+            Creates a new <see cref="T:CCDto.application.Service.Crud.Dto.Response.ListResultDto`1"/> object.
+            </summary>
+            <param name="items">List of items</param>
+        </member>
+        <member name="T:CCDto.application.Service.Crud.Dto.Response.PagedResultDto`1">
+            <summary>
+            Implements <see cref="T:CCDto.application.Service.Crud.Dto.Response.IPagedResult`1"/>.
+            </summary>
+            <typeparam name="T">Type of the items in the <see cref="P:CCDto.application.Service.Crud.Dto.Response.ListResultDto`1.Items"/> list</typeparam>
+        </member>
+        <member name="P:CCDto.application.Service.Crud.Dto.Response.PagedResultDto`1.TotalCount">
+            <summary>
+            Total count of Items.
+            </summary>
+        </member>
+        <member name="M:CCDto.application.Service.Crud.Dto.Response.PagedResultDto`1.#ctor">
+            <summary>
+            Creates a new <see cref="T:CCDto.application.Service.Crud.Dto.Response.PagedResultDto`1"/> object.
+            </summary>
+        </member>
+        <member name="M:CCDto.application.Service.Crud.Dto.Response.PagedResultDto`1.#ctor(System.Int64,CCDto.application.Service.Crud.Dto.PagedResultRequestDto,System.Collections.Generic.IReadOnlyList{`0})">
+            <summary>
+            Creates a new <see cref="T:CCDto.application.Service.Crud.Dto.Response.PagedResultDto`1"/> object.
+            </summary>
+            <param name="totalCount">Total count of Items</param>
+            <param name="items">List of items in current page</param>
+        </member>
+        <member name="T:CCDto.application.Service.IApplicationService">
+            <summary>
+            This interface must be implemented by all application services to identify them by convention.
+            </summary>
+        </member>
+        <member name="P:CCDto.application.Service.Nav.Dto.MenuDto.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CCDto.application.Service.Nav.Dto.MenuDto.MenuName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CCDto.application.Service.Nav.Dto.MenuDto.Url">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CCDto.application.Service.Nav.Dto.MenuDto.Icon">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CCDto.application.Service.Nav.Dto.MenuDto.ParentId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CCDto.application.Service.Nav.Dto.MenuDto.Order">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CCDto.application.Service.Nav.IMenusService.GetMenusTreesAsync">
+            <summary>
+            获取导航菜单
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CCDto.application.Service.Nav.MenusService.GetMenusTreesAsync">
+            <summary>
+            获取导航菜单
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:CCDto.application.Service.Tool.NPOI.Dto.FontModel.Color">
+            <summary>
+            R,G,B
+            </summary>
+        </member>
+        <member name="M:CCDto.application.Service.Tool.NPOI.NPOIService.ExcelToList``1(System.IO.Stream,System.String)">
+            <summary>
+            导入
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="stream"></param>
+            <param name="fileName">.xlsx</param>
+            <returns></returns>
+        </member>
+        <member name="M:CCDto.application.Service.Tool.NPOI.NPOIService.ExportToExcel``1(System.Collections.Generic.List{``0},CCDto.application.Service.Tool.NPOI.Dto.ExportModel)">
+            <summary>
+            导出
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="entities"></param>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

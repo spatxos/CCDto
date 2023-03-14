@@ -25,6 +25,11 @@ jobs:
             echo "TAG_NAME=${{ github.event.inputs.tag }}" >> $GITHUB_ENV
           fi
 
+      - name: Setup .NET Core
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 7.0.x
+
       - name: Login to Aliyun Container Registry (ACR)
         uses: aliyun/acr-login@v1
         with:
@@ -33,9 +38,12 @@ jobs:
           username: "${{ secrets.DOCKER_USERNAME }}"
           password: "${{ secrets.DOCKER_PASSWORD }}"
 
-      - name: Build Image
+      - name: Deploy and Build Image
         run: |
           cd src/Api/Api.Template
+          dotnet restore
+          dotnet publish -c Release -o out
+          cd bin/Release/net7.0
           docker build -t "${{ secrets.DOCKER_REGISTRY }}/ccdto/api.template:${{ env.TAG_NAME }}" -f Dockerfile .
 
       - name: Push Image

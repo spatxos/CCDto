@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\github\\CCDto\\src\\Api\\Api.Template\\Api.Template.csproj": {}
+    "D:\\github\\CCDto\\src\\api\\api.template\\Api.Template.csproj": {}
   },
   "projects": {
-    "D:\\github\\CCDto\\src\\Api\\Api.Template\\Api.Template.csproj": {
+    "D:\\github\\CCDto\\src\\api\\api.template\\Api.Template.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\github\\CCDto\\src\\Api\\Api.Template\\Api.Template.csproj",
+        "projectUniqueName": "D:\\github\\CCDto\\src\\api\\api.template\\Api.Template.csproj",
         "projectName": "Api.Template",
-        "projectPath": "D:\\github\\CCDto\\src\\Api\\Api.Template\\Api.Template.csproj",
+        "projectPath": "D:\\github\\CCDto\\src\\api\\api.template\\Api.Template.csproj",
         "packagesPath": "C:\\Users\\wangp\\.nuget\\packages\\",
-        "outputPath": "D:\\github\\CCDto\\src\\Api\\Api.Template\\obj\\",
+        "outputPath": "D:\\github\\CCDto\\src\\api\\api.template\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
