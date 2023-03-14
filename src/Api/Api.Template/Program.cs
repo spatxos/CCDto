@@ -12,5 +12,5 @@ var host = new WebHostBuilder()
             .UseContentRoot(Directory.GetCurrentDirectory())
             .UseStartup<Startup>()
             .Build();
-
+ 
 host.Run();
