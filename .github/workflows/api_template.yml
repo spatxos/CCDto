@@ -43,6 +43,7 @@ jobs:
           cd src/Api/Api.Template
           dotnet restore
           dotnet publish -c Release -o out
+          cp Dockerfile bin/Release/net7.0
           cd bin/Release/net7.0
           docker build -t "${{ secrets.DOCKER_REGISTRY }}/ccdto/api.template:${{ env.TAG_NAME }}" -f Dockerfile .
 
