@@ -66,6 +66,7 @@ jobs:
             docker tag registry.cn-hongkong.aliyuncs.com/ccdto/api.dbconnecion.application:latest ccdto/api.dbconnecion.application:latest
             docker run -it -d -p 5030:80 --name api.dbconnecion.application ccdto/api.dbconnecion.application:latest
             echo docker容器启动成功
+            docker rmi registry.cn-hongkong.aliyuncs.com/ccdto/api.dbconnecion.application
             docker images
             docker ps -a
             docker system prune -f

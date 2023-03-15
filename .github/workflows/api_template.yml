@@ -1,4 +1,4 @@
-name: Build Docker Image Run Host
+name: Build Api.Template Docker Image
 
 on:
   push:
