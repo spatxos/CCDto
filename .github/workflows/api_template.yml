@@ -33,9 +33,9 @@ jobs:
           dotnet publish -c Release -o out
           cp Dockerfile bin/Release/net7.0
           cd bin/Release/net7.0
-          docker build -t "${{ secrets.DOCKER_REGISTRY }}/ccdto/api.template:lasted" -f Dockerfile .
+          docker build -t "${{ secrets.DOCKER_REGISTRY }}/ccdto/api.template:latest" -f Dockerfile .
 
       - name: Push Image
         run: |
           docker images
-          docker push "${{ secrets.DOCKER_REGISTRY }}/ccdto/api.template:lasted"
+          docker push "${{ secrets.DOCKER_REGISTRY }}/ccdto/api.template:latest"
