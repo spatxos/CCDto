@@ -64,7 +64,7 @@ jobs:
             docker ps -a
             docker pull registry.cn-hongkong.aliyuncs.com/ccdto/api.dbfield.application:latest
             docker tag registry.cn-hongkong.aliyuncs.com/ccdto/api.dbfield.application:latest ccdto/api.dbfield.application:latest
-            docker run -it -d -p 5030:80 --name api.dbfield.application ccdto/api.dbfield.application:latest
+            docker run -it -d -p 5032:80 --name api.dbfield.application ccdto/api.dbfield.application:latest
             echo docker容器启动成功
             docker rmi registry.cn-hongkong.aliyuncs.com/ccdto/api.dbfield.application
             docker images
