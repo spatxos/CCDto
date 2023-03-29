@@ -10,6 +10,7 @@ using System;
 using System.IO;
 using CCDto.common;
 using System.Reflection;
+using SkyApm.Utilities.DependencyInjection;
 
 namespace Api.Template
 {
@@ -32,7 +33,8 @@ namespace Api.Template
                 AssemblyName = args[1];
                 Console.WriteLine($"获取到:{AssemblyName}");
             }
-
+            Environment.SetEnvironmentVariable("ASPNETCORE_HOSTINGSTARTUPASSEMBLIES", "SkyAPM.Agent.AspNetCore");
+            Environment.SetEnvironmentVariable("SKYWALKING__SERVICENAME", AssemblyName);
             Configuration = builder.Build();
         }
 
@@ -44,6 +46,10 @@ namespace Api.Template
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSkyApmExtensions();
+
+            services.AddHttpClient();
+
             services.AddAssembly(AssemblyName);
 
             //services.AddSwaggerGen(options =>

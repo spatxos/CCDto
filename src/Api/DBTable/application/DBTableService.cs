@@ -14,11 +14,12 @@ namespace api.dbtable.application
     public class DBTableService : AsyncCrudAppService<DBTable, DBTableDto, int, DBTablesPagedResultRequestDto, DBTableDto>, IDBTableService
     {
         public ReturnMsg returnMsg = new ReturnMsg();
-        //public IDBConnectionService _dBConnectionService;
+        public IDBConnectionService _dBConnectionService;
         //public IDBFieldService _dBFieldService;
 
-        public DBTableService(IFreeSql fsql) : base(fsql)
+        public DBTableService(IFreeSql fsql, ExchangePipeline exchangePipeline) : base(fsql)
         {
+            var app = exchangePipeline.GetService<IDBConnectionService>();
             //_dBConnectionService = new DBConnectionService(fsql);
             //_dBFieldService = new DBFieldService(fsql);
         }
