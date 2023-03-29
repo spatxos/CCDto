@@ -47,4 +47,10 @@
     <ProjectReference Include="..\..\Core\CCDto.entity\CCDto.entity.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="skyapm.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
