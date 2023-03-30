@@ -46,17 +46,17 @@ jobs:
   call-api_dbconnection:
     runs-on: ubuntu-latest
     needs: build
-    uses: ./.github/workflows/application/api_connection.yml
+    uses: ./.github/workflows/api_connection.yml
     secrets: inherit
 
   call-api_dbtable:
     runs-on: ubuntu-latest
     needs: build
-    uses: ./.github/workflows/application/api_dbtable.yml
+    uses: ./.github/workflows/api_dbtable.yml
     secrets: inherit
 
   call-api_dbfield:
     runs-on: ubuntu-latest
     needs: build
-    uses: ./.github/workflows/application/api_dbfield.yml
+    uses: ./.github/workflows/api_dbfield.yml
     secrets: inherit

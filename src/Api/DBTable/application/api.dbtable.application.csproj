@@ -5,14 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="action.yml" />
     <None Remove="skyapm.json" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="action.yml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="skyapm.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

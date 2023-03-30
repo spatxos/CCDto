@@ -1,8 +1,6 @@
 name: build api_dbconnection
 
 on:
-  push:
-  workflow_dispatch:
   workflow_call:
   
 jobs:
