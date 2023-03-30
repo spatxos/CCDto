@@ -45,6 +45,7 @@ namespace Api.Template
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSkyApmExtensions();
             services.AddSkyAPM(ext => ext.AddAspNetCoreHosting());
 
             services.AddHttpClient();
