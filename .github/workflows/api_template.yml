@@ -34,6 +34,9 @@ jobs:
           cp Dockerfile bin/Release/net7.0
           cd bin/Release/net7.0
           docker build -t "${{ secrets.DOCKER_REGISTRY }}/ccdto/api.template:latest" -f Dockerfile .
+          ls /home/runner/work/CCDto/CCDto/src/Api/DBConneciton/application
+          ls /home/runner/work/CCDto/CCDto/src/Api/DBTable/application
+          ls /home/runner/work/CCDto/CCDto/src/Api/DBField/application
 
       - name: Push Image
         run: |
