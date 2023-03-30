@@ -3,6 +3,40 @@ name: build api_dbfield
 on:
   push:
   workflow_dispatch:
+  workflow_call:
+    secrets:
+      DOCKER_REGISTRY:
+        type: string
+        required: false
+        default: ''
+      DOCKER_REGISTRY_REGION:
+        type: string
+        required: false
+        default: ''
+      DOCKER_USERNAME:
+        type: string
+        required: false
+        default: ''
+      DOCKER_PASSWORD:
+        type: string
+        required: false
+        default: ''
+      HOST:
+        type: string
+        required: false
+        default: ''
+      HOST_USERNAME:
+        type: string
+        required: false
+        default: ''
+      HOST_PASSWORD:
+        type: string
+        required: false
+        default: ''
+      HOST_PORT:
+        type: string
+        required: false
+        default: ''
 
 jobs:
   build:

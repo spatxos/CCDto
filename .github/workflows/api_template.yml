@@ -43,7 +43,7 @@ jobs:
           docker images
           docker push "${{ secrets.DOCKER_REGISTRY }}/ccdto/api.template:latest"
 
-  api_dbconnection:
+  call-api_dbconnection:
     runs-on: ubuntu-latest
     needs: build
     steps:
@@ -53,8 +53,17 @@ jobs:
           ref: master
       - name: Step api_dbconnection
         uses: ./src/Api/DBConneciton/application
+        secrets:
+          DOCKER_REGISTRY: "${{ secrets.DOCKER_REGISTRY }}"
+          DOCKER_REGISTRY_REGION: "${{ secrets.DOCKER_REGISTRY_REGION }}"
+          DOCKER_USERNAME: "${{ secrets.DOCKER_USERNAME }}"
+          DOCKER_PASSWORD: "${{ secrets.DOCKER_PASSWORD }}"
+          HOST: "${{ secrets.HOST }}"
+          HOST_USERNAME: "${{ secrets.HOST_USERNAME }}"
+          HOST_PASSWORD: "${{ secrets.HOST_PASSWORD }}"
+          HOST_PORT: "${{ secrets.HOST_PORT }}"
 
-  api_dbtable:
+  call-api_dbtable:
     runs-on: ubuntu-latest
     needs: build
     steps:
@@ -64,8 +73,17 @@ jobs:
           ref: master
       - name: Step api_dbtable
         uses: ./src/Api/DBTable/application
+        secrets:
+          DOCKER_REGISTRY: "${{ secrets.DOCKER_REGISTRY }}"
+          DOCKER_REGISTRY_REGION: "${{ secrets.DOCKER_REGISTRY_REGION }}"
+          DOCKER_USERNAME: "${{ secrets.DOCKER_USERNAME }}"
+          DOCKER_PASSWORD: "${{ secrets.DOCKER_PASSWORD }}"
+          HOST: "${{ secrets.HOST }}"
+          HOST_USERNAME: "${{ secrets.HOST_USERNAME }}"
+          HOST_PASSWORD: "${{ secrets.HOST_PASSWORD }}"
+          HOST_PORT: "${{ secrets.HOST_PORT }}"
 
-  api_dbfield:
+  call-api_dbfield:
     runs-on: ubuntu-latest
     needs: build
     steps:
@@ -75,3 +93,12 @@ jobs:
           ref: master
       - name: Step api_dbfield
         uses: ./src/Api/DBField/application
+        secrets:
+          DOCKER_REGISTRY: "${{ secrets.DOCKER_REGISTRY }}"
+          DOCKER_REGISTRY_REGION: "${{ secrets.DOCKER_REGISTRY_REGION }}"
+          DOCKER_USERNAME: "${{ secrets.DOCKER_USERNAME }}"
+          DOCKER_PASSWORD: "${{ secrets.DOCKER_PASSWORD }}"
+          HOST: "${{ secrets.HOST }}"
+          HOST_USERNAME: "${{ secrets.HOST_USERNAME }}"
+          HOST_PASSWORD: "${{ secrets.HOST_PASSWORD }}"
+          HOST_PORT: "${{ secrets.HOST_PORT }}"
