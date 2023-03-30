@@ -44,13 +44,16 @@ jobs:
           docker push "${{ secrets.DOCKER_REGISTRY }}/ccdto/api.template:latest"
 
   call_api_dbconnection:
+    needs: build
     uses: ./.github/workflows/api_connection.yml
     secrets: inherit
 
   call_api_dbtable:
+    needs: build
     uses: ./.github/workflows/api_dbtable.yml
     secrets: inherit
 
   call_api_dbfield:
+    needs: build
     uses: ./.github/workflows/api_dbfield.yml
     secrets: inherit
