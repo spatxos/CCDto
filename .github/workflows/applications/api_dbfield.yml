@@ -1,0 +1,73 @@
+name: build api_dbfield
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v2
+        with:
+          ref: master
+
+      - name: Setup .NET Core
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 7.0.x
+
+      - name: Login to Aliyun Container Registry (ACR)
+        uses: aliyun/acr-login@v1
+        with:
+          login-server: "${{ secrets.DOCKER_REGISTRY }}"
+          region-id: "${{ secrets.DOCKER_REGISTRY_REGION }}"  # 3
+          username: "${{ secrets.DOCKER_USERNAME }}"
+          password: "${{ secrets.DOCKER_PASSWORD }}"
+
+      - name: Deploy and Build Image
+        run: |
+          cd src/Api/DBField/application
+          dotnet restore
+          dotnet publish -c Release -o out
+          cp Dockerfile bin/Release/net7.0
+          cd bin/Release/net7.0
+          docker build -t "${{ secrets.DOCKER_REGISTRY }}/ccdto/api.dbfield.application:latest" -f Dockerfile .
+
+      - name: Push Image
+        run: |
+          docker images
+          docker push "${{ secrets.DOCKER_REGISTRY }}/ccdto/api.dbfield.application:latest"
+
+  # Docker 自动部署
+  deploy-docker: 
+    needs: [build]
+    name: Deploy Docker
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }} # 服务器ip
+          username: ${{ secrets.HOST_USERNAME }} # 服务器登录用户名
+          password: ${{ secrets.HOST_PASSWORD }} # 服务器登录密码
+          port: ${{ secrets.HOST_PORT }} # 服务器ssh端口
+          script: |
+            docker info
+            echo $(docker ps -aqf "name=api.dbfield.application")
+            docker stop $(docker ps -aqf "name=api.dbfield.application")
+            docker container rm api.dbfield.application
+            docker rmi ccdto/api.dbfield.application
+            docker image rm `docker images --format='{{.Repository}}:{{.Tag}}' --filter reference=ccdto/api.dbfield.application*:*`
+            echo 查看是否成功删除api.dbfield.application
+            docker ps -a
+            docker pull registry.cn-hongkong.aliyuncs.com/ccdto/api.dbfield.application:latest
+            docker tag registry.cn-hongkong.aliyuncs.com/ccdto/api.dbfield.application:latest ccdto/api.dbfield.application:latest
+            docker run -it -d -p 5032:80 --name api.dbfield.application ccdto/api.dbfield.application:latest
+            echo docker容器启动成功
+            docker rmi registry.cn-hongkong.aliyuncs.com/ccdto/api.dbfield.application
+            docker images
+            docker ps -a
+            docker system prune -f
+            echo docker容器和镜像删除成功

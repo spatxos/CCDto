@@ -5,6 +5,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="skyapm.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="skyapm.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\..\..\Core\CCDto.application\CCDto.application.csproj" />
     <ProjectReference Include="..\..\..\Core\CCDto.common\CCDto.common.csproj" />
     <ProjectReference Include="..\entity\api.dbtable.entity.csproj" />
