@@ -34,8 +34,6 @@ namespace Api.Template
                 AssemblyName = args[1];
                 Console.WriteLine($"获取到:{AssemblyName}");
             }
-            Environment.SetEnvironmentVariable("ASPNETCORE_HOSTINGSTARTUPASSEMBLIES", "SkyAPM.Agent.AspNetCore");
-            Environment.SetEnvironmentVariable("SKYWALKING__SERVICENAME", AssemblyName);
             Configuration = builder.Build();
         }
 
@@ -47,7 +45,6 @@ namespace Api.Template
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddSkyApmExtensions();
             services.AddSkyAPM(ext => ext.AddAspNetCoreHosting());
 
             services.AddHttpClient();
