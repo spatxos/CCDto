@@ -11,6 +11,7 @@ using System.IO;
 using CCDto.common;
 using System.Reflection;
 using SkyApm.Utilities.DependencyInjection;
+using SkyApm.AspNetCore.Diagnostics;
 
 namespace Api.Template
 {
@@ -47,6 +48,7 @@ namespace Api.Template
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddSkyApmExtensions();
+            services.AddSkyAPM(ext => ext.AddAspNetCoreHosting());
 
             services.AddHttpClient();
 
