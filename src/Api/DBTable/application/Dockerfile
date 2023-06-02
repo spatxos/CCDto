@@ -5,7 +5,6 @@ COPY . ./
 RUN ls
 
 # Build runtime image
-FROM mcr.microsoft.com/dotnet/aspnet:7.0
 WORKDIR /App
 COPY --from=build-env /App .
 ENV ASPNETCORE_HOSTINGSTARTUPASSEMBLIES=SkyAPM.Agent.AspNetCore
