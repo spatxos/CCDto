@@ -1,2 +1,10 @@
-# yml之中调用执行其他的yml
-  1.在除了.github/workflows根文件夹以外的地方添加一个action.yml然后才能进行调用(https://stackoverflow.com/questions/74350826/github-composite-actions-cant-find-action-yml)
+# About
+CCDTO以api_template项目作为模板，其他项目在此模板上进行注入，做成的一个个api服务
+
+# Plan
+- Dapr or Orleans
+- Kubernetes
+
+# Additional Resources
+- [Panda.DynamicWebApi](https://github.com/pda-team/Panda.DynamicWebApi)
+- [FreeSql](https://github.com/dotnetcore/FreeSql)
