@@ -19,7 +19,6 @@ namespace CCDto.entity.Base
         /// <summary>
         /// 逻辑删除.
         /// </summary>
-        [DtoColumn(IsDisabled = false, IsEdit = false)]
         public bool IsDelete { get; set; }
 
         /// <summary>

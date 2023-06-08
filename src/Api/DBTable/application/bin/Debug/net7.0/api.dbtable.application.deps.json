@@ -8,8 +8,8 @@
     ".NETCoreApp,Version=v7.0": {
       "api.dbtable.application/1.0.0": {
         "dependencies": {
-          "CCDto.application": "1.0.0",
-          "CCDto.common": "1.0.0",
+          "CCDto.BaseCommon": "1.0.0",
+          "CCDto.BaseService": "1.0.0",
           "api.dbtable.entity": "1.0.0"
         },
         "runtime": {
@@ -1031,6 +1031,14 @@
           }
         }
       },
+      "Panda.DynamicWebApi/1.2.1": {
+        "runtime": {
+          "lib/net6.0/Panda.DynamicWebApi.dll": {
+            "assemblyVersion": "1.2.1.0",
+            "fileVersion": "1.2.1.0"
+          }
+        }
+      },
       "Portable.BouncyCastle/1.9.0": {
         "runtime": {
           "lib/netstandard2.0/BouncyCastle.Crypto.dll": {
@@ -1870,7 +1878,9 @@
       },
       "api.dbconnecion.entity/1.0.0": {
         "dependencies": {
-          "CCDto.entity": "1.0.0"
+          "AutoMapper": "12.0.1",
+          "CCDto.BaseCommon": "1.0.0",
+          "CCDto.BaseEntity": "1.0.0"
         },
         "runtime": {
           "api.dbconnecion.entity.dll": {}
@@ -1878,7 +1888,9 @@
       },
       "api.dbfield.entity/1.0.0": {
         "dependencies": {
-          "CCDto.entity": "1.0.0"
+          "AutoMapper": "12.0.1",
+          "CCDto.BaseCommon": "1.0.0",
+          "CCDto.BaseEntity": "1.0.0"
         },
         "runtime": {
           "api.dbfield.entity.dll": {}
@@ -1886,7 +1898,6 @@
       },
       "api.dbtable.entity/1.0.0": {
         "dependencies": {
-          "CCDto.entity": "1.0.0",
           "api.dbconnecion.entity": "1.0.0",
           "api.dbfield.entity": "1.0.0"
         },
@@ -1894,30 +1905,10 @@
           "api.dbtable.entity.dll": {}
         }
       },
-      "CCDto.application/1.0.0": {
-        "dependencies": {
-          "CCDto.common": "1.0.0",
-          "CCDto.entity": "1.0.0",
-          "FreeSql": "3.2.691-preview20230305",
-          "FreeSql.Extensions.LazyLoading": "3.2.691-preview20230305",
-          "FreeSql.Provider.MySql": "3.2.691-preview20230305",
-          "FreeSql.Provider.Oracle": "3.2.691-preview20230305",
-          "FreeSql.Provider.SqlServer": "3.2.691-preview20230305",
-          "FreeSql.Repository": "3.2.691-preview20230305",
-          "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
-          "Microsoft.AspNetCore.Mvc.ViewFeatures": "2.2.0",
-          "NPOI": "2.6.0",
-          "Panda.DynamicWebApi": "1.0.0",
-          "api.dbfield.entity": "1.0.0"
-        },
-        "runtime": {
-          "CCDto.application.dll": {}
-        }
-      },
-      "CCDto.common/1.0.0": {
+      "CCDto.BaseCommon/1.0.0": {
         "dependencies": {
           "AutoMapper": "12.0.1",
-          "CCDto.entity": "1.0.0",
+          "CCDto.BaseEntity": "1.0.0",
           "IdleBus": "1.5.2",
           "Microsoft.AspNetCore.Http": "2.2.2",
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
@@ -1928,22 +1919,37 @@
           "Microsoft.Extensions.DependencyInjection": "8.0.0-preview.1.23110.8"
         },
         "runtime": {
-          "CCDto.common.dll": {}
+          "CCDto.BaseCommon.dll": {}
         }
       },
-      "CCDto.entity/1.0.0": {
+      "CCDto.BaseEntity/1.0.0": {
         "dependencies": {
           "FreeSql": "3.2.691-preview20230305",
           "FreeSql.Extensions.Linq": "3.2.691-preview20230305",
           "Newtonsoft.Json": "13.0.3-beta1"
         },
         "runtime": {
-          "CCDto.entity.dll": {}
+          "CCDto.BaseEntity.dll": {}
         }
       },
-      "Panda.DynamicWebApi/1.0.0": {
+      "CCDto.BaseService/1.0.0": {
+        "dependencies": {
+          "CCDto.BaseCommon": "1.0.0",
+          "CCDto.BaseEntity": "1.0.0",
+          "FreeSql": "3.2.691-preview20230305",
+          "FreeSql.Extensions.LazyLoading": "3.2.691-preview20230305",
+          "FreeSql.Provider.MySql": "3.2.691-preview20230305",
+          "FreeSql.Provider.Oracle": "3.2.691-preview20230305",
+          "FreeSql.Provider.SqlServer": "3.2.691-preview20230305",
+          "FreeSql.Repository": "3.2.691-preview20230305",
+          "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
+          "Microsoft.AspNetCore.Mvc.ViewFeatures": "2.2.0",
+          "NPOI": "2.6.0",
+          "Panda.DynamicWebApi": "1.2.1",
+          "api.dbconnecion.entity": "1.0.0"
+        },
         "runtime": {
-          "Panda.DynamicWebApi.dll": {}
+          "CCDto.BaseService.dll": {}
         }
       }
     }
@@ -2555,6 +2561,13 @@
       "sha512": "sha512-q5wnpKslkWrucgLtQr0YMWpHHT/zqjxRfErTsyiGzwDnsg3F6r0zW4Hv8g3lsdtyi0/ThUsENx2jisuPochmEQ==",
       "path": "oracle.manageddataaccess.core/3.21.61",
       "hashPath": "oracle.manageddataaccess.core.3.21.61.nupkg.sha512"
+    },
+    "Panda.DynamicWebApi/1.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NBmhr3LmcH28mq7RzvcVMUeQgBxhcy5qEw07+4Xms1UKqIU2fTTW1GypRZM5g2AlPt58xq7ZUc5fSCQcVv4CmQ==",
+      "path": "panda.dynamicwebapi/1.2.1",
+      "hashPath": "panda.dynamicwebapi.1.2.1.nupkg.sha512"
     },
     "Portable.BouncyCastle/1.9.0": {
       "type": "package",
@@ -3257,22 +3270,17 @@
       "serviceable": false,
       "sha512": ""
     },
-    "CCDto.application/1.0.0": {
+    "CCDto.BaseCommon/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "CCDto.common/1.0.0": {
+    "CCDto.BaseEntity/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "CCDto.entity/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Panda.DynamicWebApi/1.0.0": {
+    "CCDto.BaseService/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -21,7 +21,6 @@
           "NPOI": "2.6.0",
           "Panda.DynamicWebApi": "1.2.1",
           "api.dbconnecion.entity": "1.0.0",
-          "api.dbfield.entity": "1.0.0",
           "api.dbtable.entity": "1.0.0"
         },
         "runtime": {

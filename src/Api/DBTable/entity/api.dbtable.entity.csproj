@@ -5,7 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Core\CCDto.entity\CCDto.entity.csproj" />
     <ProjectReference Include="..\..\DBConneciton\entity\api.dbconnecion.entity.csproj" />
     <ProjectReference Include="..\..\DBField\entity\api.dbfield.entity.csproj" />
   </ItemGroup>

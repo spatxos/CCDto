@@ -1,8 +1,4 @@
-﻿using CCDto.entity.Base;
-using CCDto.entity.DtoColumn;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System;
 
 namespace CCDto.entity.Dto
 {
@@ -40,18 +36,15 @@ namespace CCDto.entity.Dto
         /// <summary>
         /// Id of the entity.
         /// </summary>
-        [DtoColumn(IsDisabled = true,IsEdit = false)]
         public virtual TPrimaryKey Id { get; set; }
 
         /// <summary>
         /// 删除标识
         /// </summary>
-        [DtoColumn(ShowName = "删除标识", IsDisabled = true, IsEdit = false, EditType = EditType.boolselect)]
         public virtual bool IsDelete { get; set; }
         /// <summary>
         /// 删除标识
         /// </summary>
-        [DtoColumn(ShowName = "删除标识", IsDisabled = true, IsEdit = false)]
         public virtual string IsDeleteValue => IsDelete ? "是" : "否";
 
         /// <summary>

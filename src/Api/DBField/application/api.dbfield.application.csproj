@@ -5,18 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="skyapm.json" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="skyapm.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\Core\CCDto.application\CCDto.application.csproj" />
-    <ProjectReference Include="..\..\..\Core\CCDto.entity\CCDto.entity.csproj" />
+    <ProjectReference Include="..\..\..\Core\CCDto.application\CCDto.BaseService.csproj" />
+    <ProjectReference Include="..\..\..\Core\CCDto.entity\CCDto.BaseEntity.csproj" />
     <ProjectReference Include="..\entity\api.dbfield.entity.csproj" />
   </ItemGroup>
 

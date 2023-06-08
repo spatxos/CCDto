@@ -7,13 +7,11 @@ namespace CCDto.entity.Base
 {
     #region MyRegion
     [Serializable]
-    public class ReturnMsg : BaseEntity
+    public class ReturnMsg
     {
         public Guid Guid { get; set; }
 
         public bool IsSuccess { get; set; }
-
-        public BaseEntity Value { get; set; }
 
         public string Message { get; set; }
 
@@ -35,14 +33,6 @@ namespace CCDto.entity.Base
             Guid = Guid.NewGuid();
             IsSuccess = isSuccess;
             Message = message;
-        }
-
-        public ReturnMsg(bool isSuccess, string message, BaseEntity value)
-        {
-            Guid = Guid.NewGuid();
-            IsSuccess = isSuccess;
-            Message = message;
-            Value = value;
         }
 
         public ReturnMsg(bool isSuccess, string message, Guid guid)

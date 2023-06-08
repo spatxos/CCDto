@@ -1,7 +1,5 @@
 using CCDto.entity.Base;
 using CCDto.entity.Dto;
-using CCDto.entity.DtoColumn;
-using CCDto.entity.Enum;
 using System;
 
 namespace api.dbconnecion.entity.Dto
@@ -17,25 +15,16 @@ namespace api.dbconnecion.entity.Dto
         //1.新增/修改中的select 设置OptionSql = "select id,name as value from tablename where ..." 
         //2.列表显示中  先在Entity中增加对应表实体，Dto中增加对应Value或者Name名称，MapProfile中增加对应映射关系
 
-        [DtoColumn(ShowName = "数据库名称")]
         public virtual string DBConnectionName { get; set; }
-        [DtoColumn(ShowName = "数据库编号")]
         public virtual string DBConnectionNo { get; set; }
 
-        [DtoColumn(Type = typeof(DBType),ShowName = "数据库类型", IsDisabled = true, EditType = EditType.enumselect)]
         public virtual int DBType { get; set; }
 
-        [DtoColumn(ShowName = "数据库类型", IsEdit = false)]
-        public string DBTypeValue => ((DBType)DBType).ToString();
 
-
-        [DtoColumn(ShowName = "数据库连接字符串")]
         public virtual string DBConnectionString { get; set; }
 
-        [DtoColumn(ShowName = "添加时间", IsEdit = false)]
         public DateTime? CreateTime { get; set; }
 
-        [DtoColumn(ShowName = "备注")]
         public string Remark { get; set; }
 
     }

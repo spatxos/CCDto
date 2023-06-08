@@ -1,5 +1,4 @@
-﻿using CCDto.common.NetCore.Extensions;
-using CCDto.common.NetCore.Middleware;
+﻿
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -50,7 +49,7 @@ namespace Api.Template
 
             services.AddHttpClient();
 
-            services.AddAssembly(AssemblyName);
+            //services.AddAssembly(AssemblyName);
 
             //services.AddSwaggerGen(options =>
             //{
@@ -74,7 +73,7 @@ namespace Api.Template
             //    }
             //});
 
-            services.AddMultiDB(Configuration);
+            //services.AddMultiDB(Configuration);
             services.AddMvcCore(option =>
             {
                 option.EnableEndpointRouting = false;
@@ -100,7 +99,6 @@ namespace Api.Template
                 }
             });
 
-            app.UseExceptionMiddleware();
             app.UseStaticFiles();
 
             //app.UseSwagger();

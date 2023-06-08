@@ -1,7 +1,6 @@
 ﻿using api.dbconnecion.entity;
 using api.dbfield.entity;
 using CCDto.entity.Base;
-using CCDto.entity.FreeSql;
 using FreeSql.DataAnnotations;
 using Newtonsoft.Json;
 using System;
@@ -14,7 +13,6 @@ namespace api.dbtable.entity
     /// </summary>
     [Serializable]
     [Table(Name = "TBL_DBTABLE", OldName = "DBTable")]
-    [MultiDB(DbName: "DB2")]
     public class DBTable : Entity<int>
     {
         /// <summary>

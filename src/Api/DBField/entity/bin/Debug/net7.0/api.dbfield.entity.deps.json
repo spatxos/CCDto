@@ -9,8 +9,8 @@
       "api.dbfield.entity/1.0.0": {
         "dependencies": {
           "AutoMapper": "12.0.1",
-          "CCDto.common": "1.0.0",
-          "CCDto.entity": "1.0.0"
+          "CCDto.BaseCommon": "1.0.0",
+          "CCDto.BaseEntity": "1.0.0"
         },
         "runtime": {
           "api.dbfield.entity.dll": {}
@@ -699,10 +699,10 @@
         }
       },
       "System.Threading.Tasks.Extensions/4.5.1": {},
-      "CCDto.common/1.0.0": {
+      "CCDto.BaseCommon/1.0.0": {
         "dependencies": {
           "AutoMapper": "12.0.1",
-          "CCDto.entity": "1.0.0",
+          "CCDto.BaseEntity": "1.0.0",
           "IdleBus": "1.5.2",
           "Microsoft.AspNetCore.Http": "2.2.2",
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
@@ -713,17 +713,17 @@
           "Microsoft.Extensions.DependencyInjection": "8.0.0-preview.1.23110.8"
         },
         "runtime": {
-          "CCDto.common.dll": {}
+          "CCDto.BaseCommon.dll": {}
         }
       },
-      "CCDto.entity/1.0.0": {
+      "CCDto.BaseEntity/1.0.0": {
         "dependencies": {
           "FreeSql": "3.2.691-preview20230305",
           "FreeSql.Extensions.Linq": "3.2.691-preview20230305",
           "Newtonsoft.Json": "13.0.3-beta1"
         },
         "runtime": {
-          "CCDto.entity.dll": {}
+          "CCDto.BaseEntity.dll": {}
         }
       }
     }
@@ -1238,12 +1238,12 @@
       "path": "system.threading.tasks.extensions/4.5.1",
       "hashPath": "system.threading.tasks.extensions.4.5.1.nupkg.sha512"
     },
-    "CCDto.common/1.0.0": {
+    "CCDto.BaseCommon/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "CCDto.entity/1.0.0": {
+    "CCDto.BaseEntity/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

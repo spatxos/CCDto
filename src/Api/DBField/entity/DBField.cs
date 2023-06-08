@@ -1,5 +1,4 @@
 ﻿using CCDto.entity.Base;
-using CCDto.entity.FreeSql;
 using FreeSql.DataAnnotations;
 using System;
 
@@ -10,7 +9,6 @@ namespace api.dbfield.entity
     /// </summary>
     [Serializable]
     [Table(Name = "TBL_DBFIELD", OldName = "DBField")]
-    [MultiDB(DbName: "DB3")]
     public class DBField : Entity<int>
     {
         /// <summary>

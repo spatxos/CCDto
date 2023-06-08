@@ -15,6 +15,5 @@ namespace CCDto.entity.Dto.Request
         /// </summary>
         int PageIndex { get; set; }
 
-        PageTableFoot PageTableFoot { get; set; }
     }
 }

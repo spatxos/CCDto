@@ -15,7 +15,5 @@ namespace CCDto.entity.Dto.Request
     {
         [Range(0, int.MaxValue)]
         public virtual int PageIndex { get; set; }
-
-        public virtual PageTableFoot PageTableFoot { get; set; }
     }
 }

@@ -9,8 +9,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Core\CCDto.common\CCDto.common.csproj" />
-    <ProjectReference Include="..\..\..\Core\CCDto.entity\CCDto.entity.csproj" />
+    <ProjectReference Include="..\..\..\Core\CCDto.common\CCDto.BaseCommon.csproj" />
+    <ProjectReference Include="..\..\..\Core\CCDto.entity\CCDto.BaseEntity.csproj" />
   </ItemGroup>
 
 </Project>

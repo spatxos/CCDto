@@ -1,9 +1,9 @@
 using api.dbconnecion.entity;
-using CCDto.application.Service.Crud;
 using CCDto.entity.Base;
 using api.dbconnecion.entity.Dto;
 using CCDto.application;
 using Panda.DynamicWebApi.Attributes;
+using CCDto.BaseService.Crud;
 
 namespace api.dbconnecion.application
 {

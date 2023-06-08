@@ -1,5 +1,4 @@
 using System;
-using CCDto.entity.Table;
 using CCDto.entity.Dto.Request;
 
 namespace api.dbfield.entity.Dto
