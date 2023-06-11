@@ -1,7 +1,0 @@
-D:\github\CCDto\out\CCDto.entity.dll
-D:\github\CCDto\out\CCDto.entity.deps.json
-D:\github\CCDto\out\CCDto.entity.pdb
-D:\github\CCDto\out\FreeSql.dll
-D:\github\CCDto\out\FreeSql.Extensions.Linq.dll
-D:\github\CCDto\out\Newtonsoft.Json.dll
-D:\github\CCDto\out\zh-Hans\FreeSql.resources.dll

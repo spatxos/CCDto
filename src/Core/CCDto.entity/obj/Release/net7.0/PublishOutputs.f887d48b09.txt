@@ -1,7 +1,0 @@
-D:\github\CCDto\src\Core\CCDto.entity\bin\Release\net7.0\publish\CCDto.entity.dll
-D:\github\CCDto\src\Core\CCDto.entity\bin\Release\net7.0\publish\CCDto.entity.deps.json
-D:\github\CCDto\src\Core\CCDto.entity\bin\Release\net7.0\publish\CCDto.entity.pdb
-D:\github\CCDto\src\Core\CCDto.entity\bin\Release\net7.0\publish\FreeSql.dll
-D:\github\CCDto\src\Core\CCDto.entity\bin\Release\net7.0\publish\FreeSql.Extensions.Linq.dll
-D:\github\CCDto\src\Core\CCDto.entity\bin\Release\net7.0\publish\Newtonsoft.Json.dll
-D:\github\CCDto\src\Core\CCDto.entity\bin\Release\net7.0\publish\zh-Hans\FreeSql.resources.dll

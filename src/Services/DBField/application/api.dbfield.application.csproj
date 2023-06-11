@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <OutputType>Exe</OutputType>
+	  <TargetFramework>net7.0</TargetFramework>
+	  <GenerateDocumentationFile>True</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\CCDto\CCDto.Module\CCDto.Module.csproj" />
+    <ProjectReference Include="..\entity\api.dbfield.entity.csproj" />
+  </ItemGroup>
+
+</Project>

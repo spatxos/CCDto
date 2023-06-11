@@ -1,5 +1,0 @@
-D:\github\CCDto\src\Api\ModelLibrary\obj\Debug\net7.0\ModelLibrary.csproj.AssemblyReference.cache
-D:\github\CCDto\src\Api\ModelLibrary\obj\Debug\net7.0\ModelLibrary.GeneratedMSBuildEditorConfig.editorconfig
-D:\github\CCDto\src\Api\ModelLibrary\obj\Debug\net7.0\ModelLibrary.AssemblyInfoInputs.cache
-D:\github\CCDto\src\Api\ModelLibrary\obj\Debug\net7.0\ModelLibrary.AssemblyInfo.cs
-D:\github\CCDto\src\Api\ModelLibrary\obj\Debug\net7.0\ModelLibrary.csproj.CoreCompileInputs.cache
