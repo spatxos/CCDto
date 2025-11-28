@@ -1,4 +1,4 @@
-FROM registry.cn-hongkong.aliyuncs.com/ccdto/api.template:latest AS build-env
+FROM api.template:latest AS build-env
 WORKDIR ./
 RUN ls ./
 COPY . ./

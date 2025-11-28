@@ -1,0 +1,24 @@
+version: "3.9"
+services:
+  dbapi:
+    build:
+      context: .
+      dockerfile: src/DispatchProxyDemo.Api.DBConnection/Dockerfile
+    environment:
+      - DB_HOST=192.168.1.37
+      - DB_PORT=33037
+      - DB_USER=spaxtos
+      - DB_PASSWORD=123456789
+    ports:
+      - "5101:5101"
+  aggregator:
+    build:
+      context: .
+      dockerfile: src/DispatchProxyDemo.Aggregator/Dockerfile
+    environment:
+      - DBCONNECTION_API=http://dbapi:5101
+    depends_on:
+      - dbapi
+    ports:
+      - "5201:5201"
+

@@ -14,7 +14,7 @@ namespace api.dbconnecion.application.Services
     }
     //[Service("DBConnection")]
     ///// <summary>
-    ///// Êý¾Ý¿â·þÎñ
+    ///// ï¿½ï¿½ï¿½Ý¿ï¿½ï¿½ï¿½ï¿½
     ///// </summary>
     //public class DBConnectionAppService : IDBConnectionService
     //{
@@ -31,7 +31,7 @@ namespace api.dbconnecion.application.Services
     //    }
 
     //    /// <summary>
-    //    /// »ñÈ¡
+    //    /// ï¿½ï¿½È¡
     //    /// </summary>
     //    /// <returns></returns>
     //    [HttpGet]
